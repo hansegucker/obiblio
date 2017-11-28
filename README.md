@@ -1,2 +1,2 @@
 # obiblio
-Fork of german Openbiblio project
+**Before you do anything else solve issue #1**
