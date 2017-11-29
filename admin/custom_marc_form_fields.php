@@ -26,7 +26,8 @@ echo H($material_type);
 <td align="right" class="primary">Tag</td>
 <td align="Left" class="primary">
 <?php printInputText("tag",3,3,$postVars,$pageErrors); ?>
-<input type="button" onClick="javascript:popSecondary('../catalog/usmarc_select.php?retpage=<?php echo HURL($returnPg);?>')" value="Select" class="button">
+    <input type="button" onClick="popSecondary('../catalog/usmarc_select.php?retpage=<?php echo HURL($returnPg); ?>')"
+           value="Select" class="button">
 </td></tr>
 <tr>
 <td  align="right" class="primary">Subfield Code</td>

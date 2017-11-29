@@ -10,7 +10,9 @@
     </td>
     <td valign="top" class="primary">
       <?php printInputText("tag",3,3,$postVars,$pageErrors); ?>
-      <input type="button" onClick="javascript:popSecondary('../catalog/usmarc_select.php?retpage=<?php echo HURL($returnPg);?>')" value="<?php echo $loc->getText("biblioMarcNewFormSelect"); ?>" class="button">
+        <input type="button"
+               onClick="popSecondary('../catalog/usmarc_select.php?retpage=<?php echo HURL($returnPg); ?>')"
+               value="<?php echo $loc->getText("biblioMarcNewFormSelect"); ?>" class="button">
       <?php echo H($tagDesc); ?>
     </td>
   </tr>

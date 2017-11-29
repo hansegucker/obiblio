@@ -187,7 +187,8 @@
 
   <tr>
     <td align="center" colspan="5" class="primary">
-      <input type="button" onClick="javascript:editTheme()" value="  <?php echo $loc->getText("adminSubmit"); ?>  " class="button">
+        <input type="button" onClick="editTheme()" value="  <?php echo $loc->getText("adminSubmit"); ?>  "
+               class="button">
       <input type="button" onClick="self.location='../admin/theme_list.php'" value="  <?php echo $loc->getText("adminCancel"); ?>  " class="button">
     </td>
   </tr>
