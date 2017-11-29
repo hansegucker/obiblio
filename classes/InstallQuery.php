@@ -8,7 +8,8 @@ require_once("../classes/Query.php");
 
 class InstallQuery extends Query {
   /* Override constructor so the installer can test the database connection */
-  function InstallQuery() {
+    function __construct()
+    {
     ;
   }
   function dropTable($tableName) {

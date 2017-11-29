@@ -15,7 +15,8 @@
  * ending in '_e'.
  */
 class Error {
-  function Error($msg) {
+    function __construct($msg)
+    {
     $this->msg = $msg;
   }
   function toStr() {
@@ -27,8 +28,10 @@ class Error {
 class FieldError extends Error {
   /* public */
   var $field;
-  function FieldError($field, $msg) {
-    parent::Error($msg);
+
+    function __construct($field, $msg)
+    {
+        parent::__construct($msg);
     $this->field = $field;
   }
   function listExtract($errors) {

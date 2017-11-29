@@ -18,8 +18,9 @@ require_once("../classes/Localize.php");
 class UsmarcTagDmQuery extends Query {
   var $_loc;
 
-  function UsmarcTagDmQuery() {
-    $this->Query();
+    function __construct()
+    {
+        Query::__construct();
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
   }
 

@@ -19,7 +19,7 @@ require_once("../classes/Localize.php");
 
 class CircQuery extends Query {
 	function CircQuery() {
-		$this->Query();
+        Query::__construct();
 		$this->_loc = new Localize(OBIB_LOCALE, 'classes');
 	}
 	function checkout_e($mbcode, $bcode) {

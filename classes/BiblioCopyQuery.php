@@ -19,8 +19,9 @@ class BiblioCopyQuery extends Query {
   var $_rowCount = 0;
   var $_loc;
 
-  function BiblioCopyQuery() {
-    $this->Query();
+    function __construct()
+    {
+        Query::__construct();
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
   }
 

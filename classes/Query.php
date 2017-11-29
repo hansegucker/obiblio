@@ -12,7 +12,8 @@ class Query {
    * fatal error if it fails.  If you want to catch the error, subclass Query and
    * call connect_e() yourself.
    */
-  function Query() {
+    function __construct()
+    {
     $e = $this->connect_e();
     if ($e) {
       Fatal::dbError($e->sql, $e->msg, $e->dberror);

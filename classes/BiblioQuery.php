@@ -27,8 +27,9 @@ class BiblioQuery extends Query {
   var $_loc;
   var $_fieldsInBiblio;
 
-  function BiblioQuery() {
-    $this->Query();
+    function __construct()
+    {
+        Query::__construct();
     $this->_loc = new Localize(OBIB_LOCALE,"classes");
     $this->_fieldsInBiblio = array(
       '100a' => 'author',
