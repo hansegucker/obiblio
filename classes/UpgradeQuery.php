@@ -93,10 +93,10 @@ class UpgradeQuery extends InstallQuery {
         }
         $notices = array_merge($notices, $n);
       } elseif (!$version) {
-        $error = new Error("No existing OpenBiblio database, please perform a fresh install.");
+          $error = new OError("No existing OpenBiblio database, please perform a fresh install.");
         return array(NULL, $error);
       } else {
-        $error = new Error('Unknown database version: '.$version.'.  No automatic upgrade routine available.');
+          $error = new OError('Unknown database version: ' . $version . '.  No automatic upgrade routine available.');
         return array(NULL, $error);
       }
     } while (1);

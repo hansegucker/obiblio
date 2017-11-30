@@ -203,7 +203,7 @@ class BiblioSearchQuery extends Query {
     }
 
     # Calculate stats based on row count
-    $this->_rowCount = implode(mysql_fetch_row(mysql_query('select found_rows();')));
+      $this->_rowCount = implode(mysqli_fetch_row(mysqli_query($this->_link, 'select found_rows();')));
     $this->_pageCount = ceil($this->_rowCount / $this->_itemsPerPage);
     return true;
 

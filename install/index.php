@@ -19,7 +19,7 @@
   
   include("../install/header.php");
   // 0.7: CircQuery uses PHP to determine current time, other scripts use MySQL
-  $mysql_date = implode(mysql_fetch_row(mysql_query('select sysdate();')));
+$mysql_date = implode(mysqli_fetch_row(mysqli_query($link, 'select sysdate();')));
   $php_date = date('Y-m-d H:i:s');
   if ($php_date != $mysql_date) {
 ?>

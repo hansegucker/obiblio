@@ -40,17 +40,17 @@ class Form {
       else
         $values[$f['name']] = $f['default'];
       if ($f['required'] and $values[$f['name']] == '') {
-        $errors[] = new FieldError($f['name'], Form::T("This field must be filled in."));
+          $errors[] = new FieldOError($f['name'], Form::T("This field must be filled in."));
         continue;
       }
       if ($f['type'] == 'select') {
         if (!isset($f['options'][$values[$f['name']]])) {
-          $errors[] = new FieldError($f['name'], Form::T("Choose a valid value from the list."));
+            $errors[] = new FieldOError($f['name'], Form::T("Choose a valid value from the list."));
         }
       } else if ($f['type'] == 'date') {
         list($val, $err) = Date::read_e($values[$f['name']]);
         if ($err)
-          $errors[] = new FieldError($f['name'], $err->toStr());
+            $errors[] = new FieldOError($f['name'], $err->toStr());
         else
           $values[$f['name']] = $val;
       }
@@ -84,7 +84,7 @@ class Form {
     }
     echo ">\n";
     echo '<input type="hidden" name="_posted" value="1" />'."\n";
-    list($msg, $errors) = FieldError::listExtract($params['errors']);
+      list($msg, $errors) = FieldOError::listExtract($params['errors']);
     $rows = array();
     foreach ($fields as $f) {
       if (!isset($params['values'][$f['name']])) {
@@ -99,11 +99,11 @@ class Form {
         $error = NULL;
       if ($f['type'] == 'hidden') {
         if ($error) {
-          Fatal::internalError(Form::T("Unexpected hidden field error: %error%", array('error'=>$error)));
+            Fatal::internalError(Form::T("Unexpected hidden field error: %error%", array('OError' => $error)));
         }
         echo $html;
       } else {
-        $rows[] = array('title'=>$f['title'], 'html'=>$html, 'error'=>$error);
+          $rows[] = array('title' => $f['title'], 'html' => $html, 'OError' => $error);
       }
     }
     echo '<table class="form">';
@@ -114,8 +114,8 @@ class Form {
     foreach ($rows as $r) {
       echo "<tr>";
       echo "<th>".H($r['title'])."</th>";
-      if ($r['error']) {
-        $err = '<span class="error">'.H($r['error']).'</span><br />';
+        if ($r['OError']) {
+            $err = '<span class="error">' . H($r['OError']) . '</span><br />';
       } else {
         $err = '';
       }

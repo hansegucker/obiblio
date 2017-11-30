@@ -40,7 +40,7 @@
           $err = $circQ->checkout_as_of_e($mbcode, $bcode, $date);
           if($err !== NULL)
             $errors[] = $loc->getText("Couldn't check out %item% to %member%: %error%",
-                                      array('item'=>$bcode, 'member'=>$mbcode, 'error'=>$err->toStr()));
+                array('item' => $bcode, 'member' => $mbcode, 'OError' => $err->toStr()));
         }
         break;
       case '%CHECKIN%':
@@ -48,7 +48,7 @@
           list($info, $err) = $circQ->shelving_cart_e($bcode, $date, true);
           if($err)
             $errors[] = $loc->getText("Couldn't check in %item%: %error%",
-                                      array('item'=>$bcode, 'error'=>$err->toStr()));
+                array('item' => $bcode, 'OError' => $err->toStr()));
         }
         break;
       default:

@@ -22,7 +22,7 @@ class Date {
         $gotit = true;
       }
       else {
-        return array(NULL, new Error('Ambiguous, use yyyy-mm-dd OR dd.mm.yyyy'));
+          return array(NULL, new OError('Ambiguous, use yyyy-mm-dd OR dd.mm.yyyy'));
       }
     } elseif (preg_match('/^([0-9]+)\.([0-9]+)\.([0-9]+)$/', $datestr, $m)) {
       # European Style
@@ -33,10 +33,10 @@ class Date {
     }
     if ($gotit) {
       if ($month < 1 or $month > 12) {
-        return array(NULL, new Error('Bad month number: '.$month));
+          return array(NULL, new OError('Bad month number: ' . $month));
       }
       if ($day < 1 or $day > 31) {
-        return array(NULL, new Error('Bad day number: '.$day));
+          return array(NULL, new OError('Bad day number: ' . $day));
       }
       if ($year < 60) {
         $year += 2000;
@@ -46,7 +46,7 @@ class Date {
       if (checkdate($month, $day, $year)) {
         return array(sprintf('%04d-%02d-%02d', $year, $month, $day), NULL);
       } else {
-        return array(NULL, new Error('Invalid date, check your calendar'));
+          return array(NULL, new OError('Invalid date, check your calendar'));
       }
     }
     if ($ref !== NULL) {
@@ -64,7 +64,7 @@ class Date {
     } elseif ($datestr == 'tomorrow') {
       return array(Date::addDays($ref, 1), NULL);
     } else {
-      return array(NULL, new Error('Invalid date format'));
+        return array(NULL, new OError('Invalid date format'));
     }
   }
   function addDays($date, $days) {

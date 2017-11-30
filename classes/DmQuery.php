@@ -59,7 +59,7 @@ class DmQuery extends Query {
   }
 
   function getCheckoutStats($mbrid) {
-    $MySQLn = explode('.', implode('', explode('-', mysql_get_server_info())));
+      $MySQLn = explode('.', implode('', explode('-', mysqli_get_server_info($this->_link))));
     if ($MySQLn[0] < '5') {
         $cmd = 'type=heap';
     } else {

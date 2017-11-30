@@ -120,7 +120,7 @@ class InstallQuery extends Query {
           //process)
           $sql = str_replace("%prfx%",$tablePrfx,$sqlStmt);
           //replace ENGINE with TYPE for old MySQL versions
-          $MySQLn = explode('.', implode('', explode('-', mysql_get_server_info())));
+            $MySQLn = explode('.', implode('', explode('-', mysqli_get_server_info($this->_link))));
           if ($MySQLn[0] < '5') {
             $sql = str_replace("ENGINE=","TYPE=",$sql);
             $sql = str_replace("engine=","type=",$sql);

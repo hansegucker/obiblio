@@ -87,9 +87,10 @@
   
   # Compatibility
   $phpver = explode('.', PHP_VERSION);
-  if (!function_exists('mysql_real_escape_string')) {		# PHP < 4.3.0
-    function mysql_real_escape_string($s, $link) {
-      return mysql_escape_string($s);
+if (!function_exists('mysqli_real_escape_string')) {        # PHP < 4.3.0
+    function mysqli_real_escape_string($s, $link)
+    {
+        return mysqli_escape_string($link, $s);
     }
   }
   if ($phpver[0]>=5 || ($phpver[0]==4 && $phpver[1]>=3)) {
@@ -126,7 +127,7 @@
 
   require_once('../database_constants.php');
   require_once('../shared/global_constants.php');
-  require_once('../classes/Error.php');
+require_once('../classes/OError.php');
   require_once('../classes/Iter.php');
   require_once('../classes/Nav.php');
   

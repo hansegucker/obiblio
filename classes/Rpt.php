@@ -134,7 +134,7 @@ class RptParser {
 
     $this->fd = fopen($this->filename, 'rb');
     if ($this->fd === FALSE) {
-      return array(NULL, new Error('Cannot open file: '.$this->filename));
+        return array(NULL, new OError('Cannot open file: ' . $this->filename));
     }
     $this->_tokens = array();
     $this->line = 0;
@@ -144,12 +144,12 @@ class RptParser {
   function parse_e() {
     $list = array();
     while($d = $this->p_decl()) {
-      if (is_a($d, 'Error')) {
+        if (is_a($d, 'OError')) {
         return array(NULL, $d);
       }
       array_push($list, $d);
     }
-    if ($this->lat[0] == 'ERROR') {
+      if ($this->lat[0] == 'OError') {
       return array(NULL, $this->lexerError());
     }
     if ($this->lat[0] != 'EOF') {
@@ -159,7 +159,7 @@ class RptParser {
   }
 
   function error($msg) {
-    return new Error($this->filename.':'.$this->line.': '.$msg);
+      return new OError($this->filename . ':' . $this->line . ': ' . $msg);
   }
   function lexerError() {
     return $this->error('Lexer error - FIXME');
@@ -202,7 +202,7 @@ class RptParser {
       }
     }
     if ($line === FALSE and !feof($this->fd)) {
-      return array('ERROR');
+        return array('OError');
     }
     return array('EOF');
   }
@@ -327,7 +327,7 @@ class RptParser {
         $name = $this->lat[1];
         $this->lex();
         $list = $this->p_params();
-        if (is_a($list, 'Error')) {
+          if (is_a($list, 'OError')) {
           return $list;
         }
         $list['name'] = $name;
@@ -335,11 +335,11 @@ class RptParser {
       case 'parameters':
         $this->lex();
         $list = $this->p_param_decls();
-        if (is_a($list, 'Error')) {
+          if (is_a($list, 'OError')) {
           return $list;
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         return array('parameters', $list);
@@ -356,28 +356,28 @@ class RptParser {
       if ($this->lat[0] == 'order_by') {
         $this->lex();
         $params = $this->p_params();
-        if (is_a($params, 'Error')) {
+          if (is_a($params, 'OError')) {
           return $params;
         }
         $items = $this->p_items();
-        if (is_a($items, 'Error')) {
+          if (is_a($items, 'OError')) {
           return $items;
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         $list[] = array('order_by', 'order_by', $params, $items);
       } elseif ($this->lat[0] == 'session_id') {
         $this->lex();
         $params = $this->p_params();
-        if (is_a($params, 'Error')) {
+          if (is_a($params, 'OError')) {
           return $params;
         }
         $list[] = array('session_id', 'session_id', $params);
       } else {
         $d = $this->p_param_decl();
-        if (is_a($d, 'Error')) {
+          if (is_a($d, 'OError')) {
           return $d;
         } elseif (!$d) {
           break;
@@ -399,7 +399,7 @@ class RptParser {
     $name = $this->lat[1];
     $this->lex();
     $params = $this->p_params();
-    if (is_a($params, 'Error')) {
+      if (is_a($params, 'OError')) {
       return $params;
     }
     switch ($type) {
@@ -408,21 +408,21 @@ class RptParser {
         return array($type, $name, $params);
       case 'group':
         $list = $this->p_param_decls();
-        if (is_a($list, 'Error')) {
+          if (is_a($list, 'OError')) {
           return $list;
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         return array('group', $name, $params, $list);
       case 'select':
         $list = $this->p_items();
-        if (is_a($list, 'Error')) {
+          if (is_a($list, 'OError')) {
           return $list;
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         return array('select', $name, $params, $list);
@@ -441,7 +441,7 @@ class RptParser {
         $value = $this->lat[1];
         $this->lex();
         $params = $this->p_params();
-        if (is_a($params, 'Error')) {
+          if (is_a($params, 'OError')) {
           return $params;
         }
         array_push($list, array($value, $params));
@@ -457,7 +457,7 @@ class RptParser {
           $this->lex();
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         $q = new Query();
@@ -473,15 +473,15 @@ class RptParser {
   }
   function p_sql_form() {
     $exprs = $this->p_sql_exprs();
-    if (is_a($exprs, 'Error')) {
+      if (is_a($exprs, 'OError')) {
       return $exprs;
     }
     $subs = $this->p_subselects();
-    if (is_a($subs, 'Error')) {
+      if (is_a($subs, 'OError')) {
       return $subs;
     }
     $result = $this->p_end();
-    if (is_a($result, 'Error')) {
+      if (is_a($result, 'OError')) {
       return $result;
     }
     return array('sql', array($exprs, $subs));
@@ -489,7 +489,7 @@ class RptParser {
   function p_sql_exprs() {
     $list = array();
     while ($e = $this->p_sql_expr()) {
-      if (is_a($e, 'Error')) {
+        if (is_a($e, 'OError')) {
         return $e;
       }
       array_push($list, $e);
@@ -514,11 +514,11 @@ class RptParser {
         $name = $this->lat[1];
         $this->lex();
         $then = $this->p_sql_exprs();
-        if (is_a($then, 'Error')) {
+          if (is_a($then, 'OError')) {
           return $then;
         }
         $else = $this->p_else_part();
-        if (is_a($else, 'Error')) {
+          if (is_a($else, 'OError')) {
           return $else;
         }
         return array('if_set', $name, $then, $else);
@@ -537,11 +537,11 @@ class RptParser {
         $value = $this->lat[1];
         $this->lex();
         $then = $this->p_sql_exprs();
-        if (is_a($then, 'Error')) {
+          if (is_a($then, 'OError')) {
           return $then;
         }
         $else = $this->p_else_part();
-        if (is_a($else, 'Error')) {
+          if (is_a($else, 'OError')) {
           return $else;
         }
         return array($type, $name, $value, $then, $else);
@@ -555,11 +555,11 @@ class RptParser {
         $name = $this->lat[1];
         $this->lex();
         $block = $this->p_sql_exprs();
-        if (is_a($block, 'Error')) {
+          if (is_a($block, 'OError')) {
           return $block;
         }
         $result = $this->p_end();
-        if (is_a($result, 'Error')) {
+          if (is_a($result, 'OError')) {
           return $result;
         }
         return array($type, $name, $block);
@@ -575,14 +575,14 @@ class RptParser {
     if ($this->lat[0] == 'else') {
       $this->lex();
       $list = $this->p_sql_exprs();
-      if (is_a($list, 'Error')) {
+        if (is_a($list, 'OError')) {
         return $list;
       }
     } else {
       $list = array();
     }
     $result = $this->p_end();
-    if (is_a($result, 'Error')) {
+      if (is_a($result, 'OError')) {
       return $result;
     }
     if (!$result) {
@@ -600,7 +600,7 @@ class RptParser {
       $name = $this->lat[1];
       $this->lex();
       $s = $this->p_sql_form();
-      if (is_a($s, 'Error')) {
+        if (is_a($s, 'OError')) {
         return $s;
       }
       $list[$name] = $s;
@@ -613,7 +613,7 @@ class RptParser {
     }
     $this->lex();
     $list = $this->p_params();
-    if (is_a($list, 'Error')) {
+      if (is_a($list, 'OError')) {
       return $list;
     }
     return true;

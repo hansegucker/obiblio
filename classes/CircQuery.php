@@ -50,51 +50,51 @@ class CircQuery extends Query {
 		} else {
 			list($date, $err) = Date::read_e($date);
 			if ($err)
-				return new Error($this->_loc->getText("Can't understand date: %err%", array('err'=>$err->toStr())));
+                return new OError($this->_loc->getText("Can't understand date: %err%", array('err' => $err->toStr())));
 			$earliest = strtotime($date." 00:00:00");
 			$latest = strtotime($date." 23:59:59");
 		}
 		if($due !== NULL) {
 			list($due, $err) = Date::read_e($due);
 			if ($err)
-				return new Error($this->_loc->getText("Can't understand date: %err%", array('err'=>$err->toStr())));
+                return new OError($this->_loc->getText("Can't understand date: %err%", array('err' => $err->toStr())));
 		}
 		if($earliest > time())
-			return new Error($this->_loc->getText("Won't do checkouts for future dates."));
+            return new OError($this->_loc->getText("Won't do checkouts for future dates."));
 		$mbrQ = new MemberQuery();
 		$mbr = $mbrQ->maybeGetByBarcode($mbcode);
 		if (!$mbr)
-			return new Error($this->_loc->getText("Bad member barcode: %bcode%", array('bcode'=>$mbcode)));
+            return new OError($this->_loc->getText("Bad member barcode: %bcode%", array('bcode' => $mbcode)));
 		$mbrid = $mbr->getMbrid();
 		if (!$force && OBIB_BLOCK_CHECKOUTS_WHEN_FINES_DUE) {
 			$acctQ = new MemberAccountQuery();
 			$balance = $acctQ->getBalance($mbrid);
 			if ($balance > 0)
-				return new Error($this->_loc->getText("Member owes fines: checkout not allowed"));
+                return new OError($this->_loc->getText("Member owes fines: checkout not allowed"));
 		}
                 if ($mbr->getMembershipEnd()!="0000-00-00") {
     		 if (strtotime($mbr->getMembershipEnd())<=strtotime("now")) {
-			 return new Error($this->_loc->getText("Member must renew membership before checking out."));
+                 return new OError($this->_loc->getText("Member must renew membership before checking out."));
     		    }
   		}
                 $copyQ = new BiblioCopyQuery();
                 $copy = $copyQ->maybeGetByBarcode($bcode);
 		if (!$copy)
-			return new Error($this->_loc->getText("Bad copy barcode: %bcode%", array('bcode'=>$bcode)));
+            return new OError($this->_loc->getText("Bad copy barcode: %bcode%", array('bcode' => $bcode)));
 		$fee2 = $copyQ->getDailyLateFee($copy);
 		if ($copy->getStatusCd() == OBIB_STATUS_OUT) {
 			if ($copy->getMbrid() == $mbrid) {
 				# Renewal
 				$reachedLimit = $copyQ->hasReachedRenewalLimit($mbrid, $mbr->getClassification(), $copy);
 				if(!$force && $reachedLimit)
-					return new Error($this->_loc->getText("Item %bcode% has reached its renewal limit.", array('bcode'=>$bcode)));
+                    return new OError($this->_loc->getText("Item %bcode% has reached its renewal limit.", array('bcode' => $bcode)));
 				else if (!$force && ($copy->getDaysLate() > 0) && ($fee2>0))
-					return new Error($this->_loc->getText("Item %bcode% is late and cannot be renewed.", array('bcode'=>$bcode)));
+                    return new OError($this->_loc->getText("Item %bcode% is late and cannot be renewed.", array('bcode' => $bcode)));
 				else
 					{
                                         $holdQ = new BiblioHoldQuery();
                                         $hold = $holdQ->maybeGetFirstHold($copy->getBibid(), $copy->getCopyid());
-                                        if ($hold) return new Error($this->_loc->getText("Item %bcode% is on hold.", array('bcode'=>$bcode)));
+                        if ($hold) return new OError($this->_loc->getText("Item %bcode% is on hold.", array('bcode' => $bcode)));
                                         $copy->setRenewalCount($copy->getRenewalCount() + 1);
                                         }
 			} else if ($force) {
@@ -105,20 +105,20 @@ class CircQuery extends Query {
 				if (!$copy)
 					Fatal::internalError("Copy disappeared mysteriously.");
 			} else
-				return new Error($this->_loc->getText("Item %bcode% is already checked out to another member.",
+                return new OError($this->_loc->getText("Item %bcode% is already checked out to another member.",
 					array('bcode'=>$bcode)));
 		} else {
 			$copy->setRenewalCount(0);
 			$reachedLimit = $copyQ->hasReachedCheckoutLimit($mbrid,$mbr->getClassification(),$copy->getBibid());
 			if (!$force && $reachedLimit)
-				return new Error($this->_loc->getText("Member has reached checkout limit for this collection."));
+                return new OError($this->_loc->getText("Member has reached checkout limit for this collection."));
 		}
 		$days = $copyQ->getDaysDueBack($copy);
 		if ($days <= 0) {
 			if ($force)		# the checkout has probably already happened, just guess - FIXME?
 				$days = 14;
 			else
-				return new Error($this->_loc->getText("Checkouts are disallowed for this collection."));
+                return new OError($this->_loc->getText("Checkouts are disallowed for this collection."));
 		}
 		if ($copy->getStatusCd() == OBIB_STATUS_ON_HOLD) {
 			$holdQ = new BiblioHoldQuery();
@@ -133,14 +133,14 @@ class CircQuery extends Query {
 				if ($tooOld || $mbrid == $hold->getMbrid())
 					$holdQ->delete($hold->getBibid(), $hold->getCopyid(), $hold->getHoldid());
 				else if (!$force)
-					return new Error($this->_loc->getText("Item is on hold for another member."));
+                    return new OError($this->_loc->getText("Item is on hold for another member."));
 			}
 		}
 		$oldtime = strtotime($copy->getStatusBeginDt());
 		if ($oldtime > $latest)
-			return new Error($this->_loc->getText("Can't change status to an earlier date on item %bcode%.", array('bcode'=>$bcode)));
+            return new OError($this->_loc->getText("Can't change status to an earlier date on item %bcode%.", array('bcode' => $bcode)));
 		else if ($oldtime == $latest)
-			return new Error($this->_loc->getText("Can't change status more than once per second on item %bcode%." , array('bcode'=>$bcode)));
+            return new OError($this->_loc->getText("Can't change status more than once per second on item %bcode%.", array('bcode' => $bcode)));
 		else if ($oldtime < $earliest)
 			$time = date('Y-m-d H:i:s', $earliest);
 		else
@@ -172,7 +172,7 @@ class CircQuery extends Query {
 			else
 				$back=$due;
 			if (strtotime($mbr->getMembershipEnd())<strtotime($back)) {
-			 	return new Error($this->_loc->getText("!!!Note : due date is after the end of the membership"));
+                return new OError($this->_loc->getText("!!!Note : due date is after the end of the membership"));
     		    	}
 		}
 	}
@@ -196,17 +196,17 @@ class CircQuery extends Query {
 		} else {
 			list($date, $err) = Date::read_e($date);
 			if ($err)
-				return array($info, new Error($this->_loc->getText("Can't understand date: %err%",
+                return array($info, new OError($this->_loc->getText("Can't understand date: %err%",
 					array('err'=>$err->toStr()))));
 			$earliest = strtotime($date." 00:00:00");
 			$latest = strtotime($date." 23:59:59");
 		}
 		if($earliest > time())
-			return array($info, new Error($this->_loc->getText("Won't do checkins for future dates.")));
+            return array($info, new OError($this->_loc->getText("Won't do checkins for future dates.")));
 		$copyQ = new BiblioCopyQuery();
 		$copy = $copyQ->maybeGetByBarcode($bcode);
 		if (!$copy)
-			return array($info, new Error($this->_loc->getText("Bad copy barcode: %bcode%", array('bcode'=>$bcode))));
+            return array($info, new OError($this->_loc->getText("Bad copy barcode: %bcode%", array('bcode' => $bcode))));
 		$info['bibid'] = $copy->getBibid();
 		$fee = $copyQ->getDailyLateFee($copy);
 		$mbrid = $info['mbrid'] = $copy->getMbrid();
@@ -223,9 +223,9 @@ class CircQuery extends Query {
 			$copy->setStatusCd(OBIB_STATUS_SHELVING_CART);
 		$oldtime = strtotime($copy->getStatusBeginDt());
 		if ($oldtime > $latest)
-			return array($info, new Error($this->_loc->getText("Can't change status to an earlier date on item %bcode%.", array('bcode'=>$bcode))));
+            return array($info, new OError($this->_loc->getText("Can't change status to an earlier date on item %bcode%.", array('bcode' => $bcode))));
 		else if ($oldtime == $latest)
-			return array($info, new Error($this->_loc->getText("Can't change status more than once per second on item %bcode%." , array('bcode'=>$bcode))));
+            return array($info, new OError($this->_loc->getText("Can't change status more than once per second on item %bcode%.", array('bcode' => $bcode))));
 		else if ($oldtime < $earliest)
 			$time = date('Y-m-d H:i:s', $earliest);
 		else
