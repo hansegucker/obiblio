@@ -372,7 +372,7 @@ class Query
 
 class DbIter extends Iter
 {
-    function DbIter($results)
+    function __construct($results)
     {
         $this->results = $results;
     }
@@ -398,7 +398,7 @@ class DbIter extends Iter
 
 class DbOld
 {
-    function DbOld($results, $id)
+    function __construct($results, $id)
     {
         $this->results = $results;
         $this->id = $id;

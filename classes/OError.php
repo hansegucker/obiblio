@@ -76,7 +76,7 @@ class DbOError extends OError
   var $msg;
   var $dberror;
 
-    function DbOError($sql, $msg, $dberror)
+    function __construct($sql, $msg, $dberror)
     {
     $this->sql = $sql;
     $this->msg = $msg;

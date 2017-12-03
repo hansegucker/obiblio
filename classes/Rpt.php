@@ -689,7 +689,8 @@ class RptIter extends Iter {
   #	array('order_by_expr')
   #		An appropriate SQL ORDER BY clause is appended to
   #		the query at this point.
-  function RptIter($sqls, $params) {
+    function __construct($sqls, $params)
+    {
     $this->params = $params;
     $this->q = new Query();
     foreach ($sqls as $s) {
