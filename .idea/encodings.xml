@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/circ/checkin_form.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/install_instructions_german.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/locale/de/reports.php" charset="ISO-8859-1" />
   </component>
 </project>

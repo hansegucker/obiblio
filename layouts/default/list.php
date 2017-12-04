@@ -4,9 +4,13 @@
  */
 
 require_once('../classes/Lay.php');
+require_once("../classes/Localize.php");
+
 
 class Layout_list {
   function render($rpt) {
+      $loc = new Localize(OBIB_LOCALE, 'reports');
+
     $cols = $rpt->columns();
     $colspacing = 0.125;
     $total = 0;
@@ -36,7 +40,7 @@ class Layout_list {
         if ($rpt->title()) {
           $lay->pushFont('Times-Bold', 18);
             $lay->container('TextLine', array('x-align'=>'center'));
-              $lay->text($rpt->title());
+            $lay->text($loc->getText($rpt->title()));
             $lay->close();
           $lay->popFont();
         }
@@ -47,7 +51,7 @@ class Layout_list {
                 continue;
               }
               $lay->container('TextLine', array('width'=>($unit*$col['width']).'in', 'underline'=>1));
-                $lay->text($col['title']);
+                $lay->text($loc->getText($col['title']));
               $lay->close();
             }
           $lay->close();

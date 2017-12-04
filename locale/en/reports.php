@@ -274,4 +274,15 @@ $trans["author"]                   = "\$text = 'Author';";
 $trans["due_back_dt"]              = "\$text = 'Due Back';";
 $trans["checkoutCount"]            = "\$text = 'Checkout Count';";
 
+# Layouts (overdue.php)
+$trans["overdueHours"] = "\$text = 'hours: ';";
+$trans["overdueGreetingBefore"] = "\$text = 'Dear ';";
+$trans["overdueGreetingAfter"] = "\$text = ',',";
+$trans["overdueText"] = "\$text = 'du hast bei uns vor einiger Zeit folgende Bücher bei uns ausgeliehen und nicht rechtzeitig zurückgegeben. " .
+    "Wir bitten dich, diese Bücher so schnell wie möglich zurückzugeben und die Versäumnisgebühr zu bezahlen.';";
+$trans["overdueGoodbye"] = "\$text = 'Sincerly, ';";
+$trans["overdueTheStaffAt"] = "\$text = 'The team at ';";
+$trans["overdueDueDate"] = "\$text = 'Due day';";
+$trans["overdueDaysLate"] = "\$text = 'Days late';";
+
 ?>

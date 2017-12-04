@@ -35,7 +35,6 @@
   #*  getting form vars
   #****************************************************************************
   require("../shared/get_form_vars.php");
-
   echo '<h1>'.$loc->getText($rpt->title()).'</h1>';
 
   if (isset($_REQUEST['msg'])) {
@@ -58,6 +57,6 @@
   Params::printForm($params);
 ?>
 
-<input type="submit" value="Submit" class="button" />
+    <input type="submit" value="<?= $loc->getText('reportCriteriaRunReport'); ?>" class="button"/>
 </form>
 <?php include("../shared/footer.php"); ?>
