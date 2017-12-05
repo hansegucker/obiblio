@@ -2,7 +2,7 @@
 /* This file is part of a copyrighted work; it is distributed with NO WARRANTY.
  * See the file COPYRIGHT.html for more details.
  */
- 
+
 
 /*********************************************************************************
  * Draws input html tag of type text.
@@ -12,17 +12,18 @@
  * @access public
  *********************************************************************************
  */
-function printUsmarcText($tag,$subfieldCd,&$marcTags,&$marcSubflds,$showTagDesc){
-  $arrayIndex = sprintf("%03d",$tag).$subfieldCd;
+function printUsmarcText($tag, $subfieldCd, &$marcTags, &$marcSubflds, $showTagDesc)
+{
+    $arrayIndex = sprintf("%03d", $tag) . $subfieldCd;
 
-  if (($showTagDesc) 
-    && (isset($marcTags[$tag]))
-    && (isset($marcSubflds[$arrayIndex]))){
-    echo H($marcTags[$tag]->getDescription());
-    echo " (".H($marcSubflds[$arrayIndex]->getDescription()).")";
-  } elseif (isset($marcSubflds[$arrayIndex])){
-    echo H($marcSubflds[$arrayIndex]->getDescription());
-  }
+    if (($showTagDesc)
+        && (isset($marcTags[$tag]))
+        && (isset($marcSubflds[$arrayIndex]))) {
+        echo H($marcTags[$tag]->getDescription());
+        echo " (" . H($marcSubflds[$arrayIndex]->getDescription()) . ")";
+    } elseif (isset($marcSubflds[$arrayIndex])) {
+        echo H($marcSubflds[$arrayIndex]->getDescription());
+    }
 }
 
 ?>

@@ -7,6 +7,6 @@
 #*  Translation Metadata
 #****************************************************************************
 $lang_metadata = array(
-   "locale_description" => "Deutsch"
+    "locale_description" => "Deutsch"
 );
 ?>

@@ -2,24 +2,24 @@
 /* This file is part of a copyrighted work; it is distributed with NO WARRANTY.
  * See the file COPYRIGHT.html for more details.
  */
- 
-  require_once("../shared/common.php");
-  session_cache_limiter(null);
 
-  $tab = "cataloging";
-  $nav = "new";
-  $helpPage = "biblioEdit";
-  $focus_form_name = "newbiblioform";
-  $focus_form_field = "materialCd";
-  require_once("../functions/inputFuncs.php");
-  require_once("../shared/logincheck.php");
-  require_once("../classes/Biblio.php");
-  require_once("../classes/BiblioQuery.php");
-  require_once("../classes/Localize.php");
+require_once("../shared/common.php");
+session_cache_limiter(null);
 
-  $loc = new Localize(OBIB_LOCALE,$tab);
+$tab = "cataloging";
+$nav = "new";
+$helpPage = "biblioEdit";
+$focus_form_name = "newbiblioform";
+$focus_form_field = "materialCd";
+require_once("../functions/inputFuncs.php");
+require_once("../shared/logincheck.php");
+require_once("../classes/Biblio.php");
+require_once("../classes/BiblioQuery.php");
+require_once("../classes/Localize.php");
 
-  if (isset($_GET["bibid"])){
+$loc = new Localize(OBIB_LOCALE, $tab);
+
+if (isset($_GET["bibid"])) {
     unset($_SESSION["postVars"]);
     unset($_SESSION["pageErrors"]);
     #****************************************************************************
@@ -33,37 +33,38 @@
     $biblioQ = new BiblioQuery();
     $biblioQ->connect();
     if ($biblioQ->errorOccurred()) {
-      $biblioQ->close();
-      displayErrorPage($biblioQ);
+        $biblioQ->close();
+        displayErrorPage($biblioQ);
     }
     if (!$biblio = $biblioQ->doQuery($bibid)) {
-      $biblioQ->close();
-      displayErrorPage($biblioQ);
+        $biblioQ->close();
+        displayErrorPage($biblioQ);
     }
     foreach ($biblio->getBiblioFields() as $value) {
-	$value->setFieldid('');
+        $value->setFieldid('');
     }
 
     #**************************************************************************
     #*  load up post vars
     #**************************************************************************
     include("biblio_post_conversion.php");
-  }
-  require_once("../shared/header.php");
+}
+require_once("../shared/header.php");
 
-  $cancelLocation = "../shared/biblio_view.php?bibid=".$postVars["bibid"];
-  $headerWording="New";
+$cancelLocation = "../shared/biblio_view.php?bibid=" . $postVars["bibid"];
+$headerWording = "New";
 
 ?>
 
-  <script language="JavaScript">
+<script language="JavaScript">
     <!--
-      function matCdReload(){
-        document.newbiblioform.posted.value='media_change';
+    function matCdReload() {
+        document.newbiblioform.posted.value = 'media_change';
         document.newbiblioform.submit();
-      }
+    }
+
     //-->
-  </script>
+</script>
 <form name="newbiblioform" method="POST" action="../catalog/biblio_new.php">
-<?php include("../catalog/biblio_fields.php"); ?>
-<?php include("../shared/footer.php"); ?>
+    <?php include("../catalog/biblio_fields.php"); ?>
+    <?php include("../shared/footer.php"); ?>

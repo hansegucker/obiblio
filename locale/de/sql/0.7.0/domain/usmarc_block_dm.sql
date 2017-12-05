@@ -1,11 +1,11 @@
-insert into %prfx%usmarc_block_dm values (0,'Kontrollinformationen, Zahlen und Codes');
-insert into %prfx%usmarc_block_dm values (1,'Haupteintrag');
-insert into %prfx%usmarc_block_dm values (2,'Titel, Untertitel, Verlag, Reihe, Edition, Erscheinungsjahr');
-insert into %prfx%usmarc_block_dm values (3,'Physikalische Beschreibung, Seitenzahlen, Größe');
-insert into %prfx%usmarc_block_dm values (4,'Informationen über die Serie');
-insert into %prfx%usmarc_block_dm values (5,'Inhaltsangabe, Zusammenfassung, Themenbereich und Anmerkungen');
-insert into %prfx%usmarc_block_dm values (6,'Schlagwörter');
-insert into %prfx%usmarc_block_dm values (7,'Zusätzliche Einträge, nicht Serie-n und Themenbezogen');
-insert into %prfx%usmarc_block_dm values (8,'Seriennebeneintragungen');
-insert into %prfx%usmarc_block_dm values (9,'Lokale Daten');
+INSERT INTO % prfx%usmarc_block_dm VALUES (0, 'Kontrollinformationen, Zahlen und Codes');
+INSERT INTO % prfx%usmarc_block_dm VALUES (1, 'Haupteintrag');
+INSERT INTO % prfx%usmarc_block_dm VALUES (2, 'Titel, Untertitel, Verlag, Reihe, Edition, Erscheinungsjahr');
+INSERT INTO % prfx%usmarc_block_dm VALUES (3, 'Physikalische Beschreibung, Seitenzahlen, Grï¿½ï¿½e');
+INSERT INTO % prfx%usmarc_block_dm VALUES (4, 'Informationen ï¿½ber die Serie');
+INSERT INTO % prfx%usmarc_block_dm VALUES (5, 'Inhaltsangabe, Zusammenfassung, Themenbereich und Anmerkungen');
+INSERT INTO % prfx%usmarc_block_dm VALUES (6, 'Schlagwï¿½rter');
+INSERT INTO % prfx%usmarc_block_dm VALUES (7, 'Zusï¿½tzliche Eintrï¿½ge, nicht Serie-n und Themenbezogen');
+INSERT INTO % prfx%usmarc_block_dm VALUES (8, 'Seriennebeneintragungen');
+INSERT INTO % prfx%usmarc_block_dm VALUES (9, 'Lokale Daten');
 

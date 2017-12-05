@@ -1,9 +1,9 @@
-drop table if exists %prfx%mbr_classify_dm;
-create table %prfx%mbr_classify_dm (
-  code smallint auto_increment primary key
-  ,description varchar(40) not null
-  ,default_flg char(1) not null
-  ,max_fines decimal(4,2) not null
+DROP TABLE IF EXISTS % prfx % mbr_classify_dm;
+CREATE TABLE %prfx%mbr_classify_dm (
+CODE SMALLINT AUTO_INCREMENT PRIMARY KEY
+, description VARCHAR (40) NOT NULL
+, default_flg CHAR (1) NOT NULL
+, max_fines DECIMAL (4, 2) NOT NULL
 )
-  ENGINE=MyISAM
+ENGINE =MyISAM
 ;

@@ -1,8 +1,8 @@
-drop table if exists %prfx%state_dm;
-create table %prfx%state_dm (
-  code char(2) primary key
-  ,description varchar(20) not null
-  ,default_flg char(1) not null
+DROP TABLE IF EXISTS % prfx % state_dm;
+CREATE TABLE %prfx%state_dm (
+CODE CHAR (2) PRIMARY KEY
+, description VARCHAR (20) NOT NULL
+, default_flg CHAR (1) NOT NULL
 )
-  ENGINE=MyISAM
+ENGINE =MyISAM
 ;

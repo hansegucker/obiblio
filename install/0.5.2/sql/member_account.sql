@@ -1,13 +1,13 @@
-drop table if exists %prfx%member_account;
-create table %prfx%member_account (
-  mbrid integer not null
-  ,transid integer auto_increment not null
-  ,create_dt datetime not null
-  ,create_userid integer not null
-  ,transaction_type_cd char(2) not null
-  ,amount decimal(8,2) not null
-  ,description varchar(128) null
-  ,primary key(mbrid,transid)
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % member_account;
+CREATE TABLE %prfx%member_account (
+mbrid INTEGER NOT NULL
+, transid INTEGER AUTO_INCREMENT NOT NULL
+, create_dt DATETIME NOT NULL
+, create_userid INTEGER NOT NULL
+, transaction_type_cd CHAR (2) NOT NULL
+, amount DECIMAL (8, 2) NOT NULL
+, description VARCHAR (128) NULL
+, PRIMARY KEY (mbrid, transid)
+)
+ENGINE =MyISAM
 ;

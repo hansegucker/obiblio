@@ -1,8 +1,8 @@
-drop table if exists %prfx%session;
-create table %prfx%session (
-  userid integer(5) not null
-  ,last_updated_dt datetime not null
-  ,token integer(5) not null
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % SESSION;
+CREATE TABLE %prfx% SESSION (
+userid INTEGER (5) NOT NULL
+, last_updated_dt DATETIME NOT NULL
+, token INTEGER (5) NOT NULL
+)
+ENGINE =MyISAM
 ;

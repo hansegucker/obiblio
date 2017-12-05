@@ -1,8 +1,8 @@
-drop table if exists %prfx%member_fields;
-create table %prfx%member_fields (
-  mbrid integer NOT NULL,
-  code varchar(16) NOT NULL,
-  data text NOT NULL,
-  PRIMARY KEY (mbrid, code),
-  INDEX code_index (code)
-) ENGINE=MyISAM;
+DROP TABLE IF EXISTS % prfx % member_fields;
+CREATE TABLE %prfx%member_fields (
+mbrid INTEGER NOT NULL,
+CODE VARCHAR (16) NOT NULL,
+DATA TEXT NOT NULL,
+PRIMARY KEY (mbrid, CODE ),
+INDEX code_index ( CODE )
+) ENGINE =MyISAM;

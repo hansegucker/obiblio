@@ -1,9 +1,9 @@
-insert into %prfx%biblio_status_dm values ('in','verfügbar','Y');
-insert into %prfx%biblio_status_dm values ('out','ausgeliehen','N');
-insert into %prfx%biblio_status_dm values ('mnd','beschädigt','N');
-insert into %prfx%biblio_status_dm values ('dis','in Präsentation','N');
-insert into %prfx%biblio_status_dm values ('hld','vorbestellt','N');
-insert into %prfx%biblio_status_dm values ('lst','verloren','N');
-insert into %prfx%biblio_status_dm values ('ln','Leihgabe','N');
-insert into %prfx%biblio_status_dm values ('ord','bestellt','N');
-insert into %prfx%biblio_status_dm values ('crt','in Eingangsablage','N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('in', 'verfï¿½gbar', 'Y');
+INSERT INTO % prfx%biblio_status_dm VALUES ('out', 'ausgeliehen', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('mnd', 'beschï¿½digt', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('dis', 'in Prï¿½sentation', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('hld', 'vorbestellt', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('lst', 'verloren', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('ln', 'Leihgabe', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('ord', 'bestellt', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('crt', 'in Eingangsablage', 'N');

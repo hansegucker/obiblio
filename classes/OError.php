@@ -19,179 +19,205 @@ class OError
 {
     function __construct($msg)
     {
-    $this->msg = $msg;
-  }
-  function toStr() {
-    return $this->msg;
-  }
+        $this->msg = $msg;
+    }
+
+    function toStr()
+    {
+        return $this->msg;
+    }
 }
 
 /* For when an error applies to a particular form or DB field */
 
 class FieldOError extends OError
 {
-  /* public */
-  var $field;
+    /* public */
+    var $field;
 
     function __construct($field, $msg)
     {
         parent::__construct($msg);
-    $this->field = $field;
-  }
-  function listExtract($errors) {
-    $msgs = array();
-    $l = array();
-    foreach ($errors as $e) {
-      if (isset($e->field)) {
-        $l[$e->field][] = $e->toStr();
-      } else {
-        $msgs[] = $e->toStr();
-      }
+        $this->field = $field;
     }
-    $msg = implode(' ', $msgs);
-    foreach ($l as $k=>$v) {
-      $l[$k] = implode(' ', $v);
+
+    function listExtract($errors)
+    {
+        $msgs = array();
+        $l = array();
+        foreach ($errors as $e) {
+            if (isset($e->field)) {
+                $l[$e->field][] = $e->toStr();
+            } else {
+                $msgs[] = $e->toStr();
+            }
+        }
+        $msg = implode(' ', $msgs);
+        foreach ($l as $k => $v) {
+            $l[$k] = implode(' ', $v);
+        }
+        return array($msg, $l);
     }
-    return array($msg, $l);
-  }
-  function backToForm($url, $errors) {
-      list($msg, $fielderrs) = FieldOError::listExtract($errors);
-    $_SESSION["postVars"] = mkPostVars();
-    $_SESSION["pageErrors"] = $fielderrs;
-    if(strchr($url, '?')) {
-      header("Location: ".$url."&msg=".U($msg));
-    } else {
-      header("Location: ".$url."?msg=".U($msg));
+
+    function backToForm($url, $errors)
+    {
+        list($msg, $fielderrs) = FieldOError::listExtract($errors);
+        $_SESSION["postVars"] = mkPostVars();
+        $_SESSION["pageErrors"] = $fielderrs;
+        if (strchr($url, '?')) {
+            header("Location: " . $url . "&msg=" . U($msg));
+        } else {
+            header("Location: " . $url . "?msg=" . U($msg));
+        }
+        exit();
     }
-    exit();
-  }
 }
 
 /* Most DB errors are fatal, but we sometimes have to catch them. */
 
 class DbOError extends OError
 {
-  /* The attributes here are public. */
-  var $sql;
-  var $msg;
-  var $dberror;
+    /* The attributes here are public. */
+    var $sql;
+    var $msg;
+    var $dberror;
 
     function __construct($sql, $msg, $dberror)
     {
-    $this->sql = $sql;
-    $this->msg = $msg;
-    $this->dberror = $dberror;
-  }
-  function toStr() {
-    $s = $this->msg.': '.$this->dberror;
-    if ($this->sql) {
-      $s .= ' -- FULL SQL: '.$this->sql;
+        $this->sql = $sql;
+        $this->msg = $msg;
+        $this->dberror = $dberror;
     }
-    return $s;
-  }
+
+    function toStr()
+    {
+        $s = $this->msg . ': ' . $this->dberror;
+        if ($this->sql) {
+            $s .= ' -- FULL SQL: ' . $this->sql;
+        }
+        return $s;
+    }
 }
 
 /* Fatal Errors */
-class Fatal {
-  /* Override default behaviour, e.g. for supressing errors, unit testing, etc. */
-  function setHandler(&$obj) {
-    global $_Error_FatalHandler;
-    $old =& $_Error_FatalHandler;
-    $_Error_FatalHandler = $class;
-    return $old;
-  }
-  /* "Can't happen" states */
-  function internalError($msg) {
-    global $_Error_FatalHandler;
-    if (method_exists($_Error_FatalHandler, 'internalError')) {
-      $_Error_FatalHandler->internalError($msg);
-    } else {
-      Fatal::error('Internal Error: '.$msg);
+
+class Fatal
+{
+    /* Override default behaviour, e.g. for supressing errors, unit testing, etc. */
+    function setHandler(&$obj)
+    {
+        global $_Error_FatalHandler;
+        $old =& $_Error_FatalHandler;
+        $_Error_FatalHandler = $class;
+        return $old;
     }
-  }
-  /* Query errors */
-  function dbError($sql, $msg, $dberror) {
-    global $_Error_FatalHandler;
-    if (method_exists($_Error_FatalHandler, 'dbError')) {
-      $_Error_FatalHandler->dbError($sql, $msg, $dberror);
-    } else {
-      Fatal::error('Database Error: '.$msg.' in query: '.$sql.' DBMS says: '.$dberror);
+
+    /* "Can't happen" states */
+    function internalError($msg)
+    {
+        global $_Error_FatalHandler;
+        if (method_exists($_Error_FatalHandler, 'internalError')) {
+            $_Error_FatalHandler->internalError($msg);
+        } else {
+            Fatal::error('Internal Error: ' . $msg);
+        }
     }
-  }
-  /* Generic */
-  function error($msg) {
-    global $_Error_FatalHandler;
-    if (method_exists($_Error_FatalHandler, 'error')) {
-      $_Error_FatalHandler->error($msg);
-    } else {
-      die($msg);
+
+    /* Query errors */
+    function dbError($sql, $msg, $dberror)
+    {
+        global $_Error_FatalHandler;
+        if (method_exists($_Error_FatalHandler, 'dbError')) {
+            $_Error_FatalHandler->dbError($sql, $msg, $dberror);
+        } else {
+            Fatal::error('Database Error: ' . $msg . ' in query: ' . $sql . ' DBMS says: ' . $dberror);
+        }
     }
-  }
+
+    /* Generic */
+    function error($msg)
+    {
+        global $_Error_FatalHandler;
+        if (method_exists($_Error_FatalHandler, 'error')) {
+            $_Error_FatalHandler->error($msg);
+        } else {
+            die($msg);
+        }
+    }
 }
 
 /* error is the only required method */
-class FatalHandler {
-  /* FIXME - Internationalize this stuff */
-  function internalError($msg) {
-    echo "<h1>Internal Error - You've Probably Found a Bug</h1>\n";
-    echo "<p>Please give all the information on this page to your support personnel.</p>\n";
-    echo "<p>".H($msg)."</p>\n";
-    $this->printBackTrace();
-    exit(1);
-  }
-  function dbError($sql, $msg, $dberror) {
-    echo "<h1>Database Query Error - You've Probably Found a Bug</h1>\n";
-    echo "<h2>".H($msg)."</h2>\n";
-    echo "<p>Please give all the information on this page to your support personnel.</p>\n";
-    echo "<p>Query ".H($sql)." failed.  The DBMS said this:</p>\n";
-    echo "<pre>".H($dberror)."</pre>";
-    $this->printBackTrace();
-    exit(1);
-  }
-  function error($msg) {
-    echo "<h1>Fatal Error</h1>\n";
-    echo "<h2>".H($msg)."</h2>\n";
-    $this->printBackTrace();
-    exit(1);
-  }
-  function printBackTrace() {
-    if (function_exists('debug_backtrace')) {
-      echo "<h2>Debug Backtrace (most recent call first):</h2>\n";
-      echo '<pre>';
-      foreach(debug_backtrace() as $frame) {
-        # As usual, PHP makes things more complicated.  This time by
-        # deciding that all elements of the stack frame are optional.  Sigh.
-        if (isset($frame['file'])) {
-          echo H($frame['file'].':');
-        } else {
-          echo '?file?:';
-        }
-        if (isset($frame['line'])) {
-          echo H($frame['line'].' ');
-        } else {
-          echo '?line? ';
-        }
-        if (isset($frame['class']) and isset($frame['type'])) {
-          echo H($frame['class'].$frame['type']);
-        }
-        if (isset($frame['function'])) {
-          echo H($frame['function'].'(');
-          if (isset($frame['args'])) {
-            $args = array();
-            foreach ($frame['args'] as $a) {
-              array_push($args, var_export($a, true));
-            }
-            echo H(implode($args, ', '));
-          } else {
-            echo '???';
-          }
-          echo ')';
-        }
-        echo "\n";
-      }
-      echo '</pre>';
+
+class FatalHandler
+{
+    /* FIXME - Internationalize this stuff */
+    function internalError($msg)
+    {
+        echo "<h1>Internal Error - You've Probably Found a Bug</h1>\n";
+        echo "<p>Please give all the information on this page to your support personnel.</p>\n";
+        echo "<p>" . H($msg) . "</p>\n";
+        $this->printBackTrace();
+        exit(1);
     }
-  }
+
+    function dbError($sql, $msg, $dberror)
+    {
+        echo "<h1>Database Query Error - You've Probably Found a Bug</h1>\n";
+        echo "<h2>" . H($msg) . "</h2>\n";
+        echo "<p>Please give all the information on this page to your support personnel.</p>\n";
+        echo "<p>Query " . H($sql) . " failed.  The DBMS said this:</p>\n";
+        echo "<pre>" . H($dberror) . "</pre>";
+        $this->printBackTrace();
+        exit(1);
+    }
+
+    function error($msg)
+    {
+        echo "<h1>Fatal Error</h1>\n";
+        echo "<h2>" . H($msg) . "</h2>\n";
+        $this->printBackTrace();
+        exit(1);
+    }
+
+    function printBackTrace()
+    {
+        if (function_exists('debug_backtrace')) {
+            echo "<h2>Debug Backtrace (most recent call first):</h2>\n";
+            echo '<pre>';
+            foreach (debug_backtrace() as $frame) {
+                # As usual, PHP makes things more complicated.  This time by
+                # deciding that all elements of the stack frame are optional.  Sigh.
+                if (isset($frame['file'])) {
+                    echo H($frame['file'] . ':');
+                } else {
+                    echo '?file?:';
+                }
+                if (isset($frame['line'])) {
+                    echo H($frame['line'] . ' ');
+                } else {
+                    echo '?line? ';
+                }
+                if (isset($frame['class']) and isset($frame['type'])) {
+                    echo H($frame['class'] . $frame['type']);
+                }
+                if (isset($frame['function'])) {
+                    echo H($frame['function'] . '(');
+                    if (isset($frame['args'])) {
+                        $args = array();
+                        foreach ($frame['args'] as $a) {
+                            array_push($args, var_export($a, true));
+                        }
+                        echo H(implode($args, ', '));
+                    } else {
+                        echo '???';
+                    }
+                    echo ')';
+                }
+                echo "\n";
+            }
+            echo '</pre>';
+        }
+    }
 }
 
 $_Error_FatalHandler = new FatalHandler;

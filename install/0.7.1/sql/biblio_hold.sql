@@ -1,12 +1,12 @@
-drop table if exists %prfx%biblio_hold;
-create table %prfx%biblio_hold (
-  bibid integer not null
-  ,copyid integer not null
-  ,holdid integer auto_increment not null
-  ,hold_begin_dt datetime not null
-  ,mbrid integer not null
-  ,index mbr_index (mbrid)
-  ,primary key(bibid,copyid,holdid)
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % biblio_hold;
+CREATE TABLE %prfx%biblio_hold (
+bibid INTEGER NOT NULL
+, copyid INTEGER NOT NULL
+, holdid INTEGER AUTO_INCREMENT NOT NULL
+, hold_begin_dt DATETIME NOT NULL
+, mbrid INTEGER NOT NULL
+, INDEX mbr_index (mbrid)
+, PRIMARY KEY (bibid, copyid, holdid)
+)
+ENGINE =MyISAM
 ;

@@ -1,2 +1,2 @@
-insert into %prfx%member_fields_dm values ('schoolGrade','School Grade','N');
-insert into %prfx%member_fields_dm values ('schoolTeacher','School Teacher','N');
+INSERT INTO % prfx%member_fields_dm VALUES ('schoolGrade', 'School Grade', 'N');
+INSERT INTO % prfx%member_fields_dm VALUES ('schoolTeacher', 'School Teacher', 'N');

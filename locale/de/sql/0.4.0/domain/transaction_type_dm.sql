@@ -1,3 +1,3 @@
-insert into %prfx%transaction_type_dm values ('-p','Zahlung','Y');
-insert into %prfx%transaction_type_dm values ('-r','Gutschrift','N');
-insert into %prfx%transaction_type_dm values ('+c','Gebühr','N');
+INSERT INTO % prfx%transaction_type_dm VALUES ('-p', 'Zahlung', 'Y');
+INSERT INTO % prfx%transaction_type_dm VALUES ('-r', 'Gutschrift', 'N');
+INSERT INTO % prfx%transaction_type_dm VALUES ('+c', 'Gebï¿½hr', 'N');

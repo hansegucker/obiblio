@@ -2,14 +2,14 @@
 /* This file is part of a copyrighted work; it is distributed with NO WARRANTY.
  * See the file COPYRIGHT.html for more details.
  */
- 
-  #****************************************************************************
-  #*  Read for field value descriptions
-  #****************************************************************************
-  require_once("../classes/UsmarcTagDm.php");
-  require_once("../classes/UsmarcTagDmQuery.php");
-  require_once("../classes/UsmarcSubfieldDm.php");
-  require_once("../classes/UsmarcSubfieldDmQuery.php");
+
+#****************************************************************************
+#*  Read for field value descriptions
+#****************************************************************************
+require_once("../classes/UsmarcTagDm.php");
+require_once("../classes/UsmarcTagDmQuery.php");
+require_once("../classes/UsmarcSubfieldDm.php");
+require_once("../classes/UsmarcSubfieldDmQuery.php");
 
 /**********************************************************************************
  * getTagDesc - sets tag, ind, and subfield descriptions
@@ -23,49 +23,51 @@
  * @access public
  **********************************************************************************
  */
-function getTagDesc($tag,$subfldCd,&$tagDesc,&$subfldDesc,&$ind1Desc,&$ind2Desc){
-  $tagDesc = "";
-  $subfldDesc = "";
-  $ind1Desc = "";
-  $ind2Desc = "";
-  if ($tag != "") {
-    $marcTagDmQ = new UsmarcTagDmQuery();
-    $marcTagDmQ->connect();
-    if ($marcTagDmQ->errorOccurred()) {
-      $marcTagDmQ->close();
-      displayErrorPage($marcTagDmQ);
-    }
-    $marcTag = $marcTagDmQ->doQuery($tag);
-    if ($marcTagDmQ->errorOccurred()) {
-      $marcTagDmQ->close();
-      displayErrorPage($marcTagDmQ);
-    }
-    $marcTagDmQ->close();
-    if ($marcTag) {
-      $tagDesc = $marcTag->getDescription();
-      $ind1Desc = $marcTag->getInd1Description();
-      $ind2Desc = $marcTag->getInd2Description();
+function getTagDesc($tag, $subfldCd, &$tagDesc, &$subfldDesc, &$ind1Desc, &$ind2Desc)
+{
+    $tagDesc = "";
+    $subfldDesc = "";
+    $ind1Desc = "";
+    $ind2Desc = "";
+    if ($tag != "") {
+        $marcTagDmQ = new UsmarcTagDmQuery();
+        $marcTagDmQ->connect();
+        if ($marcTagDmQ->errorOccurred()) {
+            $marcTagDmQ->close();
+            displayErrorPage($marcTagDmQ);
+        }
+        $marcTag = $marcTagDmQ->doQuery($tag);
+        if ($marcTagDmQ->errorOccurred()) {
+            $marcTagDmQ->close();
+            displayErrorPage($marcTagDmQ);
+        }
+        $marcTagDmQ->close();
+        if ($marcTag) {
+            $tagDesc = $marcTag->getDescription();
+            $ind1Desc = $marcTag->getInd1Description();
+            $ind2Desc = $marcTag->getInd2Description();
 
-      # reading for subfield description
-      $marcSubfldDmQ = new UsmarcSubfieldDmQuery();
-      $marcSubfldDmQ->connect();
-      if ($marcSubfldDmQ->errorOccurred()) {
-        $marcSubfldDmQ->close();
-        displayErrorPage($marcSubfldDmQ);
-      }
-      $marcSubfld = $marcSubfldDmQ->doQuery($tag, $subfldCd);
-      if ($marcSubfldDmQ->errorOccurred()) {
-        $marcSubfldDmQ->close();
-        displayErrorPage($marcSubfldDmQ);
-      }
-      $marcSubfldDmQ->close();
-      if (!$marcSubfld) {
-        $subfldDesc = "";
-      } else {
-        $subfldDesc = $marcSubfld->getDescription();
-      }
+            # reading for subfield description
+            $marcSubfldDmQ = new UsmarcSubfieldDmQuery();
+            $marcSubfldDmQ->connect();
+            if ($marcSubfldDmQ->errorOccurred()) {
+                $marcSubfldDmQ->close();
+                displayErrorPage($marcSubfldDmQ);
+            }
+            $marcSubfld = $marcSubfldDmQ->doQuery($tag, $subfldCd);
+            if ($marcSubfldDmQ->errorOccurred()) {
+                $marcSubfldDmQ->close();
+                displayErrorPage($marcSubfldDmQ);
+            }
+            $marcSubfldDmQ->close();
+            if (!$marcSubfld) {
+                $subfldDesc = "";
+            } else {
+                $subfldDesc = $marcSubfld->getDescription();
+            }
+        }
     }
-  }
-  return true;
+    return true;
 }
+
 ?>

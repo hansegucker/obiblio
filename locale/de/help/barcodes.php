@@ -3,47 +3,50 @@
 
 Hilfe Untersektionen:
 <ul>
-  <li><a href="#memb">Benutzer-Barcodes</a></li>
-  <li><a href="#p_id">Benutzerausweise drucken</a></li>
-  <li><a href="#copy">Exemplar-Barcodes</a></li>
-  <li><a href="#p_ba">Barcodes für Medien drucken</a></li>
-  <li><a href="#scan">Benutzung eines Barcode-Scanners</a></li>
+    <li><a href="#memb">Benutzer-Barcodes</a></li>
+    <li><a href="#p_id">Benutzerausweise drucken</a></li>
+    <li><a href="#copy">Exemplar-Barcodes</a></li>
+    <li><a href="#p_ba">Barcodes fï¿½r Medien drucken</a></li>
+    <li><a href="#scan">Benutzung eines Barcode-Scanners</a></li>
 </ul>
 <br><br>
 
-<a name="memb">Für Benutzer-Barcodes sollte man Barcodes mit einer vorangestellten
-Null verwenden, so dass alle Barcodes die gleiche Länge haben.</a>
+<a name="memb">Fï¿½r Benutzer-Barcodes sollte man Barcodes mit einer vorangestellten
+    Null verwenden, so dass alle Barcodes die gleiche Lï¿½nge haben.</a>
 <br><br><br>
 
 <a name="p_id">Print member cards as follows:</a>
 <ul>
-  <li>Gehen sie in den Berichte-Tab und starten Sie die Mitgliedersuche.</li>
-  <li>Wandeln Sie das Berichtergebnis, indem Sie ein Ausweis-Layout aus 
-  dem Untermenü auf der linken Seite auswählen.</li>
+    <li>Gehen sie in den Berichte-Tab und starten Sie die Mitgliedersuche.</li>
+    <li>Wandeln Sie das Berichtergebnis, indem Sie ein Ausweis-Layout aus
+        dem Untermenï¿½ auf der linken Seite auswï¿½hlen.
+    </li>
 </ul>
 <br>
 
-<a name="copy">Für die Exemplare kann der Barcode wie folgt aussehen:</a>
+<a name="copy">Fï¿½r die Exemplare kann der Barcode wie folgt aussehen:</a>
 <ul>
-  <li>extern</li>
-  <li>intern, indem man ihn 
-    <a href="../shared/help.php?page=biblioCopyEdit#auto">automatisch</a> generiert</li>
+    <li>extern</li>
+    <li>intern, indem man ihn
+        <a href="../shared/help.php?page=biblioCopyEdit#auto">automatisch</a> generiert
+    </li>
 </ul>
 <br>
 
 <a name="p_ba">Barcode-Aufkleber kann man wie folgt erstellen:</a>
 <ul>
-  <li>Gehen sie in den Berichte-Tab und starten Sie die Exemplarsuche.</li>
-  <li>Wandeln Sie das Berichtergebnis, indem Sie ein Aufkleberlayout aus 
-  dem Untermenü auf der linken Seite auswählen.</li>
+    <li>Gehen sie in den Berichte-Tab und starten Sie die Exemplarsuche.</li>
+    <li>Wandeln Sie das Berichtergebnis, indem Sie ein Aufkleberlayout aus
+        dem Untermenï¿½ auf der linken Seite auswï¿½hlen.
+    </li>
 </ul>
 <br>
 
 <a name="scan">Jeder Barcode-Scanner der die Tastatur emuliert wird von
-OpenBiblio unterstützt,</a> 
+    OpenBiblio unterstï¿½tzt,</a>
 Dies beinhaltet USB-Scanner und Scanner, die zwischen Tastatur und Keyboard
-gesteckt werden (über eine Tastaturweiche).
+gesteckt werden (ï¿½ber eine Tastaturweiche).
 <br>
-Die meisten Scanner können so programmiert werden, dass ein automatischer Zeilenumbruch
-nach dem Scan durchgeführt wird (als ob man Enter auf der Tastatur drückt). In diesem Fall
-kann OpenBiblio gleich automatisch nach dem Scan ihre Anfrage durchführen.
+Die meisten Scanner kï¿½nnen so programmiert werden, dass ein automatischer Zeilenumbruch
+nach dem Scan durchgefï¿½hrt wird (als ob man Enter auf der Tastatur drï¿½ckt). In diesem Fall
+kann OpenBiblio gleich automatisch nach dem Scan ihre Anfrage durchfï¿½hren.

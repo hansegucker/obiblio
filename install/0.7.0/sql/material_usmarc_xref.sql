@@ -1,11 +1,11 @@
-drop table if exists %prfx%material_usmarc_xref;
-create table %prfx%material_usmarc_xref (
-  `xref_id` int(11) NOT NULL auto_increment,
-  `materialCd` int(11) NOT NULL default '0',
-  `tag` char(3) NOT NULL default '',
-  `subfieldCd` char(1) NOT NULL default '',
-  `descr` varchar(64) NOT NULL default '',
-  `required` char(1) NOT NULL default '',
-  `cntrltype` char(1) NOT NULL default '',
-  PRIMARY KEY  (`xref_id`)
-) ENGINE=MyISAM;
+DROP TABLE IF EXISTS % prfx % material_usmarc_xref;
+CREATE TABLE %prfx%material_usmarc_xref (
+`xref_id` INT (11) NOT NULL AUTO_INCREMENT,
+`materialCd` INT (11) NOT NULL DEFAULT '0',
+`tag` CHAR (3) NOT NULL DEFAULT '',
+`subfieldCd` CHAR (1) NOT NULL DEFAULT '',
+`descr` VARCHAR (64) NOT NULL DEFAULT '',
+`required` CHAR (1) NOT NULL DEFAULT '',
+`cntrltype` CHAR (1) NOT NULL DEFAULT '',
+PRIMARY KEY (`xref_id`)
+) ENGINE =MyISAM;

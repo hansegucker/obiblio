@@ -1,3 +1,3 @@
-insert into %prfx%transaction_type_dm values ('-p','payment','Y');
-insert into %prfx%transaction_type_dm values ('-r','credit','N');
-insert into %prfx%transaction_type_dm values ('+c','charge','N');
+INSERT INTO % prfx%transaction_type_dm VALUES ('-p', 'payment', 'Y');
+INSERT INTO % prfx%transaction_type_dm VALUES ('-r', 'credit', 'N');
+INSERT INTO % prfx%transaction_type_dm VALUES ('+c', 'charge', 'N');

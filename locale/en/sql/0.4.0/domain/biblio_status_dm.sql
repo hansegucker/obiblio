@@ -1,9 +1,9 @@
-insert into %prfx%biblio_status_dm values ('in','checked in','Y');
-insert into %prfx%biblio_status_dm values ('out','checked out','N');
-insert into %prfx%biblio_status_dm values ('mnd','damaged/mending','N');
-insert into %prfx%biblio_status_dm values ('dis','display area','N');
-insert into %prfx%biblio_status_dm values ('hld','on hold','N');
-insert into %prfx%biblio_status_dm values ('lst','lost','N');
-insert into %prfx%biblio_status_dm values ('ln','on loan','N');
-insert into %prfx%biblio_status_dm values ('ord','on order','N');
-insert into %prfx%biblio_status_dm values ('crt','shelving cart','N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('in', 'checked in', 'Y');
+INSERT INTO % prfx%biblio_status_dm VALUES ('out', 'checked out', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('mnd', 'damaged/mending', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('dis', 'display area', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('hld', 'on hold', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('lst', 'lost', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('ln', 'on loan', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('ord', 'on order', 'N');
+INSERT INTO % prfx%biblio_status_dm VALUES ('crt', 'shelving cart', 'N');

@@ -1,9 +1,9 @@
-drop table if exists %prfx%biblio_copy_fields;
-create table %prfx%biblio_copy_fields (
-  bibid integer NOT NULL,
-  copyid integer NOT NULL,
-  code varchar(16) NOT NULL,
-  data text NOT NULL,
-  PRIMARY KEY (bibid, copyid, code),
-  INDEX code_index (code)
-) ENGINE=MyISAM;
+DROP TABLE IF EXISTS % prfx % biblio_copy_fields;
+CREATE TABLE %prfx%biblio_copy_fields (
+bibid INTEGER NOT NULL,
+copyid INTEGER NOT NULL,
+CODE VARCHAR (16) NOT NULL,
+DATA TEXT NOT NULL,
+PRIMARY KEY (bibid, copyid, CODE ),
+INDEX code_index ( CODE )
+) ENGINE =MyISAM;

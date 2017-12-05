@@ -1,16 +1,16 @@
-drop table if exists %prfx%biblio_copy;
-create table %prfx%biblio_copy (
-  bibid integer not null
-  ,copyid integer auto_increment not null
-  ,copy_desc varchar(160) null
-  ,barcode_nmbr varchar(20) not null
-  ,status_cd char(3) not null
-  ,status_begin_dt datetime not null
-  ,due_back_dt date null
-  ,mbrid integer null
-  ,index barcode_index (barcode_nmbr)
-  ,index mbr_index (mbrid)
-  ,primary key(bibid,copyid)
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % biblio_copy;
+CREATE TABLE %prfx%biblio_copy (
+bibid INTEGER NOT NULL
+, copyid INTEGER AUTO_INCREMENT NOT NULL
+, copy_desc VARCHAR (160) NULL
+, barcode_nmbr VARCHAR (20) NOT NULL
+, status_cd CHAR (3) NOT NULL
+, status_begin_dt DATETIME NOT NULL
+, due_back_dt DATE NULL
+, mbrid INTEGER NULL
+, INDEX barcode_index (barcode_nmbr)
+, INDEX mbr_index (mbrid)
+, PRIMARY KEY (bibid, copyid)
+)
+ENGINE =MyISAM
 ;

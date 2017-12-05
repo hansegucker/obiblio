@@ -1,13 +1,13 @@
-drop table if exists %prfx%biblio_field;
-create table %prfx%biblio_field (
-  bibid integer not null
-  ,fieldid integer auto_increment not null
-  ,tag smallint not null
-  ,ind1_cd char(1) null
-  ,ind2_cd char(1) null
-  ,subfield_cd char(1) not null
-  ,field_data text null
-  ,primary key(bibid,fieldid)
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % biblio_field;
+CREATE TABLE %prfx%biblio_field (
+bibid INTEGER NOT NULL
+, fieldid INTEGER AUTO_INCREMENT NOT NULL
+, tag SMALLINT NOT NULL
+, ind1_cd CHAR (1) NULL
+, ind2_cd CHAR (1) NULL
+, subfield_cd CHAR (1) NOT NULL
+, field_data TEXT NULL
+, PRIMARY KEY (bibid, fieldid)
+)
+ENGINE =MyISAM
 ;

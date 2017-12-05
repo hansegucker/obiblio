@@ -1,18 +1,17 @@
-/*!40100 set old_passwords = 1 */;
-insert into %prfx%staff
-values (null
-  ,sysdate()
-  ,sysdate()
-  ,1
-  ,'admin'
-  ,password('admin')
-  ,'Administrator'
-  ,null
-  ,'N'
-  ,'Y'
-  ,'Y'
-  ,'Y'
-  ,'Y'
-  ,'Y'
-)
-;
+/*!40100 SET old_passwords = 1 */;
+INSERT INTO % prfx%staff
+VALUES ( NULL
+, sysdate()
+, sysdate()
+, 1
+, 'admin'
+, PASSWORD ('admin')
+, 'Administrator'
+, NULL
+, 'N'
+, 'Y'
+, 'Y'
+, 'Y'
+, 'Y'
+, 'Y'
+);

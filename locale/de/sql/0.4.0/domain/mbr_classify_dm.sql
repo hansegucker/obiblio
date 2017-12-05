@@ -1,2 +1,2 @@
-insert into %prfx%mbr_classify_dm values ('a','Erwachsene','N');
-insert into %prfx%mbr_classify_dm values ('j','Jugendliche','Y');
+INSERT INTO % prfx%mbr_classify_dm VALUES ('a', 'Erwachsene', 'N');
+INSERT INTO % prfx%mbr_classify_dm VALUES ('j', 'Jugendliche', 'Y');

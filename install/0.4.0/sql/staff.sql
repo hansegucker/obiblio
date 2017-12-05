@@ -1,19 +1,19 @@
-drop table if exists %prfx%staff;
-create table %prfx%staff (
-  userid integer auto_increment primary key
-  ,create_dt datetime not null
-  ,last_change_dt datetime not null
-  ,last_change_userid integer not null
-  ,username varchar(20) not null
-  ,pwd varchar(20) not null
-  ,last_name varchar(30) not null
-  ,first_name varchar(30) null
-  ,suspended_flg char(1) not null
-  ,admin_flg char(1) not null
-  ,circ_flg char(1) not null
-  ,circ_mbr_flg char(1) not null
-  ,catalog_flg char(1) not null
-  ,reports_flg char(1) not null
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % staff;
+CREATE TABLE %prfx%staff (
+userid INTEGER AUTO_INCREMENT PRIMARY KEY
+, create_dt DATETIME NOT NULL
+, last_change_dt DATETIME NOT NULL
+, last_change_userid INTEGER NOT NULL
+, username VARCHAR (20) NOT NULL
+, pwd VARCHAR (20) NOT NULL
+, last_name VARCHAR (30) NOT NULL
+, first_name VARCHAR (30) NULL
+, suspended_flg CHAR (1) NOT NULL
+, admin_flg CHAR (1) NOT NULL
+, circ_flg CHAR (1) NOT NULL
+, circ_mbr_flg CHAR (1) NOT NULL
+, catalog_flg CHAR (1) NOT NULL
+, reports_flg CHAR (1) NOT NULL
+)
+ENGINE =MyISAM
 ;

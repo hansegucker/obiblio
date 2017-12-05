@@ -2,29 +2,29 @@
 /* This file is part of a copyrighted work; it is distributed with NO WARRANTY.
  * See the file COPYRIGHT.html for more details.
  */
- 
-  require_once("../shared/common.php");
-  session_cache_limiter(null);
 
-  $tab = "cataloging";
-  $nav = "editmarcfield";
-  $focus_form_name = "editmarcform";
-  $focus_form_field = "tag";
+require_once("../shared/common.php");
+session_cache_limiter(null);
 
-  require_once("../functions/inputFuncs.php");
-  require_once("../shared/logincheck.php");
-  require_once("../catalog/marcFuncs.php");
-  require_once("../classes/BiblioField.php");
-  require_once("../classes/BiblioFieldQuery.php");
-  require_once("../classes/Localize.php");
-  $loc = new Localize(OBIB_LOCALE,$tab);
+$tab = "cataloging";
+$nav = "editmarcfield";
+$focus_form_name = "editmarcform";
+$focus_form_field = "tag";
 
-  $postVars = array();
-  $pageErrors = array();
-  if (isset($_GET["bibid"])) {
+require_once("../functions/inputFuncs.php");
+require_once("../shared/logincheck.php");
+require_once("../catalog/marcFuncs.php");
+require_once("../classes/BiblioField.php");
+require_once("../classes/BiblioFieldQuery.php");
+require_once("../classes/Localize.php");
+$loc = new Localize(OBIB_LOCALE, $tab);
+
+$postVars = array();
+$pageErrors = array();
+if (isset($_GET["bibid"])) {
     $bibid = $_GET["bibid"];
     if (!isset($_GET['fieldid'])) {
-      Fatal::internalError('no fieldid set');
+        Fatal::internalError('no fieldid set');
     }
     $fieldid = $_GET["fieldid"];
 
@@ -34,13 +34,13 @@
     $fieldQ = new BiblioFieldQuery();
     $fieldQ->connect();
     if ($fieldQ->errorOccurred()) {
-      $fieldQ->close();
-      displayErrorPage($fieldQ);
+        $fieldQ->close();
+        displayErrorPage($fieldQ);
     }
-    $field = $fieldQ->doQuery($bibid,$fieldid);
+    $field = $fieldQ->doQuery($bibid, $fieldid);
     if ($fieldQ->errorOccurred()) {
-      $fieldQ->close();
-      displayErrorPage($fieldQ);
+        $fieldQ->close();
+        displayErrorPage($fieldQ);
     }
     $fieldQ->close();
 
@@ -53,52 +53,51 @@
     $postVars["fieldData"] = $field->getFieldData();
     $selectedTag = $field->getTag();
     $selectedSubfld = $field->getSubfieldCd();
-  } else {
+} else {
     $postVars = $_SESSION['postVars'];
     if (isset($_SESSION['pageErrors'])) {
-      $pageErrors = $_SESSION['pageErrors'];
+        $pageErrors = $_SESSION['pageErrors'];
     }
     $bibid = $postVars["bibid"];
     $fieldid = $postVars["fieldid"];
     $selectedTag = $postVars["tag"];
     $selectedSubfld = $postVars["subfieldCd"];
-  }
-  if (!isset($bibid) || $bibid == "") {
+}
+if (!isset($bibid) || $bibid == "") {
     Fatal::internalError('no bibid set');
-  }
-  if (!isset($fieldid) || $fieldid == "") {
+}
+if (!isset($fieldid) || $fieldid == "") {
     Fatal::internalError('no fieldid set');
-  }
-  if (isset($_GET["tag"])) {
+}
+if (isset($_GET["tag"])) {
     $selectedTag = $_GET["tag"];
     $postVars["tag"] = $selectedTag;
-  }
-  if (isset($_GET["subfld"])) {
+}
+if (isset($_GET["subfld"])) {
     $selectedSubfld = $_GET["subfld"];
     $postVars["subfieldCd"] = $selectedSubfld;
-  }
+}
 
-  require_once("../shared/header.php");
+require_once("../shared/header.php");
 
-  #****************************************************************************
-  #*  Read for field value descriptions
-  #****************************************************************************
-  getTagDesc($selectedTag,$selectedSubfld,$tagDesc,$subfldDesc,$ind1Desc,$ind2Desc);
+#****************************************************************************
+#*  Read for field value descriptions
+#****************************************************************************
+getTagDesc($selectedTag, $selectedSubfld, $tagDesc, $subfldDesc, $ind1Desc, $ind2Desc);
 
-  $formLabel = $loc->getText("biblioMarcEditFormHdr");
-  $returnPg = "../catalog/biblio_marc_edit_form.php?bibid=".U($bibid)."&fieldid=".U($fieldid);
+$formLabel = $loc->getText("biblioMarcEditFormHdr");
+$returnPg = "../catalog/biblio_marc_edit_form.php?bibid=" . U($bibid) . "&fieldid=" . U($fieldid);
 
-  #****************************************************************************
-  #*  Start of body
-  #****************************************************************************
-  ?>
-  
+#****************************************************************************
+#*  Start of body
+#****************************************************************************
+?>
+
 <form name="editmarcform" method="POST" action="../catalog/biblio_marc_edit.php">
-<?php include("../catalog/biblio_marc_fields.php"); ?>
-<input type="hidden" name="bibid" value="<?php echo H($bibid);?>">
-<input type="hidden" name="fieldid" value="<?php echo H($fieldid);?>">
+    <?php include("../catalog/biblio_marc_fields.php"); ?>
+    <input type="hidden" name="bibid" value="<?php echo H($bibid); ?>">
+    <input type="hidden" name="fieldid" value="<?php echo H($fieldid); ?>">
 </form>
-  
 
 
 <?php include("../shared/footer.php"); ?>

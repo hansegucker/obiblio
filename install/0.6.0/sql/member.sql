@@ -1,18 +1,18 @@
-drop table if exists %prfx%member;
-create table %prfx%member (
-  mbrid integer auto_increment primary key
-  ,barcode_nmbr varchar(20) not null
-  ,create_dt datetime not null
-  ,last_change_dt datetime not null
-  ,last_change_userid integer not null
-  ,last_name varchar(50) not null
-  ,first_name varchar(50) not null
-  ,address text null
-  ,home_phone varchar(15) null
-  ,work_phone varchar(15) null
-  ,email varchar(128) null
-  ,classification smallint not null
-  ,mbrshipend date not null
-  )
-  ENGINE=MyISAM
+DROP TABLE IF EXISTS % prfx % member;
+CREATE TABLE %prfx%member (
+mbrid INTEGER AUTO_INCREMENT PRIMARY KEY
+, barcode_nmbr VARCHAR (20) NOT NULL
+, create_dt DATETIME NOT NULL
+, last_change_dt DATETIME NOT NULL
+, last_change_userid INTEGER NOT NULL
+, last_name VARCHAR (50) NOT NULL
+, first_name VARCHAR (50) NOT NULL
+, address TEXT NULL
+, home_phone VARCHAR (15) NULL
+, work_phone VARCHAR (15) NULL
+, email VARCHAR (128) NULL
+, classification SMALLINT NOT NULL
+, mbrshipend DATE NOT NULL
+)
+ENGINE =MyISAM
 ;

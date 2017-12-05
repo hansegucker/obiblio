@@ -14,7 +14,7 @@
  *   Formatting rules:
  *   - Resulting translation string must be stored in a variable called $text.
  *   - Input arguments must be surrounded by % characters (i.e. %pageCount%).
- *   - A backslash ('\') needs to be placed before any special php characters 
+ *   - A backslash ('\') needs to be placed before any special php characters
  *     (such as $, ", etc.) within the php translation code.
  *
  *   Simple Example:
@@ -24,7 +24,7 @@
  *     $trans["searchResult"]      = "\$text='page %page% of %pages%';";
  *
  *   Example Containing a PHP If Statment and Argument Substitution:
- *     $trans["searchResult"]      = 
+ *     $trans["searchResult"]      =
  *       "if (%items% == 1) {
  *         \$text = '%items% result';
  *       } else {
@@ -37,84 +37,84 @@
 #****************************************************************************
 #*  Translation text shared by various php files under the navbars dir
 #****************************************************************************
-$trans["login"]                    = "\$text = 'Login';";
-$trans["logout"]                   = "\$text = 'Logout';";
-$trans["help"]                     = "\$text = 'Hilfe';";
+$trans["login"] = "\$text = 'Login';";
+$trans["logout"] = "\$text = 'Logout';";
+$trans["help"] = "\$text = 'Hilfe';";
 
 #****************************************************************************
 #*  Translation text for page home.php
 #****************************************************************************
-$trans["homeHomeLink"]             = "\$text = 'Startseite';";
-$trans["homeLicenseLink"]          = "\$text = 'Lizenz';";
+$trans["homeHomeLink"] = "\$text = 'Startseite';";
+$trans["homeLicenseLink"] = "\$text = 'Lizenz';";
 
 #****************************************************************************
 #*  Translation text for page admin.php
 #****************************************************************************
-$trans["adminSummary"]             = "\$text = 'Admin-Übersicht';";
-$trans["adminStaff"]               = "\$text = 'Mitarbeiter';";
-$trans["adminSettings"]            = "\$text = 'Bibliothekseinst.';";
-$trans["adminMaterialTypes"]       = "\$text = 'Medienarten';";
-$trans["adminCollections"]         = "\$text = 'Genres';";
-$trans["adminThemes"]              = "\$text = 'Layout';";
-$trans["adminTranslation"]         = "\$text = 'Übersetzung';";
-$trans["Member Types"]             = "\$text = 'Mitgliederarten';";
-$trans["Member Fields"]            = "\$text = 'Mitgliederfelder';";
-$trans["Copy Fields"]              = "\$text = 'Exemplarfelder';";
-$trans["Checkout Privs"]           = "\$text = 'Ausleiheinst.';";
+$trans["adminSummary"] = "\$text = 'Admin-Ãœbersicht';";
+$trans["adminStaff"] = "\$text = 'Mitarbeiter';";
+$trans["adminSettings"] = "\$text = 'Bibliothekseinst.';";
+$trans["adminMaterialTypes"] = "\$text = 'Medienarten';";
+$trans["adminCollections"] = "\$text = 'Genres';";
+$trans["adminThemes"] = "\$text = 'Layout';";
+$trans["adminTranslation"] = "\$text = 'Ãœbersetzung';";
+$trans["Member Types"] = "\$text = 'Mitgliederarten';";
+$trans["Member Fields"] = "\$text = 'Mitgliederfelder';";
+$trans["Copy Fields"] = "\$text = 'Exemplarfelder';";
+$trans["Checkout Privs"] = "\$text = 'Ausleiheinst.';";
 
 #****************************************************************************
 #*  Translation text for page cataloging.php
 #****************************************************************************
-$trans["catalogSummary"]           = "\$text = 'Katalogisierung';";
-$trans["catalogSearch1"]           = "\$text = 'Mediensuche';";
-$trans["catalogSearch2"]           = "\$text = 'Mediensuche';";
-$trans["catalogResults"]           = "\$text = 'Suchergebnisse';";
-$trans["catalogBibInfo"]           = "\$text = 'Medieninformationen';";
-$trans["catalogBibEdit"]           = "\$text = 'Med. bearb.';";
-$trans["catalogBibEditMarc"]       = "\$text = 'MARC bearb.';";
-$trans["catalogBibMarcNewFld"]     = "\$text = 'Neues MARC Feld';";
+$trans["catalogSummary"] = "\$text = 'Katalogisierung';";
+$trans["catalogSearch1"] = "\$text = 'Mediensuche';";
+$trans["catalogSearch2"] = "\$text = 'Mediensuche';";
+$trans["catalogResults"] = "\$text = 'Suchergebnisse';";
+$trans["catalogBibInfo"] = "\$text = 'Medieninformationen';";
+$trans["catalogBibEdit"] = "\$text = 'Med. bearb.';";
+$trans["catalogBibEditMarc"] = "\$text = 'MARC bearb.';";
+$trans["catalogBibMarcNewFld"] = "\$text = 'Neues MARC Feld';";
 $trans["catalogBibMarcNewFldShrt"] = "\$text = 'Neues MARC';";
-$trans["catalogBibMarcEditFld"]    = "\$text = 'Bearb. MARC Feld';";
-$trans["catalogCopyNew"]           = "\$text = 'Neues Exem.';";
-$trans["catalogCopyEdit"]          = "\$text = 'Bearb. Exem.';";
-$trans["catalogHolds"]             = "\$text = 'Vorbestellungen';";
-$trans["catalogDelete"]            = "\$text = 'Lösche';";
-$trans["catalogBibNewLike"]        = "\$text = 'Ähnliches Neu';";
-$trans["catalogBibNew"]            = "\$text = 'Neues Medium';";
-$trans["Upload Marc Data"]         = "\$text = 'MARC Daten laden';";
-$trans["History"]                  = "\$text = 'Historie';";
+$trans["catalogBibMarcEditFld"] = "\$text = 'Bearb. MARC Feld';";
+$trans["catalogCopyNew"] = "\$text = 'Neues Exem.';";
+$trans["catalogCopyEdit"] = "\$text = 'Bearb. Exem.';";
+$trans["catalogHolds"] = "\$text = 'Vorbestellungen';";
+$trans["catalogDelete"] = "\$text = 'LÃ¶sche';";
+$trans["catalogBibNewLike"] = "\$text = 'Ã„hnliches Neu';";
+$trans["catalogBibNew"] = "\$text = 'Neues Medium';";
+$trans["Upload Marc Data"] = "\$text = 'MARC Daten laden';";
+$trans["History"] = "\$text = 'Historie';";
 
 #****************************************************************************
 #*  Translation text for page reports.php
 #****************************************************************************
-$trans["reportsSummary"]           = "\$text = 'Berichte Übersicht';";
-$trans["reportsReportListLink"]    = "\$text = 'Berichte';";
-$trans["reportsLabelsLink"]        = "\$text = 'Etiketten';";
-$trans["reportsLettersLink"]       = "\$text = 'Briefe';";
-$trans["Report Results"]           = "\$text = 'Berichtsergebnis';";
-$trans["Report List"]              = "\$text = 'Berichteübersicht';";
-$trans["Report Criteria"]          = "\$text = 'Berichtskriterien';";
+$trans["reportsSummary"] = "\$text = 'Berichte Ãœbersicht';";
+$trans["reportsReportListLink"] = "\$text = 'Berichte';";
+$trans["reportsLabelsLink"] = "\$text = 'Etiketten';";
+$trans["reportsLettersLink"] = "\$text = 'Briefe';";
+$trans["Report Results"] = "\$text = 'Berichtsergebnis';";
+$trans["Report List"] = "\$text = 'BerichteÃ¼bersicht';";
+$trans["Report Criteria"] = "\$text = 'Berichtskriterien';";
 
 #****************************************************************************
 #*  Translation text for page opac.php
 #****************************************************************************
-$trans["catalogSearch1"]           = "\$text = 'Suche';";
-$trans["catalogSearch2"]           = "\$text = 'Mediensuche';";
-$trans["catalogResults"]           = "\$text = 'Suchergebnisse';";
-$trans["catalogBibInfo"]           = "\$text = 'Medieninfo';";
-$trans["userlogin"]      	   = "\$text = 'Benutzerlogin';";
-$trans["memberaccount"]      	   = "\$text = 'Benutzerkonto';";
+$trans["catalogSearch1"] = "\$text = 'Suche';";
+$trans["catalogSearch2"] = "\$text = 'Mediensuche';";
+$trans["catalogResults"] = "\$text = 'Suchergebnisse';";
+$trans["catalogBibInfo"] = "\$text = 'Medieninfo';";
+$trans["userlogin"] = "\$text = 'Benutzerlogin';";
+$trans["memberaccount"] = "\$text = 'Benutzerkonto';";
 
 #Added
 
-$trans["memberInfo"]="\$text = 'Benutzerinfos';";
-$trans["memberSearch"]="\$text = 'Benutzersuche';";
-$trans["editInfo"]="\$text = 'Bearb. Infos';";
-$trans["checkoutHistory"]= "\$text = 'Ausleih-History';";
-$trans["account"]="\$text = 'Gebühren';";
-$trans["checkIn"]="\$text = 'Medienrückgabe';";
-$trans["memberSearch"]= "\$text = 'Benutzersuche';";
-$trans["newMember"]= "\$text = 'Neuer Benutzer';";
-$trans["Offline Circulation"]= "\$text = 'Offline Ausleihe';";
+$trans["memberInfo"] = "\$text = 'Benutzerinfos';";
+$trans["memberSearch"] = "\$text = 'Benutzersuche';";
+$trans["editInfo"] = "\$text = 'Bearb. Infos';";
+$trans["checkoutHistory"] = "\$text = 'Ausleih-History';";
+$trans["account"] = "\$text = 'GebÃ¼hren';";
+$trans["checkIn"] = "\$text = 'MedienrÃ¼ckgabe';";
+$trans["memberSearch"] = "\$text = 'Benutzersuche';";
+$trans["newMember"] = "\$text = 'Neuer Benutzer';";
+$trans["Offline Circulation"] = "\$text = 'Offline Ausleihe';";
 //$trans["account"]        	= "\$text = 'Account';";
 ?>
