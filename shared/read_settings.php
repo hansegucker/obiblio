@@ -77,7 +77,10 @@ if ($set->getLocale() == "de") {
     obib_setlocale(LC_MONETARY, $set->getLocale());
     obib_setlocale(LC_NUMERIC, $set->getLocale());
 }
-define("OBIB_CHARSET", $set->getCharset());
+//define("OBIB_CHARSET", $set->getCharset());
+// FIXME: Remove charset complete
+define("OBIB_CHARSET", "utf-8");
+
 define("OBIB_HTML_LANG_ATTR", $set->getHtmlLangAttr());
 define("OBIB_LIBRARY_USE_IMAGE_ONLY", $set->isUseImageSet());
 define("OBIB_LIBRARY_IMAGE_URL", $set->getLibraryImageUrl());

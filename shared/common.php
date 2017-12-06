@@ -54,6 +54,7 @@ function H($s)
     } else {
         $charset = "";
     }
+
     $phpver = explode('.', PHP_VERSION);
     if ($phpver[0] == 4 || ($phpver[0] == 5 && $phpver[1] < 3)) {
         return htmlspecialchars($s, ENT_QUOTES);

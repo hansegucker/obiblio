@@ -203,14 +203,14 @@ if (isset($_GET["updated"])) {
                 </select>
             </td>
         </tr>
-        <tr>
+        <!--<tr>
             <td nowrap="true" class="primary">
                 <?php echo $loc->getText("admin_settingsHTMLChar"); ?>
             </td>
             <td valign="top" class="primary">
                 <?php printInputText("charset", 20, 20, $postVars, $pageErrors); ?>
             </td>
-        </tr>
+        </tr>-->
         <tr>
             <td nowrap="true" class="primary">
                 <?php echo $loc->getText("admin_settingsHTMLTagLangAttr"); ?>
