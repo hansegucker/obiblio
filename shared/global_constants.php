@@ -33,7 +33,7 @@ define("OBIB_SEARCH_KEYWORD", "7");
  *  Misc. system constants
  ****************************************************************************
  */
-define("OBIB_CODE_VERSION", "0.7.2");
+define("OBIB_CODE_VERSION", "0.7.3");
 define("OBIB_LATEST_DB_VERSION", "0.7.1");
 define("OBIB_DEFAULT_STATUS", "in");
 define("OBIB_STATUS_IN", "in");

@@ -7,35 +7,50 @@
 unset($_SESSION['pageErrors']);
 unset($_SESSION['postVars']);
 ?>
+</main>
 <!-- **************************************************************************************
      * Footer
      **************************************************************************************-->
-<br><br><br>
-</font>
-<font face="Arial, Helvetica, sans-serif" size="1" color="<?php echo H(OBIB_PRIMARY_FONT_COLOR); ?>">
-    <center>
-        <?php if (OBIB_LIBRARY_URL != "") { ?>
-            <a href="<?php echo H(OBIB_LIBRARY_URL); ?>"><?php echo $headerLoc->getText("footerLibraryHome"); ?></a> |
-        <?php }
-        if (OBIB_OPAC_URL != "") { ?>
-            <a href="<?php echo H(OBIB_OPAC_URL); ?>"><?php echo $headerLoc->getText("footerOPAC"); ?></a> |
-        <?php } ?>
-        <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><?php echo $headerLoc->getText("footerHelp"); ?></a>
-        <br><br>
-        <a href="http://obiblio.sourceforge.net/"><img src="../images/powered_by_openbiblio.gif" width="125" height="44"
-                                                       border="0"></a>
-        <br><br>
-        <?php echo $headerLoc->getText("footerPoweredBy"); ?> <?php echo H(OBIB_CODE_VERSION); ?>
-        <?php echo $headerLoc->getText("footerDatabaseVersion"); ?> <?php echo H(OBIB_DB_VERSION); ?><br>
-        <?php echo $headerLoc->getText("footerCopyright"); ?> &copy; 2002-2014 Dave Stevens, et al.<br>
-        <?php echo $headerLoc->getText("footerUnderThe"); ?>
-        <a href="../shared/copying.html"><?php echo $headerLoc->getText("footerGPL"); ?></a>
-    </center>
-    <br>
-</font>
-</td>
-</tr>
-</table>
-</main>
+<footer class="page-footer">
+    <div class="container">
+        <ul>
+            <?php if (OBIB_LIBRARY_URL != "") { ?>
+                <li>
+                    <a href="<?php echo H(OBIB_LIBRARY_URL); ?>" class="grey-text text-lighten-3">
+                        <?php echo $headerLoc->getText("footerLibraryHome"); ?>
+                    </a>
+                </li>
+            <?php }
+            if (OBIB_OPAC_URL != "") { ?>
+                <li>
+                    <a href="<?php echo H(OBIB_OPAC_URL); ?>" class="grey-text text-lighten-3">
+                        <?php echo $headerLoc->getText("footerOPAC"); ?>
+                    </a>
+                </li>
+            <?php } ?>
+            <li>
+                <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"
+                   class="grey-text text-lighten-3">
+                    <?php echo $headerLoc->getText("footerHelp"); ?>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <br><br>
+    <div class="footer-copyright">
+        <div class="container">
+            <?php echo $headerLoc->getText("footerPoweredBy"); ?> <?php echo H(OBIB_CODE_VERSION); ?>
+            <?php echo $headerLoc->getText("footerDatabaseVersion"); ?> <?php echo H(OBIB_DB_VERSION); ?><br>
+            <?php echo $headerLoc->getText("footerCopyright"); ?> &copy; 2002-2017 Dave Stevens, et al.
+            <?php echo $headerLoc->getText("footerUnderThe"); ?>
+            <a href="../home/license.php" class="grey-text text-lighten-4">
+                <?php echo $headerLoc->getText("footerGPL"); ?>
+            </a>
+        </div>
+    </div>
+
+</footer>
+
 </body>
 </html>

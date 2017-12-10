@@ -13,24 +13,35 @@ if (isset($_SESSION["userid"])) {
     $sess_userid = "";
 }
 if ($sess_userid == "") { ?>
-    <input type="button" onClick="self.location='../shared/loginform.php?RET=../home/index.php'"
-           value="<?php echo $navLoc->getText("login"); ?>" class="navbutton">
+    <li>
+        <a class="waves-effect waves-light btn green" href="../shared/loginform.php?RET=../home/index.php">
+            <?php echo $navLoc->getText("login"); ?>
+        </a>
+    </li>
 <?php } else { ?>
-    <input type="button" onClick="self.location='../shared/logout.php'"
-           value="<?php echo $navLoc->getText("logout"); ?>" class="navbutton">
+    <li>
+        <a class="waves-effect waves-light btn red" href="../shared/logout.php">
+            <?php echo $navLoc->getText("logout"); ?>
+        </a>
+    </li>
 <?php } ?>
-<br/><br/>
 
 <?php if ($nav == "home") { ?>
-    &raquo; <?php echo $navLoc->getText("homeHomeLink"); ?><br>
+    <li><a href="#" class="disabled"><i class="material-icons">home</i>
+            &raquo; <?php echo $navLoc->getText("homeHomeLink"); ?></a></li>
 <?php } else { ?>
-    <a href="../home/index.php" class="alt1"><?php echo $navLoc->getText("homeHomeLink"); ?></a><br>
+    <li><a href="../home/index.php" class="alt1"><i
+                    class="material-icons">home</i> <?php echo $navLoc->getText("homeHomeLink"); ?></a></li>
 <?php } ?>
 
 <?php if ($nav == "license") { ?>
-    &raquo; <?php echo $navLoc->getText("homeLicenseLink"); ?><br>
+    <li><a href="#" class="disabled"><i class="material-icons">copyright</i>
+            &raquo; <?php echo $navLoc->getText("homeLicenseLink"); ?></a></li>
 <?php } else { ?>
-    <a href="../home/license.php" class="alt1"><?php echo $navLoc->getText("homeLicenseLink"); ?></a><br>
+    <li><a href="../home/license.php" class="alt1"><i
+                    class="material-icons">copyright</i> <?php echo $navLoc->getText("homeLicenseLink"); ?></a></li>
 <?php } ?>
 
-<a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><?php echo $navLoc->getText("help"); ?></a>
+<li>
+    <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><i
+                class="material-icons">help</i> <?php echo $navLoc->getText("help"); ?></a></li>

@@ -45,6 +45,11 @@ echo ">\n";
             src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript">
         <!--
+        $(document).ready(function () {
+            // Init side nav
+            $(".button-collapse").sideNav();
+        });
+
         function popSecondary(url) {
             var SecondaryWin;
             SecondaryWin = window.open(url, "secondary", "resizable=yes,scrollbars=yes,width=535,height=400");
@@ -76,79 +81,83 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
         echo 'onLoad="self.focus();document.' . $focus_form_name . "." . $focus_form_field . '.focus()"';
     }
 } ?> >
-<nav class="nav-extended">
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo"><?php
-            if (OBIB_LIBRARY_IMAGE_URL != "") {
-                echo "<img src=\"" . H(OBIB_LIBRARY_IMAGE_URL) . "\">";
-            }
-            if (!OBIB_LIBRARY_USE_IMAGE_ONLY) {
-                echo " " . H(OBIB_LIBRARY_NAME);
-            }
-            ?>
-        </a>
+<header>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
-        <div class="right">
-            <?php echo $headerLoc->getText("headerTodaysDate"); ?>
-            <?php echo H(date($headerLoc->getText("headerDateFormat"))); ?><br>
+            <!-- Logo and title -->
+            <a href="#" class="brand-logo"><?php
+                if (OBIB_LIBRARY_IMAGE_URL != "") {
+                    echo "<img src=\"" . H(OBIB_LIBRARY_IMAGE_URL) . "\">";
+                }
+                if (!OBIB_LIBRARY_USE_IMAGE_ONLY) {
+                    echo " " . H(OBIB_LIBRARY_NAME);
+                }
+                ?>
+            </a>
 
-            <?php if (OBIB_LIBRARY_HOURS != "") echo $headerLoc->getText("headerLibraryHours"); ?>
-            <?php if (OBIB_LIBRARY_HOURS != "") echo H(OBIB_LIBRARY_HOURS); ?>
+            <!-- Library information (date, hours, phone) -->
+            <div class="right">
+                <?php echo $headerLoc->getText("headerTodaysDate"); ?>
+                <?php echo H(date($headerLoc->getText("headerDateFormat"))); ?><br>
 
-            <?php if (OBIB_LIBRARY_PHONE != "") echo $headerLoc->getText("headerLibraryPhone"); ?>
-            <?php if (OBIB_LIBRARY_PHONE != "") echo H(OBIB_LIBRARY_PHONE); ?>
+                <?php if (OBIB_LIBRARY_HOURS != "") echo $headerLoc->getText("headerLibraryHours"); ?>
+                <?php if (OBIB_LIBRARY_HOURS != "") echo H(OBIB_LIBRARY_HOURS); ?>
+
+                <?php if (OBIB_LIBRARY_PHONE != "") echo $headerLoc->getText("headerLibraryPhone"); ?>
+                <?php if (OBIB_LIBRARY_PHONE != "") echo H(OBIB_LIBRARY_PHONE); ?>
+            </div>
         </div>
-    </div>
-    <div class="nav-content">
-        <ul class="tabs tabs-transparent">
-            <?php if ($tab == "home") { ?>
-                <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerHome"); ?></a></li>
-            <?php } else { ?>
-                <li class="tab"><a target="_self"
-                                   href="../home/index.php"><?php echo $headerLoc->getText("headerHome"); ?></a></li>
-            <?php } ?>
 
-            <?php if ($tab == "circulation") { ?>
-                <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerCirculation"); ?></a>
-                </li>
-            <?php } else { ?>
-                <li class="tab"><a target="_self"
-                                   href="../circ/index.php"><?php echo $headerLoc->getText("headerCirculation"); ?></a>
-                </li>
-            <?php } ?>
+        <!-- Tab nav -->
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <?php if ($tab == "home") { ?>
+                    <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerHome"); ?></a></li>
+                <?php } else { ?>
+                    <li class="tab"><a target="_self"
+                                       href="../home/index.php"><?php echo $headerLoc->getText("headerHome"); ?></a>
+                    </li>
+                <?php } ?>
 
-            <?php if ($tab == "cataloging") { ?>
-                <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerCataloging"); ?></a>
-                </li>
-            <?php } else { ?>
-                <li class="tab"><a target="_self"
-                                   href="../catalog/index.php"><?php echo $headerLoc->getText("headerCataloging"); ?></a>
-                </li>
-            <?php } ?>
+                <?php if ($tab == "circulation") { ?>
+                    <li class="tab"><a href="#"
+                                       class="active"><?php echo $headerLoc->getText("headerCirculation"); ?></a>
+                    </li>
+                <?php } else { ?>
+                    <li class="tab"><a target="_self"
+                                       href="../circ/index.php"><?php echo $headerLoc->getText("headerCirculation"); ?></a>
+                    </li>
+                <?php } ?>
 
-
-            <?php if ($tab == "admin") { ?>
-                <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerAdmin"); ?></a></li>
-            <?php } else { ?>
-                <li class="tab"><a target="_self"
-                                   href="../admin/index.php"><?php echo $headerLoc->getText("headerAdmin"); ?></a></li>
-            <?php } ?>
-
-            <?php if ($tab == "reports") { ?>
-                <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerReports"); ?></a></li>
-            <?php } else { ?>
-                <li class="tab"><a target="_self"
-                                   href="../reports/index.php"><?php echo $headerLoc->getText("headerReports"); ?></a>
-                </li>
-            <?php } ?>
-        </ul>
-    </div>
-
-</nav>
-<!-- **************************************************************************************
-     * Library Name and hours
-     **************************************************************************************-->
-<main>
+                <?php if ($tab == "cataloging") { ?>
+                    <li class="tab"><a href="#"
+                                       class="active"><?php echo $headerLoc->getText("headerCataloging"); ?></a>
+                    </li>
+                <?php } else { ?>
+                    <li class="tab"><a target="_self"
+                                       href="../catalog/index.php"><?php echo $headerLoc->getText("headerCataloging"); ?></a>
+                    </li>
+                <?php } ?>
 
 
+                <?php if ($tab == "admin") { ?>
+                    <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerAdmin"); ?></a>
+                    </li>
+                <?php } else { ?>
+                    <li class="tab"><a target="_self"
+                                       href="../admin/index.php"><?php echo $headerLoc->getText("headerAdmin"); ?></a>
+                    </li>
+                <?php } ?>
 
+                <?php if ($tab == "reports") { ?>
+                    <li class="tab"><a href="#" class="active"><?php echo $headerLoc->getText("headerReports"); ?></a>
+                    </li>
+                <?php } else { ?>
+                    <li class="tab"><a target="_self"
+                                       href="../reports/index.php"><?php echo $headerLoc->getText("headerReports"); ?></a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>

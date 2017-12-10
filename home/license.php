@@ -6,8 +6,6 @@ $nav = "license";
 include("../shared/header.php");
 ?>
 
-<br>
-
 <pre>
 GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991

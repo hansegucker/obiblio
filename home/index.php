@@ -17,62 +17,87 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 # echo $loc->getText("searchResults",array("items"=>0))."<br>";
 ?>
 
-<?php echo $loc->getText("indexIntro"); ?>
+<p class="flow-text"><?php echo $loc->getText("indexIntro"); ?></p>
 
-<br><br>
-<table class="primary">
+<table>
+    <thead>
     <tr>
         <th><?php echo $loc->getText("indexTab"); ?></th>
-        <th align="left"><?php echo $loc->getText("indexDesc"); ?></th>
+        <th><?php echo $loc->getText("indexDesc"); ?></th>
     </tr>
-    <tr>
-        <td align="center" valign="top" class="primary"><a
-                    href="../circ/index.php"><?php echo $loc->getText("indexCirc"); ?></a><br><br>
-            <a href="../circ/index.php"><img src="../images/circ.png" border="0" width="30" height="30"></a></td>
-        <td class="primary"><?php echo $loc->getText("indexCircDesc1"); ?>
-            <ul>
-                <li><?php echo $loc->getText("indexCircDesc2"); ?></li>
-                <li><?php echo $loc->getText("indexCircDesc3"); ?></li>
-                <li><?php echo $loc->getText("indexCircDesc4"); ?></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td align="center" valign="top" class="primary"><a
-                    href="../catalog/index.php"><?php echo $loc->getText("indexCat"); ?></a><br><br>
-            <a href="../catalog/index.php"><img src="../images/catalog.png" border="0" width="30"
-                                                height="30"></a><br><br></td>
-        <td valign="top" class="primary"><?php echo $loc->getText("indexCatDesc1"); ?>
-            <ul>
-                <li><?php echo $loc->getText("indexCatDesc2"); ?></li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td align="center" valign="top" class="primary"><a
-                    href="../admin/index.php"><?php echo $loc->getText("indexAdmin"); ?></a><br><br>
-            <a href="../admin/index.php"><img src="../images/admin.png" border="0" width="30" height="30"></a></td>
-        <td class="primary"><?php echo $loc->getText("indexAdminDesc1"); ?>
+    </thead>
 
-            <ul>
-                <li><?php echo $loc->getText("indexAdminDesc2"); ?></li>
-                <li><?php echo $loc->getText("indexAdminDesc3"); ?></li>
-                <li><?php echo $loc->getText("indexAdminDesc4"); ?></li>
-                <li><?php echo $loc->getText("indexAdminDesc5"); ?></li>
-                <li><?php echo $loc->getText("indexAdminDesc6"); ?></li>
+    <tr>
+        <td>
+            <h4>
+                <i class="material-icons">repeat</i>
+                <?php echo $loc->getText("indexCirc"); ?>
+            </h4>
+        </td>
+
+        <td>
+            <strong><?php echo $loc->getText("indexCircDesc1"); ?></strong>
+            <ul class="collection">
+                <li class="collection-item"><?php echo $loc->getText("indexCircDesc2"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexCircDesc3"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexCircDesc4"); ?></li>
             </ul>
         </td>
     </tr>
-    <tr>
-        <td align="center" valign="top" class="primary"><a
-                    href="../reports/index.php"><?php echo $loc->getText("indexReports"); ?></a><br><br>
-            <a href="../reports/index.php"><img src="../images/reports.png" border="0" width="30"
-                                                height="30"></a><br><br></td>
-        <td class="primary" valign="top"><?php echo $loc->getText("indexReportsDesc1"); ?>
 
-            <ul>
-                <li><?php echo $loc->getText("indexReportsDesc2"); ?></li>
-                <li><?php echo $loc->getText("indexReportsDesc3"); ?></li>
+    <tr>
+
+        <td>
+            <h4>
+                <i class="material-icons">library_books</i>
+                <?php echo $loc->getText("indexCat"); ?>
+            </h4>
+        </td>
+
+        <td>
+            <strong><?php echo $loc->getText("indexCatDesc1"); ?></strong>
+
+            <ul class="collection">
+                <li class="collection-item"><?php echo $loc->getText("indexCatDesc2"); ?></li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h4>
+                <i class="material-icons">settings</i>
+                <?php echo $loc->getText("indexAdmin"); ?>
+            </h4>
+        </td>
+
+        <td>
+            <strong><?php echo $loc->getText("indexAdminDesc1"); ?></strong>
+
+            <ul class="collection">
+                <li class="collection-item"><?php echo $loc->getText("indexAdminDesc2"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexAdminDesc3"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexAdminDesc4"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexAdminDesc5"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexAdminDesc6"); ?></li>
+            </ul>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h4>
+                <i class="material-icons">print</i>
+                <?php echo $loc->getText("indexReports"); ?>
+            </h4>
+        </td>
+
+        <td>
+            <strong><?php echo $loc->getText("indexReportsDesc1"); ?></strong>
+
+            <ul class="collection">
+                <li class="collection-item"><?php echo $loc->getText("indexReportsDesc2"); ?></li>
+                <li class="collection-item"><?php echo $loc->getText("indexReportsDesc3"); ?></li>
             </ul>
         </td>
     </tr>

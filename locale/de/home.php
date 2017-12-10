@@ -40,13 +40,13 @@
 #****************************************************************************
 $trans["indexHeading"] = "\$text='Willkommen bei OpenBiblio';";
 $trans["indexIntro"] = "\$text=
-  'Benutzen Sie die Navigations-Reiter am oberen Rand jeder Seite um zu den Bereichen zu gelangen.';";
+  'Benutzen Sie die Navigations-Reiter am oberen Rand jeder Seite, um zu den Bereichen zu gelangen.';";
 $trans["indexTab"] = "\$text='Reiter';";
 $trans["indexDesc"] = "\$text='Beschreibung';";
 $trans["indexCirc"] = "\$text='Ausleihe';";
 $trans["indexCircDesc1"] = "\$text='Benutzen Sie diesen Reiter um die Benutzer zu verwalten.';";
 $trans["indexCircDesc2"] = "\$text='Mitglieder-Verwaltung (Neu, Suche, Bearbeiten, Löschen)';";
-$trans["indexCircDesc3"] = "\$text='Ausleihe, Vorbestellungen, Gebührenverwaltung und History der Mitglieder';";
+$trans["indexCircDesc3"] = "\$text='Ausleihe, Vorbestellungen, Gebührenverwaltung und Historie der Mitglieder';";
 $trans["indexCircDesc4"] = "\$text='Medienrückgabe und Eingangsablage';";
 //$trans["indexCircDesc5"]     = "\$text='Member late fee payment';";
 $trans["indexCat"] = "\$text='Katalogisierung';";
@@ -55,14 +55,14 @@ $trans["indexCatDesc2"] = "\$text='Medien-Verwaltung (Neu, Suche, Bearbeiten, L�
 //$trans["indexCatDesc3"]      = "\$text='Import bibliography from USMarc record';";
 $trans["indexAdmin"] = "\$text='Admin';";
 $trans["indexAdminDesc1"] = "\$text='Benutzen Sie diesen Reiter um die Mitarbeiter zu verwalten und die Programmeinstellungen zu ändern.';";
-$trans["indexAdminDesc2"] = "\$text='Mitarbeiter Verwaltung (Neu, Bearbeiten, Passwort, Löschen)';";
+$trans["indexAdminDesc2"] = "\$text='Mitarbeiter-Verwaltung (Neu, Bearbeiten, Passwort ändern, Löschen)';";
 $trans["indexAdminDesc3"] = "\$text='Generelle Bibliothekseinstellungen';";
 $trans["indexAdminDesc5"] = "\$text='Liste der Medienarten';";
 $trans["indexAdminDesc4"] = "\$text='Liste der Genres';";
 $trans["indexAdminDesc6"] = "\$text='Layout-Editor';";
 $trans["indexReports"] = "\$text='Berichte';";
 $trans["indexReportsDesc1"] = "\$text='Benutzen Sie diesen Reiter um Berichte über die Daten zu erstellen.';";
-$trans["indexReportsDesc2"] = "\$text='Berichte.';";
-$trans["indexReportsDesc3"] = "\$text='Etiketten.';";
+$trans["indexReportsDesc2"] = "\$text='Berichte erstellen/drucken';";
+$trans["indexReportsDesc3"] = "\$text='Etiketten drucken';";
 
 ?>
