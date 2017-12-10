@@ -36,5 +36,6 @@ unset($_SESSION['postVars']);
 </td>
 </tr>
 </table>
+</main>
 </body>
 </html>
