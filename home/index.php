@@ -11,7 +11,7 @@ require_once("../shared/header.php");
 require_once("../classes/Localize.php");
 $loc = new Localize(OBIB_LOCALE, $tab);
 ?>
-<h1><?php echo $loc->getText("indexHeading"); ?></h1>
+<h3><?php echo $loc->getText("indexHeading"); ?></h3>
 
 <?php
 # echo $loc->getText("searchResults",array("items"=>0))."<br>";
@@ -29,10 +29,10 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 
     <tr>
         <td>
-            <h4>
+            <h5>
                 <i class="material-icons">repeat</i>
                 <?php echo $loc->getText("indexCirc"); ?>
-            </h4>
+            </h5>
         </td>
 
         <td>
@@ -48,10 +48,10 @@ $loc = new Localize(OBIB_LOCALE, $tab);
     <tr>
 
         <td>
-            <h4>
+            <h5>
                 <i class="material-icons">library_books</i>
                 <?php echo $loc->getText("indexCat"); ?>
-            </h4>
+            </h5>
         </td>
 
         <td>
@@ -65,10 +65,10 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 
     <tr>
         <td>
-            <h4>
+            <h5>
                 <i class="material-icons">settings</i>
                 <?php echo $loc->getText("indexAdmin"); ?>
-            </h4>
+            </h5>
         </td>
 
         <td>
@@ -86,10 +86,10 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 
     <tr>
         <td>
-            <h4>
+            <h5>
                 <i class="material-icons">print</i>
                 <?php echo $loc->getText("indexReports"); ?>
-            </h4>
+            </h5>
         </td>
 
         <td>

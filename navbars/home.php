@@ -30,7 +30,7 @@ if ($sess_userid == "") { ?>
     <li><a href="#" class="disabled"><i class="material-icons">home</i>
             &raquo; <?php echo $navLoc->getText("homeHomeLink"); ?></a></li>
 <?php } else { ?>
-    <li><a href="../home/index.php" class="alt1"><i
+    <li><a href="../home/index.php"><i
                     class="material-icons">home</i> <?php echo $navLoc->getText("homeHomeLink"); ?></a></li>
 <?php } ?>
 
@@ -38,7 +38,7 @@ if ($sess_userid == "") { ?>
     <li><a href="#" class="disabled"><i class="material-icons">copyright</i>
             &raquo; <?php echo $navLoc->getText("homeLicenseLink"); ?></a></li>
 <?php } else { ?>
-    <li><a href="../home/license.php" class="alt1"><i
+    <li><a href="../home/license.php"><i
                     class="material-icons">copyright</i> <?php echo $navLoc->getText("homeLicenseLink"); ?></a></li>
 <?php } ?>
 

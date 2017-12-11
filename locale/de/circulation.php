@@ -57,7 +57,7 @@ $trans["indexName"] = "\$text='Nachname beginnt mit:';";
 #*  Translation text for page mbr_new_form.php, mbr_edit_form.php and mbr_fields.php, mbr_search.php
 #****************************************************************************
 $trans["Mailing Address:"] = "\$text='Postanschrift:';";
-$trans["mbrNewForm"] = "\$text='Füge hinzu neuen';";
+$trans["mbrNewForm"] = "\$text='Füge neuen ';";
 $trans["mbrEditForm"] = "\$text='Bearbeite';";
 $trans["mbrFldsHeader"] = "\$text='Benutzer:';";
 $trans["mbrFldsCardNmbr"] = "\$text='Benutzernummer:';";

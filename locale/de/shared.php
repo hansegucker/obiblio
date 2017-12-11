@@ -103,7 +103,7 @@ $trans["biblioSearchBCode2Hold"] = "\$text = 'Barcode zum Vorbestellen';";
 #****************************************************************************
 #*  Translation text for page loginform.php
 #****************************************************************************
-$trans["loginFormTbleHdr"] = "\$text = 'Mitarbeiter Login';";
+$trans["loginFormTbleHdr"] = "\$text = 'Mitarbeiter-Login';";
 $trans["loginFormUsername"] = "\$text = 'Benutzername';";
 $trans["loginFormPassword"] = "\$text = 'Passwort';";
 $trans["loginFormLogin"] = "\$text = 'Login';";

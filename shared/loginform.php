@@ -26,50 +26,42 @@ $loc = new Localize(OBIB_LOCALE, "shared");
 
 ?>
 
-<br>
-<center>
-    <form name="loginform" method="POST" action="../shared/login.php">
-        <table class="primary">
-            <tr>
-                <th><?php echo $loc->getText("loginFormTbleHdr"); ?>:</th>
-            </tr>
-            <tr>
-                <td valign="top" class="primary" align="left">
-                    <table class="primary">
-                        <tr>
-                            <td valign="top" class="noborder">
-                                <?php echo $loc->getText("loginFormUsername"); ?>:</font>
-                            </td>
-                            <td valign="top" class="noborder">
-                                <input type="text" name="username" size="20" maxlength="20"
-                                       value="<?php if (isset($postVars["username"])) echo H($postVars["username"]); ?>">
-                                <font class="error"><?php if (isset($pageErrors["username"])) echo H($pageErrors["username"]); ?></font>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td valign="top" class="noborder">
-                                <?php echo $loc->getText("loginFormPassword"); ?>:</font>
-                            </td>
-                            <td valign="top" class="noborder">
-                                <input type="password" name="pwd" size="20" maxlength="20"
-                                       value="<?php if (isset($postVars["pwd"])) echo H($postVars["pwd"]); ?>">
-                                <font class="error">
-                                    <?php if (isset($pageErrors["pwd"])) echo H($pageErrors["pwd"]); ?></font>
-                            </td>
-                        </tr>
+<div class="row">
+    <div class="col s0 m3">
 
-                        <tr>
-                            <td colspan="2" align="center" class="noborder">
-                                <input type="submit" value="<?php echo $loc->getText("loginFormLogin"); ?>"
-                                       class="button">
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
+    </div>
+    <form name="loginform" method="POST" action="../shared/login.php" class="col s12 m6">
+        <h3><?php echo $loc->getText("loginFormTbleHdr"); ?></h3>
 
+        <div class="input-field">
+            <input type="text" id="username" name="username" size="20" maxlength="20" class="validate"
+                   value="<?php if (isset($postVars["username"])) echo H($postVars["username"]); ?>">
+            <label for="username"><?php echo $loc->getText("loginFormUsername"); ?></label>
+
+            <span class="red-text">
+                <?php if (isset($pageErrors["username"])) echo H($pageErrors["username"]); ?>
+            </span>
+        </div>
+
+
+        <div class="input-field">
+            <input type="password" id="pwd" name="pwd" size="20" maxlength="20" class="validate"
+                   value="<?php if (isset($postVars["pwd"])) echo H($postVars["pwd"]); ?>">
+            <label for="pwd"><?php echo $loc->getText("loginFormPassword"); ?></label>
+
+            <span class="red-text">
+                <?php if (isset($pageErrors["pwd"])) echo H($pageErrors["pwd"]); ?>
+            </span>
+        </div>
+
+        <button type="submit" class="waves-effect waves-light btn col s12 green">
+            <?php echo $loc->getText("loginFormLogin"); ?>
+        </button>
     </form>
-</center>
+    <div class="col s0 m3">
+
+    </div>
+</div>
+
 
 <?php include("../shared/footer.php"); ?>
