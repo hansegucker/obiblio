@@ -22,43 +22,50 @@ if (isset($_REQUEST['msg'])) {
 }
 ?>
 
-<h1><img src="../images/circ.png" border="0" width="30" height="30"
-         align="top"> <?php echo $loc->getText("indexHeading"); ?></h1>
+<h3>
+    <i class="material-icons small">repeat</i> <?php echo $loc->getText("indexHeading"); ?>
+</h3>
+
 <form name="barcodesearch" method="POST" action="../circ/mbr_search.php">
-    <table class="primary">
-        <tr>
-            <th valign="top" nowrap="yes" align="left">
-                <?php echo $loc->getText("indexCardHdr"); ?>
-            </th>
-        </tr>
-        <tr>
-            <td nowrap="true" class="primary">
-                <?php echo $loc->getText("indexCard"); ?>
-                <input type="text" name="searchText" size="20" maxlength="20">
-                <input type="hidden" name="searchType" value="barcodeNmbr">
-                <input type="submit" value="<?php echo $loc->getText("indexSearch"); ?>" class="button">
-            </td>
-        </tr>
-    </table>
+
+    <p class="flow-text">
+        <?php echo $loc->getText("indexCardHdr"); ?>
+    </p>
+
+    <div class="input-field">
+        <input type="text" id="searchText" name="searchText" size="20" maxlength="20" class="validate">
+        <label for="searchText">
+            <?php echo $loc->getText("indexCard"); ?>
+        </label>
+    </div>
+
+    <input type="hidden" name="searchType" value="barcodeNmbr">
+
+    <button type="submit" class="waves-effect waves-light btn green">
+        <i class="material-icons left">search</i><?php echo $loc->getText("indexSearch"); ?>
+    </button>
+
 </form>
 
 
 <form name="phrasesearch" method="POST" action="../circ/mbr_search.php">
-    <table class="primary">
-        <tr>
-            <th valign="top" nowrap="yes" align="left">
-                <?php echo $loc->getText("indexNameHdr"); ?>
-            </td>
-        </tr>
-        <tr>
-            <td nowrap="true" class="primary">
-                <?php echo $loc->getText("indexName"); ?>
-                <input type="text" name="searchText" size="30" maxlength="80">
-                <input type="hidden" name="searchType" value="lastName">
-                <input type="submit" value="<?php echo $loc->getText("indexSearch"); ?>" class="button">
-            </td>
-        </tr>
-    </table>
+
+    <p class="flow-text">
+        <?php echo $loc->getText("indexNameHdr"); ?>
+    </p>
+
+    <div class="input-field">
+        <input type="text" id="searchText1" name="searchText" size="30" maxlength="80" class="validate">
+        <label for="searchText1">
+            <?php echo $loc->getText("indexName"); ?>
+        </label>
+    </div>
+
+    <input type="hidden" name="searchType" value="lastName">
+
+    <button type="submit" class="waves-effect waves-light btn green">
+        <i class="material-icons left">search</i><?php echo $loc->getText("indexSearch"); ?>
+    </button>
 </form>
 
 <?php include("../shared/footer.php"); ?>

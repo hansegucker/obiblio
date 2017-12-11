@@ -48,10 +48,10 @@ $trans["mbrDupBarcode"] = "\$text = 'Mediennummer, %barcode%, ist schon in Benut
 #****************************************************************************
 $trans["indexHeading"] = "\$text='Ausleihe';";
 $trans["indexCardHdr"] = "\$text='Suche Benutzer nach Benutzernummer:';";
-$trans["indexCard"] = "\$text='Benutzernummer:';";
+$trans["indexCard"] = "\$text='Benutzernummer';";
 $trans["indexSearch"] = "\$text='Suche';";
 $trans["indexNameHdr"] = "\$text='Suche Benutzer nach Nachname:';";
-$trans["indexName"] = "\$text='Nachname beginnt mit:';";
+$trans["indexName"] = "\$text='Nachname beginnt mit';";
 
 #****************************************************************************
 #*  Translation text for page mbr_new_form.php, mbr_edit_form.php and mbr_fields.php, mbr_search.php
