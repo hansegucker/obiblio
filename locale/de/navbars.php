@@ -110,7 +110,7 @@ $trans["memberaccount"] = "\$text = 'Benutzerkonto';";
 $trans["memberInfo"] = "\$text = 'Benutzerinfos';";
 $trans["memberSearch"] = "\$text = 'Benutzersuche';";
 $trans["editInfo"] = "\$text = 'Bearb. Infos';";
-$trans["checkoutHistory"] = "\$text = 'Ausleih-History';";
+$trans["checkoutHistory"] = "\$text = 'Ausleih-Historie';";
 $trans["account"] = "\$text = 'Gebühren';";
 $trans["checkIn"] = "\$text = 'Medienrückgabe';";
 $trans["memberSearch"] = "\$text = 'Benutzersuche';";

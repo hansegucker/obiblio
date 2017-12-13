@@ -87,7 +87,8 @@ if (isset($focus_form_name) && ($focus_form_name != "")) {
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
 
             <!-- Logo and title -->
-            <a href="#" class="brand-logo"><?php
+            <a href="#" class="brand-logo">
+                <?php
                 if (OBIB_LIBRARY_IMAGE_URL != "") {
                     echo "<img src=\"" . H(OBIB_LIBRARY_IMAGE_URL) . "\">";
                 }
