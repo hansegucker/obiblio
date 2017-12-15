@@ -22,16 +22,21 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 #****************************************************************************
 function printResultPages($currPage, $pageCount)
 {
+    echo "<ul class=\"pagination\">";
     global $loc;
     if ($currPage > 6) {
+        echo "<li class=\"waves-effect\">";
         echo "<a href=\"javascript:changePage(" . H(addslashes(1)) .
-            ")\" class=\"waves-effect waves-teal btn-flat\">&laquo;" .
+            ")\">&laquo;" .
             $loc->getText("First") . "</a> ";
+        echo "</li>";
     }
     if ($currPage > 1) {
+        echo "<li class=\"waves-effect\">";
         echo "<a href=\"javascript:changePage(" . H(addslashes($currPage - 1)) .
-            ")\" class=\"waves-effect waves-teal btn-flat\">" .
-            "<i class=\"material-icons\">navigate_before</i></a> ";
+            ")\" class=\"\">" .
+            "<i class=\"material-icons\">chevron_left</i></a> ";
+        echo "</li>";
     }
     $start = $currPage - 5;
     $end = $currPage + 5;
@@ -39,23 +44,34 @@ function printResultPages($currPage, $pageCount)
     if ($end > $pageCount) $end = $pageCount;
     for ($i = $start; $i <= $end; $i++) {
         if ($i == $currPage) {
-            if ($pageCount > 1) echo "<a href=\"#\" class=\"waves-effect waves-teal btn-flat disabled\">"
-                . H($i) . "</a> ";
+            if ($pageCount > 1) {
+                echo "<li class=\"waves-effect active\">";
+                echo "<a href=\"#\">"
+                    . H($i) . "</a> ";
+                echo "</li>";
+            }
         } else {
+            echo "<li class=\"waves-effect\">";
             echo "<a href=\"javascript:changePage(" . H(addslashes($i)) .
-                ")\" class=\"waves-effect waves-teal btn-flat\"> " . H($i) . "</a> ";
+                ")\"> " . H($i) . "</a> ";
+            echo "</li>";
         }
     }
     if ($currPage < $pageCount) {
+        echo "<li class=\"waves-effect\">";
         echo "<a href=\"javascript:changePage(" . ($currPage + 1) .
-            ")\" class=\"waves-effect waves-teal btn-flat\">" .
-            "<i class=\"material-icons\">navigate_next</i></a> ";
+            ")\">" .
+            "<i class=\"material-icons\">chevron_right</i></a> ";
+        echo "</li>";
     }
     if ($currPage < $pageCount - 5) {
+        echo "<li class=\"waves-effect\">";
         echo "<a href=\"javascript:changePage(" . ($pageCount) .
-            ")\" class=\"waves-effect waves-teal btn-flat\">" .
+            ")\">" .
             $loc->getText("Last") . "&raquo;</a> ";
+        echo "</li>";
     }
+    echo "</ul>";
 }
 
 #****************************************************************************
@@ -197,5 +213,8 @@ if ($mbrQ->getRowCount() == 0) {
     ?>
 </ul>
 
-<?php printResultPages($currentPageNmbr, $mbrQ->getPageCount()); ?><br>
+<div class="container center">
+    <?php printResultPages($currentPageNmbr, $mbrQ->getPageCount()); ?>
+</div>
+
 <?php require_once("../shared/footer.php"); ?>

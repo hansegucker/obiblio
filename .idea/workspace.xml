@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/obiblio.iml" afterPath="$PROJECT_DIR$/.idea/obiblio.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/circ/index.php" afterPath="$PROJECT_DIR$/circ/index.php" />
+      <change beforePath="$PROJECT_DIR$/COPYRIGHT.html" afterPath="$PROJECT_DIR$/COPYRIGHT.html" />
       <change beforePath="$PROJECT_DIR$/circ/mbr_search.php" afterPath="$PROJECT_DIR$/circ/mbr_search.php" />
-      <change beforePath="$PROJECT_DIR$/locale/de/circulation.php" afterPath="$PROJECT_DIR$/locale/de/circulation.php" />
+      <change beforePath="$PROJECT_DIR$/circ/mbr_view.php" afterPath="$PROJECT_DIR$/circ/mbr_view.php" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/test/test.html" afterPath="$PROJECT_DIR$/test/test.html" />
+      <change beforePath="$PROJECT_DIR$/test/test.js" afterPath="$PROJECT_DIR$/test/test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,9 +47,32 @@
       <file leaf-file-name="mbr_search.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="179" column="20" lean-forward="true" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+            <state relative-caret-position="464">
+              <caret line="218" column="0" lean-forward="true" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mbr_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+              <folding>
+                <marker date="1513356612078" expanded="true" signature="10955:10961" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="10961:10967" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="10967:10973" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11042:11048" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11048:11054" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11054:11060" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11129:11135" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11135:11141" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11141:11147" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11218:11224" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11224:11230" ph=" " />
+                <marker date="1513356612078" expanded="true" signature="11230:11236" ph=" " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mysqli_real_escape</find>
       <find>dbiter</find>
       <find>dbold</find>
       <find>rpt</find>
@@ -98,6 +128,7 @@
       <find>ausleih-history</find>
       <find>class=&quot;alt1&quot;</find>
       <find>suchergeb</find>
+      <find>waves-effect waves-teal btn-flat</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -132,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/classes/BiblioSearchQuery.php" />
         <option value="$PROJECT_DIR$/install/index.php" />
         <option value="$PROJECT_DIR$/shared/login.php" />
         <option value="$PROJECT_DIR$/classes/StaffQuery.php" />
@@ -182,6 +212,7 @@
         <option value="$PROJECT_DIR$/navbars/circulation.php" />
         <option value="$PROJECT_DIR$/circ/index.php" />
         <option value="$PROJECT_DIR$/locale/de/circulation.php" />
+        <option value="$PROJECT_DIR$/circ/mbr_view.php" />
         <option value="$PROJECT_DIR$/circ/mbr_search.php" />
       </list>
     </option>
@@ -230,11 +261,6 @@
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="circ" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
@@ -322,7 +348,7 @@
       <workItem from="1513183010248" duration="52000" />
       <workItem from="1513183141360" duration="1909000" />
       <workItem from="1513187344150" duration="1325000" />
-      <workItem from="1513355792123" duration="399000" />
+      <workItem from="1513355792123" duration="1229000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -457,11 +483,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513185800874</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Redesign search results page at circulation [MAT]">
+      <created>1513356226097</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1513356226097</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49277000" />
+    <option name="totallyTimeSpent" value="50107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -524,21 +557,16 @@
     <MESSAGE value="Redesign nav at circulation tab (MAT)" />
     <MESSAGE value="Redesign circulation index [MAT]" />
     <MESSAGE value="Add icons to circulation nav [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add icons to circulation nav [MAT]" />
+    <MESSAGE value="Redesign search results page at circulation [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign search results page at circulation [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/locale/de/sql/biblio_copy.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/sql/biblio_status_dm.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -881,10 +909,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="112" column="8" lean-forward="true" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding>
+            <marker date="1513356612078" expanded="true" signature="10955:10961" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="10961:10967" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="10967:10973" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11042:11048" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11048:11054" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11054:11060" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11129:11135" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11135:11141" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11141:11147" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11218:11224" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11224:11230" ph=" " />
+            <marker date="1513356612078" expanded="true" signature="11230:11236" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="179" column="20" lean-forward="true" selection-start-line="179" selection-start-column="20" selection-end-line="179" selection-end-column="20" />
+        <state relative-caret-position="464">
+          <caret line="218" column="0" lean-forward="true" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="0" />
           <folding />
         </state>
       </provider>
