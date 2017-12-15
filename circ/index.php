@@ -18,7 +18,7 @@ require_once("../classes/Localize.php");
 $loc = new Localize(OBIB_LOCALE, $tab);
 
 if (isset($_REQUEST['msg'])) {
-    echo '<font class="error">' . H($_REQUEST['msg']) . '</font>';
+    echo '<div class="red">' . H($_REQUEST['msg']) . '</div>';
 }
 ?>
 

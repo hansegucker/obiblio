@@ -83,7 +83,7 @@ $trans["First"] = "\$text='Anfang';";
 $trans["Last"] = "\$text='Ende';";
 $trans["mbrsearchNoResults"] = "\$text='Keine Ergebnisse gefunden.';";
 $trans["mbrsearchFoundResults"] = "\$text=' Ergebnisse gefunden.';";
-$trans["mbrsearchSearchResults"] = "\$text='Suchergebnisse:';";
+$trans["mbrsearchSearchResults"] = "\$text='Suchergebnisse';";
 $trans["mbrsearchCardNumber"] = "\$text='Benutzernummer:';";
 $trans["mbrsearchClassification"] = "\$text='Klassifikation:';";
 
