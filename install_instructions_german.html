@@ -80,7 +80,7 @@
             <li>Öffnen Sie das SQL-Query Fenster.</li>
             <li>Führen Sie dort die SQL-Kommandos aus <a href="#step9">Schritt 9</a> und Schritt 10, die unten
                 beschrieben sind, aus.
-                Das Kommando ist der <b>dickgeschriebene</b> Teil direkt hinter
+                Das Kommando ist der <strong>dickgeschriebene</strong> Teil direkt hinter
                 <pre>mysql></pre>
             </li>
             <li>Springen Sie zu <a href="#step12">Schritt 12</a> und beenden Sie die Prozedur.</li>
@@ -120,14 +120,14 @@
             besten nutzen Sie folgende Befehlsequenz.
             <blockquote>
                 <pre>
-C:\><b>c:\mysql\bin\mysql -u root -p</b>
-Enter password: <b>*********</b>
+C:\><strong>c:\mysql\bin\mysql -u root -p</strong>
+Enter password: <strong>*********</strong>
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 8 to server version: 3.23.26-beta
 
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer
 
-mysql> <b>show databases;</b>
+mysql> <strong>show databases;</strong>
 +--------------+
 | Database     |
 +--------------+
@@ -135,7 +135,7 @@ mysql> <b>show databases;</b>
 +--------------+
 6 rows in set (0.00 sec)
 
-mysql> <b>exit</b>
+mysql> <strong>exit</strong>
 Bye
 
 C:\>
@@ -148,10 +148,11 @@ C:\>
             <li>Erstellen Sie die OpenBiblio Datenbank. Um dies zu tun, loggen Sie sich in MySQL mit dem AdminAccount
                 ein (wie oben beschrieben) und führen sie folgendes SQL Kommando aus.
                 <blockquote><pre>
-mysql> <b>create database OpenBiblio /*!40100 default character set latin1 */;</b>
+mysql> <strong>create database OpenBiblio /*!40100 default character set latin1 */;</strong>
 </pre>
                     <div class="new">
-                        <strong>Neu:</strong> Der bedingte Kommentar <b><tt>/* ... */ </tt></b>wird in MySQL 4.1.0 oder
+                        <strong>Neu:</strong> Der bedingte Kommentar <strong><tt>/* ... */ </tt></strong>wird in MySQL
+                        4.1.0 oder
                         höher ausgeführt und spezifiziert <tt>latin1</tt> als Standard-Datenbank Zeichensatz für die
                         Datenbank, die erstellt wird.
                     </div>
@@ -189,7 +190,7 @@ mysql> <b>create database OpenBiblio /*!40100 default character set latin1 */;</
                     <br>
                     Um zu überprüfen, ob die Datenbank wirklich angelegt wurde führen Sie folgendes Kommando aus.
                     <pre>
-mysql> <b>show databases;</b>
+mysql> <strong>show databases;</strong>
 +--------------+
 | Database     |
 +--------------+
@@ -212,8 +213,8 @@ mysql> <b>show databases;</b>
                             <td><pre>mysql>
     -> </pre>
                             </td>
-                            <td><pre><b>grant all privileges on OpenBiblio.* to <i>obiblio_user</i>@localhost</b></b>
-                                <b>identified by '<i>obiblio_password</i>';</pre>
+                            <td><pre><strong>grant all privileges on OpenBiblio.* to <i>obiblio_user</i>@localhost</strong></strong>
+                                <strong>identified by '<i>obiblio_password</i>';</pre>
                             </td>
                         </tr>
                     </table>
@@ -223,7 +224,7 @@ mysql> <b>show databases;</b>
 
         <li>Prüfen Sie ihre Datenbank und den Benutzer, indem Sie sich als Benutzer einloggen.
             <blockquote><pre>
-<b>C:\mysql\bin\mysql -u<i>obiblio_user</i> -p<i>obiblio_password</i> OpenBiblio</b>
+<strong>C:\mysql\bin\mysql -u<i>obiblio_user</i> -p<i>obiblio_password</i> OpenBiblio</strong>
 </pre>
             </blockquote>
         </li>

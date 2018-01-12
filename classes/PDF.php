@@ -288,7 +288,7 @@ class PDF
     function Error($msg)
     {
         //Fatal error
-        die('<B>FPDF error: </B>' . $msg);
+	    die( '<strong>FPDF error: </strong>' . $msg );
     }
 
     function Open()

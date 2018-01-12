@@ -29,7 +29,7 @@ $loc = new Localize(OBIB_LOCALE, $tab);
     <?php echo $loc->getText("MarcUploadTestFileUpload"); ?>: <input type="file" name="usmarc_data"><br><br>
 
     <hr/>
-    <b>Defaults:</b>
+    <strong>Defaults:</strong>
     <table border=0>
         <tr>
             <td><?php echo $loc->getText("biblioFieldsCollection"); ?>:</td>

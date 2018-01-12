@@ -127,7 +127,7 @@ $marcSubfldDmQ->close();
 
     <tr>
         <td colspan="2" nowrap="true" class="primary">
-            <b><?php echo $loc->getText("biblioFieldsUsmarcFields"); ?>:</b>
+            <strong><?php echo $loc->getText( "biblioFieldsUsmarcFields" ); ?>:</strong>
         </td>
     </tr>
     <?php printUsmarcInputText(245, "a", TRUE, $postVars, $pageErrors, $marcTags, $marcSubflds, FALSE, OBIB_TEXT_CNTRL); ?>

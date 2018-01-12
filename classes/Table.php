@@ -55,7 +55,7 @@ class Table
             }
             echo '<td valign="middle" align="center" class="primary">';
             echo '<font class="small">';
-            echo '<b>All</b><br />';
+	        echo '<strong>All</strong><br />';
             echo '<input type="checkbox" name="all" value="all" onclick="setCheckboxes()" ';
             if ($this->_checked) {
                 echo 'checked="checked" ';
@@ -71,7 +71,7 @@ class Table
                 $col['title'] = $col['name'];
             }
             echo '<td valign="middle" align="center" class="primary">';
-            echo '<font class="small"><b>' . $this->_loc->getText($col['title']) . '</b></font>';
+	        echo '<font class="small"><strong>' . $this->_loc->getText( $col['title'] ) . '</strong></font>';
             if (isset($col['sort']) and $col['sort'] and $echolink) {
                 echo "<br><nobr>";
                 $echolink(1, "<img border='0' src='../images/down.png' alt='&darr;'>",

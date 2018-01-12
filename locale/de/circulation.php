@@ -121,7 +121,7 @@ $trans["mbrViewStatColHdr2"] = "\$text='Anzahl';";
 $trans["mbrViewStatColHdr3"] = "\$text='Limits';";
 $trans["mbrViewStatColHdr4"] = "\$text='Ausleihe';";
 $trans["mbrViewStatColHdr5"] = "\$text='Verlängerung';";
-$trans["mbrViewHead3"] = "\$text='Medienausleihe:';";
+$trans["mbrViewHead3"] = "\$text='Medienausleihe';";
 $trans["mbrViewBarcode"] = "\$text='Mediennummer:';";
 $trans["mbrViewCheckOut"] = "\$text='Ausleihen';";
 $trans["mbrViewHead4"] = "\$text='Derzeit ausgeliehene Medien:';";
@@ -138,7 +138,7 @@ $trans["mbrViewOutHdr10"] = "\$text='Rückgabe';";
 $trans["To Shelving Cart"] = "\$text='In Eingangsablage';";
 $trans["Renew item"] = "\$text='Verlängere Medium';";
 $trans["mbrViewNoCheckouts"] = "\$text='Derzeit keine Medien ausgeliehen.';";
-$trans["mbrViewHead5"] = "\$text='Vorbestellen:';";
+$trans["mbrViewHead5"] = "\$text='Vorbestellen';";
 $trans["mbrViewHead6"] = "\$text='Derzeit vorbestellte Medien:';";
 $trans["mbrViewPlaceHold"] = "\$text='Vorbestellen';";
 $trans["mbrViewHoldHdr1"] = "\$text='Funktion';";
@@ -208,8 +208,8 @@ $trans["checkinErr1"] = "\$text='Keine Medien wurden ausgewählt.';";
 #****************************************************************************
 #*  Translation text for page hold_message.php
 #****************************************************************************
-$trans["holdMessageHdr"] = "\$text='Medium wurde vorbestellt!';";
-$trans["holdMessageMsg1"] = "\$text='Das Medium mit der Mediennummer %barcode% welches Sie eincecken wollen wurde vorbestellt. <b>Bitte das Medium ins Vorbestellfach legen und nicht in die Eingangsablage.</b> Der Statuscode des Medium wurde auf vorbestellt geändert.';";
+$trans["holdMessageHdr"]  = "\$text='Medium wurde vorbestellt!';";
+$trans["holdMessageMsg1"] = "\$text='Das Medium mit der Mediennummer %barcode% welches Sie eincecken wollen wurde vorbestellt. <strong>Bitte das Medium ins Vorbestellfach legen und nicht in die Eingangsablage.</strong> Der Statuscode des Medium wurde auf vorbestellt geändert.';";
 $trans["holdMessageMsg2"] = "\$text='Kehre zur Medienrückgabe zurück.';";
 
 #****************************************************************************

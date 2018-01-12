@@ -208,8 +208,8 @@ $trans["checkinErr1"] = "\$text='No items have been selected.';";
 #****************************************************************************
 #*  Translation text for page hold_message.php
 #****************************************************************************
-$trans["holdMessageHdr"] = "\$text='Bibliography Has Been Placed On Hold!';";
-$trans["holdMessageMsg1"] = "\$text='The bibliography with barcode number %barcode% that you are attempting to check in has one or more hold requests placed on it.  <b>Please file this bibliography with your held items instead of placing it on your shelving cart.</b>  The status code for this bibliography has been set to hold.';";
+$trans["holdMessageHdr"]  = "\$text='Bibliography Has Been Placed On Hold!';";
+$trans["holdMessageMsg1"] = "\$text='The bibliography with barcode number %barcode% that you are attempting to check in has one or more hold requests placed on it.  <strong>Please file this bibliography with your held items instead of placing it on your shelving cart.</strong>  The status code for this bibliography has been set to hold.';";
 $trans["holdMessageMsg2"] = "\$text='Return to bibliography check in.';";
 
 #****************************************************************************

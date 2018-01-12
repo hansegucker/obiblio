@@ -61,7 +61,7 @@ function printResultPages(&$loc, $currPage, $pageCount)
     if ($end > $pageCount) $end = $pageCount;
     for ($i = $start; $i <= $end; $i++) {
         if ($i == $currPage) {
-            echo "<b>" . $i . "</b> ";
+	        echo "<strong>" . $i . "</strong> ";
         } else {
             echolink($i, $i);
             echo ' ';

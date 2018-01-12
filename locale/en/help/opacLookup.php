@@ -41,31 +41,36 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
                 <tbody>
                 <tr>
 
-                    <td class="noborder" valign="top" width="1%"><b><?php echo $loc->getText("biblioSearchTitle"); ?>
-                            :</b></td>
+                    <td class="noborder" valign="top" width="1%">
+                        <strong><?php echo $loc->getText( "biblioSearchTitle" ); ?>
+                            :</strong></td>
                     <td class="noborder" colspan="3"><a href="#exam"
                                                         title="<?php echo $loc->getText("biblioSearchDetail"); ?>">Ribsy</a>
                     </td>
                 </tr>
                 <tr>
-                    <td class="noborder" valign="top"><b><?php echo $loc->getText("biblioSearchAuthor"); ?>:</b></td>
+                    <td class="noborder" valign="top"><strong><?php echo $loc->getText( "biblioSearchAuthor" ); ?>
+                            :</strong></td>
                     <td class="noborder" colspan="3">Cleary,Beverly</td>
                 </tr>
 
                 <tr>
                     <td class="noborder" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchMaterial"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchMaterial" ); ?>
+                                :</strong></font></td>
                     <td class="noborder" colspan="3"><font class="small">book</font></td>
                 </tr>
                 <tr>
                     <td class="noborder" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCollection"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCollection" ); ?>:</strong></font>
+                    </td>
                     <td class="noborder" colspan="3"><font class="small">Juvenile Fiction</font></td>
 
                 </tr>
                 <tr>
                     <td class="noborder" nowrap="yes" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCall"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCall" ); ?>
+                                :</strong></font></td>
                     <td class="noborder" colspan="3"><font class="small">JF Cle </font></td>
                 </tr>
                 </tbody>
@@ -75,14 +80,15 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
 
     <tr>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: 000051
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: 000051
                 <a href="#exam"
                    title="<?php echo $loc->getText("biblioSearchBCode2Chk"); ?>"><?php echo $loc->getText("biblioSearchOutIn"); ?></a>
                 | <a href="#exam"
                      title="<?php echo $loc->getText("biblioSearchBCode2Hold"); ?>"><?php echo $loc->getText("biblioSearchHold"); ?></a>
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: checked in</font></td>
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: checked in</font>
+        </td>
     </tr>
 
 
@@ -97,31 +103,36 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
 
                 <tbody>
                 <tr>
-                    <td class="noborder" valign="top" width="1%"><b><?php echo $loc->getText("biblioSearchTitle"); ?>
-                            :</b></td>
+                    <td class="noborder" valign="top" width="1%">
+                        <strong><?php echo $loc->getText( "biblioSearchTitle" ); ?>
+                            :</strong></td>
                     <td class="noborder" colspan="3"><a href="#exam"
                                                         title="<?php echo $loc->getText("biblioSearchDetail"); ?>">Henry
                             Huggins</a></td>
                 </tr>
                 <tr>
-                    <td class="noborder" valign="top"><b><?php echo $loc->getText("biblioSearchAuthor"); ?>:</b></td>
+                    <td class="noborder" valign="top"><strong><?php echo $loc->getText( "biblioSearchAuthor" ); ?>
+                            :</strong></td>
                     <td class="noborder" colspan="3">Cleary,Beverly</td>
 
                 </tr>
                 <tr>
                     <td class="noborder" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchMaterial"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchMaterial" ); ?>
+                                :</strong></font></td>
                     <td class="noborder" colspan="3"><font class="small">book</font></td>
                 </tr>
                 <tr>
                     <td class="noborder" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCollection"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCollection" ); ?>:</strong></font>
+                    </td>
 
                     <td class="noborder" colspan="3"><font class="small">Juvenile Fiction</font></td>
                 </tr>
                 <tr>
                     <td class="noborder" nowrap="yes" valign="top"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCall"); ?>:</b></font></td>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCall" ); ?>
+                                :</strong></font></td>
                     <td class="noborder" colspan="3"><font class="small">JF Cle </font></td>
                 </tr>
                 </tbody>
@@ -131,14 +142,15 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
     </tr>
     <tr>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: 000061
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: 000061
                 <a href="#exam"
                    title="<?php echo $loc->getText("biblioSearchBCode2Chk"); ?>"><?php echo $loc->getText("biblioSearchOutIn"); ?></a>
                 | <a href="#exam"
                      title="<?php echo $loc->getText("biblioSearchBCode2Hold"); ?>"><?php echo $loc->getText("biblioSearchHold"); ?></a>
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: checked in</font></td>
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: checked in</font>
+        </td>
 
     </tr>
     <tr>
@@ -146,7 +158,7 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
                 3.
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: 000062
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: 000062
                 <a href="#exam"
                    title="<?php echo $loc->getText("biblioSearchBCode2Chk"); ?>"><?php echo $loc->getText("biblioSearchOutIn"); ?></a>
                 | <a href="#exam"
@@ -154,14 +166,15 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
 
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: checked in</font></td>
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: checked in</font>
+        </td>
     </tr>
     <tr>
         <td class="primary" align="center" nowrap="true" valign="top"><font class="small">
                 4.
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: 000063
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: 000063
                 <a href="#exam"
                    title="<?php echo $loc->getText("biblioSearchBCode2Chk"); ?>"><?php echo $loc->getText("biblioSearchOutIn"); ?></a>
                 | <a href="#exam"
@@ -169,7 +182,8 @@ If your browser shows tooltips the mouse pointer will explain the action of the 
 
             </font></td>
         <td class="primary" nowrap="true"><font
-                    class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: checked in</font></td>
+                    class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: checked in</font>
+        </td>
     </tr>
     </tbody>
 </table><br>

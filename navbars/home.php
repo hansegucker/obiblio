@@ -13,13 +13,13 @@ if (isset($_SESSION["userid"])) {
     $sess_userid = "";
 }
 if ($sess_userid == "") { ?>
-    <li>
+    <li class="logout">
         <a class="waves-effect waves-light btn green" href="../shared/loginform.php?RET=../home/index.php">
             <?php echo $navLoc->getText("login"); ?>
         </a>
     </li>
 <?php } else { ?>
-    <li>
+    <li class="logout">
         <a class="waves-effect waves-light btn red" href="../shared/logout.php">
             <?php echo $navLoc->getText("logout"); ?>
         </a>

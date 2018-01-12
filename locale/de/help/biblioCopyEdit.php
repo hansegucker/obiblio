@@ -34,7 +34,7 @@ Hilfe Untersektionen:
     </tr>
     <tr>
         <td class="primary" valign="top">Status</td>
-        <td class="primary" valign="top"><b>Nur beim Bearbeiten �nderbar</b>.
+        <td class="primary" valign="top"><strong>Nur beim Bearbeiten �nderbar</strong>.
             <br>Siehe auch:
             <a href="../shared/help.php?page=status">Status-�nderungen der Medien verstehen</a>
         </td>

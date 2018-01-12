@@ -200,9 +200,9 @@ if ($mbrQ->getRowCount() == 0) {
                 echo str_replace("\n", "<br />", H($mbr->getAddress())) . '<br />';
             ?>
             <p>
-                <b><?php echo $loc->getText("mbrsearchCardNumber"); ?></b>
+                <strong><?php echo $loc->getText( "mbrsearchCardNumber" ); ?></strong>
                 <?php echo H($mbr->getBarcodeNmbr()); ?><br>
-                <b><?php echo $loc->getText("mbrsearchClassification"); ?></b>
+                <strong><?php echo $loc->getText( "mbrsearchClassification" ); ?></strong>
                 <?php echo H($mbrClassifyDm[$mbr->getClassification()]); ?>
             </p>
 

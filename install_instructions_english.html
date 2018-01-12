@@ -133,7 +133,7 @@
         <ul>
             <li>Open the SQL query window.</li>
             <li>Run the SQL commands from <a href="#step9">step 9</a> and step 10 in the procedure below.
-                The command is the part in <tt><b>bold</b></tt> directly after <tt>mysql></tt></li>
+                The command is the part in <tt><strong>bold</strong></tt> directly after <tt>mysql></tt></li>
             <li>Jump to <a href="#step12">step 12</a> and finish the procedure.</li>
         </ul>
     </div>
@@ -166,9 +166,10 @@
             stop your web server. You may want to consider adding the "Start Apache" icon to your startup folder. If you
             are running NT or Windows 2000 you can add Apache as a service which will be running, even if you are logged
             off. If you are running Linux your Apache server should be packaged with your Linux installation and will
-            start when you start Linux. <b>Attention: Under Windows ME there are much reports about problems with Apache
+            start when you start Linux. <strong>Attention: Under Windows ME there are much reports about problems with
+                Apache
                 2.0.x (in my practice it doesn't run, as long as i had installed networkcards, the tcp/ip-driver of ME
-                seems buggy), take Apache 1.3.33 in this case.</b>
+                seems buggy), take Apache 1.3.33 in this case.</strong>
         </li>
         <li>Add PHP to your web server as a CGI or a module. If you are using Apache 2.0, I would highly recommend that
             you install PHP as a module instead of a cgi application. In my experience the Apache PHP module performed
@@ -202,14 +203,14 @@
         <li>Get familiar with logging into MySQL with your admin account within a DOS prompt window. You can use the
             following command sequence as a test.
             <blockquote><pre>
-C:\><b>c:\mysql\bin\mysql -uroot mysql</b>
-Enter password: <b>*********</b>
+C:\><strong>c:\mysql\bin\mysql -uroot mysql</strong>
+Enter password: <strong>*********</strong>
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 8 to server version: 3.23.26-beta
 
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer
 
-mysql> <b>show databases;</b>
+mysql> <strong>show databases;</strong>
 +--------------+
 | Database     |
 +--------------+
@@ -217,7 +218,7 @@ mysql> <b>show databases;</b>
 +--------------+
 6 rows in set (0.00 sec)
 
-mysql> <b>exit</b>
+mysql> <strong>exit</strong>
 Bye
 
 C:\>
@@ -230,10 +231,11 @@ C:\>
             <li>Create an OpenBiblio database. To do this, log into MySQL with your admin account
                 and run the following SQL command.
                 <blockquote><pre>
-mysql> <b>create database OpenBiblio /*!40100 default character set latin1 */;</b>
+mysql> <strong>create database OpenBiblio /*!40100 default character set latin1 */;</strong>
 </pre>
                     <div class="new">
-                        <strong>New:</strong> The conditional comment <b><tt>/* ... */ </tt></b>is executed on MySQL
+                        <strong>New:</strong> The conditional comment <strong><tt>/* ... */ </tt></strong>is executed on
+                        MySQL
                         4.1.0 or higher and specifies <tt>latin1</tt> as the default database character set for the
                         database created.
                     </div>
@@ -269,7 +271,7 @@ mysql> <b>create database OpenBiblio /*!40100 default character set latin1 */;</
                     <br>
                     To check to make sure the OpenBiblio database was created properly, run the following command.
                     <pre>
-mysql> <b>show databases;</b>
+mysql> <strong>show databases;</strong>
 +--------------+
 | Database     |
 +--------------+
@@ -292,8 +294,8 @@ mysql> <b>show databases;</b>
                             <td><pre>mysql>
     -> </pre>
                             </td>
-                            <td><pre><b>grant all privileges on OpenBiblio.* to <i>obiblio_user</i>@localhost</b></b>
-                                <b>identified by '<i>obiblio_password</i>';</pre>
+                            <td><pre><strong>grant all privileges on OpenBiblio.* to <i>obiblio_user</i>@localhost</strong></strong>
+                                <strong>identified by '<i>obiblio_password</i>';</pre>
                             </td>
                         </tr>
                     </table>
@@ -303,7 +305,7 @@ mysql> <b>show databases;</b>
 
         <li>Verify your OpenBiblio database and user by logging into the new MySQL database under the new user.
             <blockquote><pre>
-<b>C:\mysql\bin\mysql -u<i>obiblio_user</i> -p<i>obiblio_password</i> OpenBiblio</b>
+<strong>C:\mysql\bin\mysql -u<i>obiblio_user</i> -p<i>obiblio_password</i> OpenBiblio</strong>
 </pre>
             </blockquote>
         </li>

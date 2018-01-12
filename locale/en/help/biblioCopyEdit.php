@@ -34,7 +34,7 @@ Help Sub Sections:
     </tr>
     <tr>
         <td class="primary" valign="top">Status</td>
-        <td class="primary" valign="top"><b>Only in Edit Copy</b>.
+        <td class="primary" valign="top"><strong>Only in Edit Copy</strong>.
             <br>See also:
             <a href="../shared/help.php?page=status">Understanding bibliography status changes</a>
         </td>

@@ -60,7 +60,7 @@ function printResultPages(&$loc, $currPage, $pageCount, $sort)
     if ($end > $pageCount) $end = $pageCount;
     for ($i = $start; $i <= $end; $i++) {
         if ($i == $currPage) {
-            echo "<b>" . H($i) . "</b> ";
+	        echo "<strong>" . H( $i ) . "</strong> ";
         } else {
             echo "<a href=\"javascript:changePage(" . H(addslashes($i)) . ",'" . H(addslashes($sort)) . "')\">" . H($i) . "</a> ";
         }
@@ -237,14 +237,15 @@ if ($biblioQ->getRowCount() > 1) {
                     <td nowrap="true" class="primary" valign="top" align="center"><font class="small">
                             <?php echo H($biblioQ->getCurrentRowNmbr()); ?>.
                         </font></td>
-                    <td class="primary"><font class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: <?php echo H($biblio->getBarcodeNmbr()); ?>
+                    <td class="primary"><font
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: <?php echo H( $biblio->getBarcodeNmbr() ); ?>
                             <?php if ($lookup == 'Y') { ?>
                                 <a href="javascript:returnLookup('barcodesearch','barcodeNmbr','<?php echo H(addslashes($biblio->getBarcodeNmbr())); ?>')"><?php echo $loc->getText("biblioSearchOutIn"); ?></a> |
                                 <a href="javascript:returnLookup('holdForm','holdBarcodeNmbr','<?php echo H(addslashes($biblio->getBarcodeNmbr())); ?>')"><?php echo $loc->getText("biblioSearchHold"); ?></a>
                             <?php } ?>
                         </font></td>
                     <td class="primary"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: <?php echo H($biblioStatusDm[$biblio->getStatusCd()]); ?>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: <?php echo H( $biblioStatusDm[ $biblio->getStatusCd() ] ); ?>
                         </font></td>
                 </tr>
                 <?php
@@ -266,43 +267,46 @@ if ($biblioQ->getRowCount() > 1) {
                     <table class="primary" width="100%">
                         <tr>
                             <td class="noborder" width="1%" valign="top">
-                                <b><?php echo $loc->getText("biblioSearchTitle"); ?>:</b></td>
+                                <strong><?php echo $loc->getText( "biblioSearchTitle" ); ?>:</strong></td>
                             <td class="noborder" colspan="3"><a
                                         href="../shared/biblio_view.php?bibid=<?php echo HURL($biblio->getBibid()); ?>&amp;tab=<?php echo HURL($tab); ?>"><?php echo H($biblio->getTitle()); ?></a>
                             </td>
                         </tr>
                         <tr>
                             <td class="noborder" width="1%" valign="top"><font
-                                        class="small"><b><?php echo $loc->getText("biblioSearchTitleRemainder"); ?>:</b></font>
+                                        class="small"><strong><?php echo $loc->getText( "biblioSearchTitleRemainder" ); ?>
+                                        :</strong></font>
                             </td>
                             <td class="noborder" colspan="3"><font
                                         class="small"><?php echo H($biblio->getTitleRemainder()); ?></font></td>
                         </tr>
                         <tr>
-                            <td class="noborder" valign="top"><b><?php echo $loc->getText("biblioSearchAuthor"); ?>:</b>
+                            <td class="noborder" valign="top">
+                                <strong><?php echo $loc->getText( "biblioSearchAuthor" ); ?>:</strong>
                             </td>
                             <td class="noborder"
                                 colspan="3"><?php if ($biblio->getAuthor() != "") echo H($biblio->getAuthor()); ?></td>
                         </tr>
                         <tr>
                             <td class="noborder" valign="top"><font
-                                        class="small"><b><?php echo $loc->getText("biblioSearchMaterial"); ?>
-                                        :</b></font></td>
+                                        class="small"><strong><?php echo $loc->getText( "biblioSearchMaterial" ); ?>
+                                        :</strong></font></td>
                             <td class="noborder" colspan="3"><font
                                         class="small"><?php echo H($materialTypeDm[$biblio->getMaterialCd()]); ?></font>
                             </td>
                         </tr>
                         <tr>
                             <td class="noborder" valign="top"><font
-                                        class="small"><b><?php echo $loc->getText("biblioSearchCollection"); ?>
-                                        :</b></font></td>
+                                        class="small"><strong><?php echo $loc->getText( "biblioSearchCollection" ); ?>
+                                        :</strong></font></td>
                             <td class="noborder" colspan="3"><font
                                         class="small"><?php echo H($collectionDm[$biblio->getCollectionCd()]); ?></font>
                             </td>
                         </tr>
                         <tr>
                             <td class="noborder" valign="top" nowrap="yes"><font
-                                        class="small"><b><?php echo $loc->getText("biblioSearchCall"); ?>:</b></font>
+                                        class="small"><strong><?php echo $loc->getText( "biblioSearchCall" ); ?>
+                                        :</strong></font>
                             </td>
                             <td class="noborder" colspan="3"><font
                                         class="small"><?php echo H($biblio->getCallNmbr1() . " " . $biblio->getCallNmbr2() . " " . $biblio->getCallNmbr3()); ?></font>
@@ -315,14 +319,15 @@ if ($biblioQ->getRowCount() > 1) {
             if ($biblio->getBarcodeNmbr() != "") {
                 ?>
                 <tr>
-                    <td class="primary"><font class="small"><b><?php echo $loc->getText("biblioSearchCopyBCode"); ?></b>: <?php echo H($biblio->getBarcodeNmbr()); ?>
+                    <td class="primary"><font
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCopyBCode" ); ?></strong>: <?php echo H( $biblio->getBarcodeNmbr() ); ?>
                             <?php if ($lookup == 'Y') { ?>
                                 <a href="javascript:returnLookup('barcodesearch','barcodeNmbr','<?php echo H(addslashes($biblio->getBarcodeNmbr())); ?>')"><?php echo $loc->getText("biblioSearchOutIn"); ?></a> |
                                 <a href="javascript:returnLookup('holdForm','holdBarcodeNmbr','<?php echo H(addslashes($biblio->getBarcodeNmbr())); ?>')"><?php echo $loc->getText("biblioSearchHold"); ?></a>
                             <?php } ?>
                         </font></td>
                     <td class="primary"><font
-                                class="small"><b><?php echo $loc->getText("biblioSearchCopyStatus"); ?></b>: <?php echo H($biblioStatusDm[$biblio->getStatusCd()]); ?>
+                                class="small"><strong><?php echo $loc->getText( "biblioSearchCopyStatus" ); ?></strong>: <?php echo H( $biblioStatusDm[ $biblio->getStatusCd() ] ); ?>
                         </font></td>
                 </tr>
             <?php } else { ?>

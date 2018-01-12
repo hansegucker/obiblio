@@ -25,7 +25,7 @@ function inputField($type, $name, $value = "", $attrs = NULL, $data = NULL)
         $pageErrors = array();
     }
     if (isset($pageErrors[$name])) {
-        $s .= '<font class="error">' . H($pageErrors[$name]) . '</font><br />';
+	    $s .= '<div class="red">' . H( $pageErrors[ $name ] ) . '</div>';
     }
     if (!$attrs) {
         $attrs = array();
@@ -51,7 +51,7 @@ function inputField($type, $name, $value = "", $attrs = NULL, $data = NULL)
             $s .= "</select>\n";
             break;
         case 'textarea':
-            $s .= '<textarea name="' . H($name) . '" ';
+	        $s .= '<textarea id="' . H( $name ) . '" name="' . H( $name ) . '" ';
             foreach ($attrs as $k => $v) {
                 $s .= H($k) . '="' . H($v) . '" ';
             }
@@ -59,6 +59,7 @@ function inputField($type, $name, $value = "", $attrs = NULL, $data = NULL)
             break;
         case 'checkbox':
             $s .= '<input type="checkbox" ';
+	        $s .= 'id="' . H( $name ) . '" ';
             $s .= 'name="' . H($name) . '" ';
             $s .= 'value="' . H($data) . '" ';
             if ($value == $data) {

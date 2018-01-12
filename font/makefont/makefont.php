@@ -11,7 +11,7 @@ function ReadMap($enc)
     $file = dirname(__FILE__) . '/' . strtolower($enc) . '.map';
     $a = file($file);
     if (empty($a))
-        die('<B>Error:</B> encoding not found: ' . $enc);
+	    die( '<strong>Error:</strong> encoding not found: ' . $enc );
     $cc2gn = array();
     foreach ($a as $l) {
         if ($l{0} == '!') {
@@ -107,7 +107,7 @@ function ReadAFM($file, &$map)
         //Order widths according to map
         for ($i = 0; $i <= 255; $i++) {
             if (!isset($widths[$map[$i]])) {
-                echo '<B>Warning:</B> character ' . $map[$i] . ' is missing<BR>';
+	            echo '<strong>Warning:</strong> character ' . $map[ $i ] . ' is missing<BR>';
                 $widths[$i] = $widths['.notdef'];
             } else
                 $widths[$i] = $widths[$map[$i]];
@@ -235,7 +235,7 @@ function CheckTTF($file)
     //Check if font license allows embedding
     $f = fopen($file, 'rb');
     if (!$f)
-        die('<B>Error:</B> Can\'t open ' . $file);
+	    die( '<strong>Error:</strong> Can\'t open ' . $file );
     //Extract number of tables
     fseek($f, 4, SEEK_CUR);
     $nb = ReadShort($f);
@@ -264,7 +264,7 @@ function CheckTTF($file)
     $e = ($fsType & 0x08) != 0;
     fclose($f);
     if ($rl and !$pp and !$e)
-        echo '<B>Warning:</B> font license does not allow embedding';
+	    echo '<strong>Warning:</strong> font license does not allow embedding';
 }
 
 /*******************************************************************************
@@ -286,7 +286,7 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
     } else
         $map = array();
     if (!file_exists($afmfile))
-        die('<B>Error:</B> AFM file not found: ' . $afmfile);
+	    die( '<strong>Error:</strong> AFM file not found: ' . $afmfile );
     $fm = ReadAFM($afmfile, $map);
     if ($enc)
         $diff = MakeFontEncoding($map);
@@ -301,10 +301,10 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
         elseif ($ext == 'pfb')
             $type = 'Type1';
         else
-            die('<B>Error:</B> unrecognized font file extension: ' . $ext);
+	        die( '<strong>Error:</strong> unrecognized font file extension: ' . $ext );
     } else {
         if ($type != 'TrueType' and $type != 'Type1')
-            die('<B>Error:</B> incorrect font type: ' . $type);
+	        die( '<strong>Error:</strong> incorrect font type: ' . $type );
     }
     //Start generation
     $s = '<?php' . "\n";
@@ -325,12 +325,12 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
     if ($fontfile) {
         //Embedded font
         if (!file_exists($fontfile))
-            die('<B>Error:</B> font file not found: ' . $fontfile);
+	        die( '<strong>Error:</strong> font file not found: ' . $fontfile );
         if ($type == 'TrueType')
             CheckTTF($fontfile);
         $f = fopen($fontfile, 'rb');
         if (!$f)
-            die('<B>Error:</B> Can\'t open ' . $fontfile);
+	        die( '<strong>Error:</strong> Can\'t open ' . $fontfile );
         $file = fread($f, filesize($fontfile));
         fclose($f);
         if ($type == 'Type1') {
@@ -342,7 +342,7 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
             }
             $pos = strpos($file, 'eexec');
             if (!$pos)
-                die('<B>Error:</B> font file does not seem to be valid Type1');
+	            die( '<strong>Error:</strong> font file does not seem to be valid Type1' );
             $size1 = $pos + 6;
             if ($header and ord($file{$size1}) == 128) {
                 //Strip second binary header
@@ -350,7 +350,7 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
             }
             $pos = strpos($file, '00000000');
             if (!$pos)
-                die('<B>Error:</B> font file does not seem to be valid Type1');
+	            die( '<strong>Error:</strong> font file does not seem to be valid Type1' );
             $size2 = $pos - $size1;
             $file = substr($file, 0, $size1 + $size2);
         }
@@ -361,7 +361,7 @@ function MakeFont($fontfile, $afmfile, $enc = 'cp1252', $patch = array(), $type 
             echo 'Font file compressed (' . $cmp . ')<BR>';
         } else {
             $s .= '$file=\'' . basename($fontfile) . "';\n";
-            echo '<B>Notice:</B> font file could not be compressed (zlib extension not available)<BR>';
+	        echo '<strong>Notice:</strong> font file could not be compressed (zlib extension not available)<BR>';
         }
         if ($type == 'Type1') {
             $s .= '$size1=' . $size1 . ";\n";

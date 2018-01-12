@@ -26,3 +26,28 @@ main {
     line-height: normal;
     text-align: right;
 }
+
+nav {
+    background-color: #da1f3d;
+}
+
+.brand-logo {
+    margin-left: 20px;
+}
+
+ul.sidenav.sidenav-fixed li.logo {
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+ul.sidenav.sidenav-fixed .brand-logo {
+    margin: 0;
+}
+
+ul.sidenav.sidenav-fixed li.logo img {
+    width: 250px;
+}
+
+ul.sidenav li.logout {
+    margin-top: 130px;
+}

@@ -33,7 +33,7 @@ if ($php_date != $mysql_date) {
     </pre>
     <?php
     if (ini_get('date.timezone') == get_cfg_var('date.timezone')) {
-        echo "<b>Suggestion:</b>";
+	    echo "<strong>Suggestion:</strong>";
         echo "<ul><li>Using <a href = \"../install/phpinfo.php\">phpinfo</a>, determine the Loaded Configuration File</li>";
         echo "<li>Find this file, use an editor (Notepad etc.) to change <i>date.timezone</i> and save</li>";
         echo "<li>Restart webserver and check install again</li></ul><br>";
