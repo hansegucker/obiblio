@@ -51,7 +51,7 @@ function inputField($type, $name, $value = "", $attrs = NULL, $data = NULL)
             $s .= "</select>\n";
             break;
         case 'textarea':
-	        $s .= '<textarea id="' . H( $name ) . '" name="' . H( $name ) . '" ';
+	        $s .= '<textarea class="materialize-textarea" id="' . H( $name ) . '" name="' . H( $name ) . '" ';
             foreach ($attrs as $k => $v) {
                 $s .= H($k) . '="' . H($v) . '" ';
             }

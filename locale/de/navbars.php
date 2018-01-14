@@ -78,7 +78,7 @@ $trans["catalogBibMarcEditFld"] = "\$text = 'Bearb. MARC Feld';";
 $trans["catalogCopyNew"] = "\$text = 'Neues Exem.';";
 $trans["catalogCopyEdit"] = "\$text = 'Bearb. Exem.';";
 $trans["catalogHolds"] = "\$text = 'Vorbestellungen';";
-$trans["catalogDelete"] = "\$text = 'Lösche';";
+$trans["catalogDelete"] = "\$text = 'Löschen';";
 $trans["catalogBibNewLike"] = "\$text = 'Ähnliches Neu';";
 $trans["catalogBibNew"] = "\$text = 'Neues Medium';";
 $trans["Upload Marc Data"] = "\$text = 'MARC Daten laden';";
@@ -107,14 +107,14 @@ $trans["memberaccount"] = "\$text = 'Benutzerkonto';";
 
 #Added
 
-$trans["memberInfo"] = "\$text = 'Benutzerinfos';";
-$trans["memberSearch"] = "\$text = 'Benutzersuche';";
-$trans["editInfo"] = "\$text = 'Bearb. Infos';";
-$trans["checkoutHistory"] = "\$text = 'Ausleih-Historie';";
-$trans["account"] = "\$text = 'Gebühren';";
-$trans["checkIn"] = "\$text = 'Medienrückgabe';";
-$trans["memberSearch"] = "\$text = 'Benutzersuche';";
-$trans["newMember"] = "\$text = 'Neuer Benutzer';";
+$trans["memberInfo"]          = "\$text = 'Benutzerinfos';";
+$trans["memberSearch"]        = "\$text = 'Benutzersuche';";
+$trans["editInfo"]            = "\$text = 'Bearbeiten';";
+$trans["checkoutHistory"]     = "\$text = 'Ausleih-Historie';";
+$trans["account"]             = "\$text = 'Gebühren';";
+$trans["checkIn"]             = "\$text = 'Medienrückgabe';";
+$trans["memberSearch"]        = "\$text = 'Benutzersuche';";
+$trans["newMember"]           = "\$text = 'Neuer Benutzer';";
 $trans["Offline Circulation"] = "\$text = 'Offline Ausleihe';";
 //$trans["account"]        	= "\$text = 'Account';";
 ?>

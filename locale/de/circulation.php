@@ -56,20 +56,20 @@ $trans["indexName"] = "\$text='Nachname beginnt mit';";
 #****************************************************************************
 #*  Translation text for page mbr_new_form.php, mbr_edit_form.php and mbr_fields.php, mbr_search.php
 #****************************************************************************
-$trans["Mailing Address:"] = "\$text='Postanschrift:';";
-$trans["mbrNewForm"] = "\$text='Füge neuen ';";
-$trans["mbrEditForm"] = "\$text='Bearbeite';";
-$trans["mbrFldsHeader"] = "\$text='Benutzer:';";
-$trans["mbrFldsCardNmbr"] = "\$text='Benutzernummer:';";
-$trans["mbrFldsLastName"] = "\$text='Nachname:';";
-$trans["mbrFldsFirstName"] = "\$text='Vorname:';";
-$trans["mbrFldsAddr1"] = "\$text='Adresszeile 1:';";
-$trans["mbrFldsAddr2"] = "\$text='Adresszeile 2:';";
-$trans["mbrFldsCity"] = "\$text='Stadt:';";
-$trans["mbrFldsStateZip"] = "\$text='Bundesland, PLZ:';";
-$trans["mbrFldsHomePhone"] = "\$text='Telefon (heim):';";
-$trans["mbrFldsWorkPhone"] = "\$text='Telefon (Arbeit):';";
-$trans["mbrFldsEmail"] = "\$text='E-Mail-Adresse:';";
+$trans["Mailing Address:"]    = "\$text='Postanschrift:';";
+$trans["mbrNewForm"]          = "\$text='Füge neuen ';";
+$trans["mbrEditForm"]         = "\$text='Bearbeite';";
+$trans["mbrFldsHeader"]       = "\$text='Benutzer';";
+$trans["mbrFldsCardNmbr"]     = "\$text='Benutzernummer:';";
+$trans["mbrFldsLastName"]     = "\$text='Nachname:';";
+$trans["mbrFldsFirstName"]    = "\$text='Vorname:';";
+$trans["mbrFldsAddr1"]        = "\$text='Adresszeile 1:';";
+$trans["mbrFldsAddr2"]        = "\$text='Adresszeile 2:';";
+$trans["mbrFldsCity"]         = "\$text='Stadt:';";
+$trans["mbrFldsStateZip"]     = "\$text='Bundesland, PLZ:';";
+$trans["mbrFldsHomePhone"]    = "\$text='Telefon (heim):';";
+$trans["mbrFldsWorkPhone"]    = "\$text='Telefon (Arbeit):';";
+$trans["mbrFldsEmail"]        = "\$text='E-Mail-Adresse:';";
 $trans["mbrFldsClassify"] = "\$text='Klassifikation:';";
 $trans["mbrFldsGrade"] = "\$text='Schulklasse:';";
 $trans["mbrFldsTeacher"] = "\$text='Klassenlehrer:';";
@@ -112,27 +112,27 @@ $trans["mbrViewPhoneHome"] = "\$text='H:';";
 $trans["mbrViewPhoneWork"] = "\$text='A:';";
 $trans["mbrViewEmail"] = "\$text='E-Mail-Adresse:';";
 $trans["mbrViewGrade"] = "\$text='Schulklasse:';";
-$trans["mbrViewTeacher"] = "\$text='Klassenlehrer:';";
-$trans["mbrViewMbrShipEnd"] = "\$text='bezahlt bis:';";
+$trans["mbrViewTeacher"]      = "\$text='Klassenlehrer:';";
+$trans["mbrViewMbrShipEnd"]   = "\$text='bezahlt bis:';";
 $trans["mbrViewMbrShipNoEnd"] = "\$text='unendlich/nicht benutzt';";
-$trans["mbrViewHead2"] = "\$text='Ausleih-Status:';";
-$trans["mbrViewStatColHdr1"] = "\$text='Medienart';";
-$trans["mbrViewStatColHdr2"] = "\$text='Anzahl';";
-$trans["mbrViewStatColHdr3"] = "\$text='Limits';";
-$trans["mbrViewStatColHdr4"] = "\$text='Ausleihe';";
-$trans["mbrViewStatColHdr5"] = "\$text='Verlängerung';";
-$trans["mbrViewHead3"] = "\$text='Medienausleihe';";
-$trans["mbrViewBarcode"] = "\$text='Mediennummer:';";
-$trans["mbrViewCheckOut"] = "\$text='Ausleihen';";
-$trans["mbrViewHead4"] = "\$text='Derzeit ausgeliehene Medien:';";
-$trans["mbrViewOutHdr1"] = "\$text='Ausgeliehen';";
-$trans["mbrViewOutHdr2"] = "\$text='Medienart';";
-$trans["mbrViewOutHdr3"] = "\$text='Mediennummer';";
-$trans["mbrViewOutHdr4"] = "\$text='Titel';";
-$trans["mbrViewOutHdr5"] = "\$text='Autor';";
-$trans["mbrViewOutHdr6"] = "\$text='Rückgabe';";
-$trans["mbrViewOutHdr7"] = "\$text='Überfällige<br>Tage';";
-$trans["mbrViewOutHdr8"] = "\$text='Verlängerungen';";
+$trans["mbrViewHead2"]        = "\$text='Ausleih-Status:';";
+$trans["mbrViewStatColHdr1"]  = "\$text='Medienart';";
+$trans["mbrViewStatColHdr2"]  = "\$text='Anzahl';";
+$trans["mbrViewStatColHdr3"]  = "\$text='Limits';";
+$trans["mbrViewStatColHdr4"]  = "\$text='Ausleihe';";
+$trans["mbrViewStatColHdr5"]  = "\$text='Verlängerung';";
+$trans["mbrViewHead3"]        = "\$text='Medienausleihe';";
+$trans["mbrViewBarcode"]      = "\$text='Mediennummer';";
+$trans["mbrViewCheckOut"]     = "\$text='Ausleihen';";
+$trans["mbrViewHead4"]        = "\$text='Derzeit ausgeliehene Medien:';";
+$trans["mbrViewOutHdr1"]      = "\$text='Ausgeliehen';";
+$trans["mbrViewOutHdr2"]      = "\$text='Medienart';";
+$trans["mbrViewOutHdr3"]      = "\$text='Mediennummer';";
+$trans["mbrViewOutHdr4"]      = "\$text='Titel';";
+$trans["mbrViewOutHdr5"]      = "\$text='Autor';";
+$trans["mbrViewOutHdr6"]      = "\$text='Rückgabe';";
+$trans["mbrViewOutHdr7"]      = "\$text='Überfällige<br>Tage';";
+$trans["mbrViewOutHdr8"]      = "\$text='Verlängerungen';";
 $trans["mbrViewOutHdr9"] = "\$text='Mal';";
 $trans["mbrViewOutHdr10"] = "\$text='Rückgabe';";
 $trans["To Shelving Cart"] = "\$text='In Eingangsablage';";
@@ -223,9 +223,9 @@ $trans["This item is not checked out or on hold."] = "\$text='Dieses Exemplar is
 #****************************************************************************
 #*  Translation text for page mbr_del_confirm.php
 #****************************************************************************
-$trans["mbrDelConfirmWarn"] = "\$text = 'Der Benutzer, %name%, hat %checkoutCount% Ausleihe(n) und %holdCount% Vorbestellung(en). Alle ausgeliehenen Medien müssen zurückgegeben und alle Vorbestellungen gelöscht werden, um den Benutzer zu löschen.';";
+$trans["mbrDelConfirmWarn"]   = "\$text = 'Der Benutzer, %name%, hat %checkoutCount% Ausleihe(n) und %holdCount% Vorbestellung(en). Alle ausgeliehenen Medien müssen zurückgegeben und alle Vorbestellungen gelöscht werden, um den Benutzer zu löschen.';";
 $trans["mbrDelConfirmReturn"] = "\$text = 'Kehre zur Benutzerinformation zurück';";
-$trans["mbrDelConfirmMsg"] = "\$text = 'Sind sie sicher, dass sie den Benutzer %name% löschen wollen? Dieses wird auch die Ausleihhistory von ihm löschen.';";
+$trans["mbrDelConfirmMsg"]    = "\$text = 'Sind sie sicher, dass sie den Benutzer %name% löschen wollen? Dieses wird auch die Ausleihhistorie von ihm löschen.';";
 
 #****************************************************************************
 #*  Translation text for page mbr_del.php
@@ -236,14 +236,14 @@ $trans["mbrDelReturn"] = "\$text='kehre zur Benutzersuche zurück';";
 #****************************************************************************
 #*  Translation text for page mbr_history.php
 #****************************************************************************
-$trans["mbrHistoryHead1"] = "\$text='Benutzer Ausleihhistory:';";
-$trans["mbrHistoryNoHist"] = "\$text='Keine History gefunden.';";
-$trans["mbrHistoryHdr1"] = "\$text='Mediennummer';";
-$trans["mbrHistoryHdr2"] = "\$text='Titel';";
-$trans["mbrHistoryHdr3"] = "\$text='Autor';";
-$trans["mbrHistoryHdr4"] = "\$text='Aktueller Status';";
-$trans["mbrHistoryHdr5"] = "\$text='Datum der Statusänderung';";
-$trans["mbrHistoryHdr6"] = "\$text='Rückgabedatum';";
+$trans["mbrHistoryHead1"]  = "\$text='Ausleihhistorie des Benutzers:';";
+$trans["mbrHistoryNoHist"] = "\$text='Keine Historie gefunden.';";
+$trans["mbrHistoryHdr1"]   = "\$text='Mediennummer';";
+$trans["mbrHistoryHdr2"]   = "\$text='Titel';";
+$trans["mbrHistoryHdr3"]   = "\$text='Autor';";
+$trans["mbrHistoryHdr4"]   = "\$text='Aktueller Status';";
+$trans["mbrHistoryHdr5"]   = "\$text='Datum der Statusänderung';";
+$trans["mbrHistoryHdr6"]   = "\$text='Rückgabedatum';";
 
 #****************************************************************************
 #*  Translation text for page mbr_account.php
