@@ -225,7 +225,7 @@ $trans["This item is not checked out or on hold."] = "\$text='Dieses Exemplar is
 #****************************************************************************
 $trans["mbrDelConfirmWarn"]   = "\$text = 'Der Benutzer, %name%, hat %checkoutCount% Ausleihe(n) und %holdCount% Vorbestellung(en). Alle ausgeliehenen Medien müssen zurückgegeben und alle Vorbestellungen gelöscht werden, um den Benutzer zu löschen.';";
 $trans["mbrDelConfirmReturn"] = "\$text = 'Kehre zur Benutzerinformation zurück';";
-$trans["mbrDelConfirmMsg"]    = "\$text = 'Sind sie sicher, dass sie den Benutzer %name% löschen wollen? Dieses wird auch die Ausleihhistorie von ihm löschen.';";
+$trans["mbrDelConfirmMsg"]    = "\$text = 'Sind Sie sicher, dass sie den Benutzer %name% löschen wollen? Dies wird auch die Ausleihhistorie des Benutzers löschen.';";
 
 #****************************************************************************
 #*  Translation text for page mbr_del.php
@@ -296,17 +296,17 @@ $trans["NotAuth"] = "\$text = 'Sie sind nicht berechtigt, diese Funktion im Ausl
 #****************************************************************************
 #*  Translation text for page offline.php
 #****************************************************************************
-$trans["Upload Offline Circulation"] = "\$text='Offline Ausleihe hochladen';";
-$trans["Upload"] = "\$text='Hochladen';";
-$trans["Date:"] = "\$text='Datum:';";
-$trans["Command File:"] = "\$text='Kommandodatei:';";
-$trans["Bad upload file: Expected a command code, but didn't get one"] = "\$text='Fehlerhafte Datei: Kommandocode erwartet, aber keinen erhalten';";
-$trans["Couldn't check out %item% to %member%: %error%"] = "\$text='Konnte Exemplar %item% an %member% nicht ausleihen: %error%';";
-$trans["Couldn't check in %item%: %error%"] = "\$text='Konnte Exemplar %item% nicht zurücknehmen: %error%';";
-$trans["Unrecognized command code: %cmd%"] = "\$text='Nicht erkanntes Kommando: %cmd%';";
-$trans["Command Sheet"] = "\$text='Kommandoübersichtsblatt';";
+$trans["Upload Offline Circulation"]                                                                                                                               = "\$text='Offline-Ausleihe hochladen';";
+$trans["Upload"]                                                                                                                                                   = "\$text='Hochladen';";
+$trans["Date:"]                                                                                                                                                    = "\$text='Datum:';";
+$trans["Command File:"]                                                                                                                                            = "\$text='Kommandodatei:';";
+$trans["Bad upload file: Expected a command code, but didn't get one"]                                                                                             = "\$text='Fehlerhafte Datei: Kommandocode erwartet, aber keinen erhalten';";
+$trans["Couldn't check out %item% to %member%: %error%"]                                                                                                           = "\$text='Konnte Exemplar %item% an %member% nicht ausleihen: %error%';";
+$trans["Couldn't check in %item%: %error%"]                                                                                                                        = "\$text='Konnte Exemplar %item% nicht zurücknehmen: %error%';";
+$trans["Unrecognized command code: %cmd%"]                                                                                                                         = "\$text='Nicht erkanntes Kommando: %cmd%';";
+$trans["Command Sheet"]                                                                                                                                            = "\$text='Kommandoübersichtsblatt';";
 $trans["Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice."] = "\$text='Aktionen die keinen Fehler produzieren wurden ausgeführt. Passen Sie auf, dass Sie keine Datei doppelt hochladen, da sonst einige Ausleihen doppelt erfasst werden.';";
-$trans["Errors"] = "\$text='Fehler';";
-$trans["Offline Upload Successful."] = "\$text='Offline Hochladeaktion erfolgreich.';";
+$trans["Errors"]                                                                                                                                                   = "\$text='Fehler';";
+$trans["Offline Upload Successful."]                                                                                                                               = "\$text='Offline-Hochladeaktion erfolgreich.';";
 
 ?>

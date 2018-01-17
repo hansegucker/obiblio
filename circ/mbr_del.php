@@ -3,20 +3,20 @@
  * See the file COPYRIGHT.html for more details.
  */
 
-require_once("../shared/common.php");
-$tab = "circulation";
-$restrictToMbrAuth = TRUE;
-$nav = "deletedone";
-$restrictInDemo = true;
-require_once("../shared/logincheck.php");
-require_once("../classes/MemberQuery.php");
-require_once("../classes/BiblioStatusHistQuery.php");
-require_once("../classes/MemberAccountQuery.php");
-require_once("../functions/errorFuncs.php");
-require_once("../classes/Localize.php");
-$loc = new Localize(OBIB_LOCALE, $tab);
+require_once( "../shared/common.php" );
+$tab               = "circulation";
+$restrictToMbrAuth = true;
+$nav               = "deletedone";
+$restrictInDemo    = true;
+require_once( "../shared/logincheck.php" );
+require_once( "../classes/MemberQuery.php" );
+require_once( "../classes/BiblioStatusHistQuery.php" );
+require_once( "../classes/MemberAccountQuery.php" );
+require_once( "../functions/errorFuncs.php" );
+require_once( "../classes/Localize.php" );
+$loc = new Localize( OBIB_LOCALE, $tab );
 
-$mbrid = $_GET["mbrid"];
+$mbrid   = $_GET["mbrid"];
 $mbrName = $_GET["name"];
 
 #**************************************************************************
@@ -24,7 +24,7 @@ $mbrName = $_GET["name"];
 #**************************************************************************
 $mbrQ = new MemberQuery();
 $mbrQ->connect();
-$mbrQ->delete($mbrid);
+$mbrQ->delete( $mbrid );
 $mbrQ->close();
 
 #**************************************************************************
@@ -32,13 +32,13 @@ $mbrQ->close();
 #**************************************************************************
 $histQ = new BiblioStatusHistQuery();
 $histQ->connect();
-if ($histQ->errorOccurred()) {
-    $histQ->close();
-    displayErrorPage($histQ);
+if ( $histQ->errorOccurred() ) {
+	$histQ->close();
+	displayErrorPage( $histQ );
 }
-if (!$histQ->deleteByMbrid($mbrid)) {
-    $histQ->close();
-    displayErrorPage($histQ);
+if ( ! $histQ->deleteByMbrid( $mbrid ) ) {
+	$histQ->close();
+	displayErrorPage( $histQ );
 }
 $histQ->close();
 
@@ -47,24 +47,30 @@ $histQ->close();
 #**************************************************************************
 $transQ = new MemberAccountQuery();
 $transQ->connect();
-if ($transQ->errorOccurred()) {
-    $transQ->close();
-    displayErrorPage($transQ);
+if ( $transQ->errorOccurred() ) {
+	$transQ->close();
+	displayErrorPage( $transQ );
 }
-$trans = $transQ->delete($mbrid);
-if ($transQ->errorOccurred()) {
-    $transQ->close();
-    displayErrorPage($transQ);
+$trans = $transQ->delete( $mbrid );
+if ( $transQ->errorOccurred() ) {
+	$transQ->close();
+	displayErrorPage( $transQ );
 }
 $transQ->close();
 
 #**************************************************************************
 #*  Show success page
 #**************************************************************************
-require_once("../shared/header.php");
-echo $loc->getText("mbrDelSuccess", array("name" => $mbrName));
-
+require_once( "../shared/header.php" );
 ?>
-<br><br>
-<a href="../circ/index.php"><?php echo $loc->getText("mbrDelReturn"); ?></a>
-<?php require_once("../shared/footer.php"); ?>
+
+<p class="flow-text">
+	<?php
+	echo $loc->getText( "mbrDelSuccess", array( "name" => $mbrName ) );
+	?>
+</p>
+
+<a class="waves-effect waves-light btn" href="../circ/index.php">
+	<?php echo $loc->getText( "mbrDelReturn" ); ?>
+</a>
+<?php require_once( "../shared/footer.php" ); ?>

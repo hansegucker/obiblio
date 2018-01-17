@@ -115,6 +115,6 @@ $trans["account"]             = "\$text = 'Gebühren';";
 $trans["checkIn"]             = "\$text = 'Medienrückgabe';";
 $trans["memberSearch"]        = "\$text = 'Benutzersuche';";
 $trans["newMember"]           = "\$text = 'Neuer Benutzer';";
-$trans["Offline Circulation"] = "\$text = 'Offline Ausleihe';";
+$trans["Offline Circulation"] = "\$text = 'Offline-Ausleihe';";
 //$trans["account"]        	= "\$text = 'Account';";
 ?>
