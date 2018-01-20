@@ -195,10 +195,10 @@ if ($mbrQ->getRowCount() == 0) {
                     <?php echo H($mbr->getLastName()); ?>, <?php echo H($mbr->getFirstName()); ?>
                 </a>
             </span>
-            <?php
-            if ($mbr->getAddress() != "")
-                echo str_replace("\n", "<br />", H($mbr->getAddress())) . '<br />';
-            ?>
+            <!--            --><?php
+	        //            if ($mbr->getAddress() != "")
+	        //                echo str_replace("\n", "<br />", H($mbr->getAddress())) . '<br />';
+	        //            ?>
             <p>
                 <strong><?php echo $loc->getText( "mbrsearchCardNumber" ); ?></strong>
                 <?php echo H($mbr->getBarcodeNmbr()); ?><br>
