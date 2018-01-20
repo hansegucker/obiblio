@@ -56,32 +56,32 @@ $trans["indexName"] = "\$text='Nachname beginnt mit';";
 #****************************************************************************
 #*  Translation text for page mbr_new_form.php, mbr_edit_form.php and mbr_fields.php, mbr_search.php
 #****************************************************************************
-$trans["Mailing Address:"]    = "\$text='Postanschrift:';";
-$trans["mbrNewForm"]          = "\$text='Füge neuen ';";
-$trans["mbrEditForm"]         = "\$text='Bearbeite';";
-$trans["mbrFldsHeader"]       = "\$text='Benutzer';";
-$trans["mbrFldsCardNmbr"]     = "\$text='Benutzernummer:';";
-$trans["mbrFldsLastName"]     = "\$text='Nachname:';";
-$trans["mbrFldsFirstName"]    = "\$text='Vorname:';";
-$trans["mbrFldsAddr1"]        = "\$text='Adresszeile 1:';";
-$trans["mbrFldsAddr2"]        = "\$text='Adresszeile 2:';";
-$trans["mbrFldsCity"]         = "\$text='Stadt:';";
-$trans["mbrFldsStateZip"]     = "\$text='Bundesland, PLZ:';";
-$trans["mbrFldsHomePhone"]    = "\$text='Telefon (heim):';";
-$trans["mbrFldsWorkPhone"]    = "\$text='Telefon (Arbeit):';";
-$trans["mbrFldsEmail"]        = "\$text='E-Mail-Adresse:';";
-$trans["mbrFldsClassify"] = "\$text='Klassifikation:';";
-$trans["mbrFldsGrade"] = "\$text='Schulklasse:';";
-$trans["mbrFldsTeacher"] = "\$text='Klassenlehrer:';";
-$trans["mbrFldsMbrShip"] = "\$text='bezahlt bis (jjjj-mm-dd):';";
-$trans["mbrFldsSubmit"] = "\$text='übermitteln';";
-$trans["mbrFldsCancel"] = "\$text='Abbrechen';";
-$trans["mbrsearchResult"] = "\$text='Ergebnisseiten: ';";
-$trans["mbrsearchprev"] = "\$text='vor';";
-$trans["mbrsearchnext"] = "\$text='weiter';";
-$trans["First"] = "\$text='Anfang';";
-$trans["Last"] = "\$text='Ende';";
-$trans["mbrsearchNoResults"] = "\$text='Keine Ergebnisse gefunden.';";
+$trans["Mailing Address:"]      = "\$text='Adresse';";
+$trans["mbrNewForm"]            = "\$text='Füge neuen ';";
+$trans["mbrEditForm"]           = "\$text='Bearbeite';";
+$trans["mbrFldsHeader"]         = "\$text='Benutzer';";
+$trans["mbrFldsCardNmbr"]       = "\$text='Benutzernummer';";
+$trans["mbrFldsLastName"]       = "\$text='Nachname';";
+$trans["mbrFldsFirstName"]      = "\$text='Vorname';";
+$trans["mbrFldsAddr1"]          = "\$text='Adresszeile 1';";
+$trans["mbrFldsAddr2"]          = "\$text='Adresszeile 2';";
+$trans["mbrFldsCity"]           = "\$text='Stadt';";
+$trans["mbrFldsStateZip"]       = "\$text='Bundesland, PLZ';";
+$trans["mbrFldsHomePhone"]      = "\$text='Telefon (heim)';";
+$trans["mbrFldsWorkPhone"]      = "\$text='Telefon (Arbeit)';";
+$trans["mbrFldsEmail"]          = "\$text='E-Mail-Adresse';";
+$trans["mbrFldsClassify"]       = "\$text='Klassifikation';";
+$trans["mbrFldsGrade"]          = "\$text='Schulklasse';";
+$trans["mbrFldsTeacher"]        = "\$text='Klassenlehrer';";
+$trans["mbrFldsMbrShip"]        = "\$text='bezahlt bis (jjjj-mm-dd):';";
+$trans["mbrFldsSubmit"]         = "\$text='übermitteln';";
+$trans["mbrFldsCancel"]         = "\$text='Abbrechen';";
+$trans["mbrsearchResult"]       = "\$text='Ergebnisseiten: ';";
+$trans["mbrsearchprev"]         = "\$text='vor';";
+$trans["mbrsearchnext"]         = "\$text='weiter';";
+$trans["First"]                 = "\$text='Anfang';";
+$trans["Last"]                  = "\$text='Ende';";
+$trans["mbrsearchNoResults"]    = "\$text='Keine Ergebnisse gefunden.';";
 $trans["mbrsearchFoundResults"] = "\$text=' Ergebnisse gefunden.';";
 $trans["mbrsearchSearchResults"] = "\$text='Suchergebnisse';";
 $trans["mbrsearchCardNumber"] = "\$text='Benutzernummer:';";
@@ -209,7 +209,7 @@ $trans["checkinErr1"] = "\$text='Keine Medien wurden ausgewählt.';";
 #*  Translation text for page hold_message.php
 #****************************************************************************
 $trans["holdMessageHdr"]  = "\$text='Medium wurde vorbestellt!';";
-$trans["holdMessageMsg1"] = "\$text='Das Medium mit der Mediennummer %barcode% welches Sie eincecken wollen wurde vorbestellt. <strong>Bitte das Medium ins Vorbestellfach legen und nicht in die Eingangsablage.</strong> Der Statuscode des Medium wurde auf vorbestellt geändert.';";
+$trans["holdMessageMsg1"] = "\$text='Das Medium mit der Mediennummer %barcode%, welches Sie einchecken wollen, wurde vorbestellt. <strong>Bitte das Medium ins Vorbestellfach legen und nicht in die Eingangsablage.</strong> Der Statuscode des Medium wurde auf vorbestellt geändert.';";
 $trans["holdMessageMsg2"] = "\$text='Kehre zur Medienrückgabe zurück.';";
 
 #****************************************************************************
@@ -224,7 +224,7 @@ $trans["This item is not checked out or on hold."] = "\$text='Dieses Exemplar is
 #*  Translation text for page mbr_del_confirm.php
 #****************************************************************************
 $trans["mbrDelConfirmWarn"]   = "\$text = 'Der Benutzer, %name%, hat %checkoutCount% Ausleihe(n) und %holdCount% Vorbestellung(en). Alle ausgeliehenen Medien müssen zurückgegeben und alle Vorbestellungen gelöscht werden, um den Benutzer zu löschen.';";
-$trans["mbrDelConfirmReturn"] = "\$text = 'Kehre zur Benutzerinformation zurück';";
+$trans["mbrDelConfirmReturn"] = "\$text = 'Zur Benutzerinformation zurückkehren';";
 $trans["mbrDelConfirmMsg"]    = "\$text = 'Sind Sie sicher, dass sie den Benutzer %name% löschen wollen? Dies wird auch die Ausleihhistorie des Benutzers löschen.';";
 
 #****************************************************************************
@@ -248,20 +248,20 @@ $trans["mbrHistoryHdr6"]   = "\$text='Rückgabedatum';";
 #****************************************************************************
 #*  Translation text for page mbr_account.php
 #****************************************************************************
-$trans["mbrAccountLabel"] = "\$text='Füge eine Transaktion hinzu:';";
-$trans["mbrAccountTransTyp"] = "\$text='Transaktions Typ:';";
-$trans["mbrAccountAmount"] = "\$text='Betrag:';";
-$trans["mbrAccountDesc"] = "\$text='Beschreibung:';";
-$trans["mbrAccountHead1"] = "\$text='Transaktionen des Benutzers:';";
-$trans["mbrAccountNoTrans"] = "\$text='Keine Transaktionen gefunden.';";
-$trans["mbrAccountOpenBal"] = "\$text='Offener Betrag';";
-$trans["mbrAccountDel"] = "\$text='Lösche';";
-$trans["mbrAccountHdr1"] = "\$text='Funktion';";
-$trans["mbrAccountHdr2"] = "\$text='Datum';";
-$trans["mbrAccountHdr3"] = "\$text='Trans. Typ';";
-$trans["mbrAccountHdr4"] = "\$text='Beschreibung';";
-$trans["mbrAccountHdr5"] = "\$text='Betrag';";
-$trans["mbrAccountHdr6"] = "\$text='Kontostand';";
+$trans["mbrAccountLabel"]    = "\$text='Transaktion hinzufügen';";
+$trans["mbrAccountTransTyp"] = "\$text='Transaktions-Typ';";
+$trans["mbrAccountAmount"]   = "\$text='Betrag';";
+$trans["mbrAccountDesc"]     = "\$text='Beschreibung';";
+$trans["mbrAccountHead1"]    = "\$text='Transaktionen des Benutzers';";
+$trans["mbrAccountNoTrans"]  = "\$text='Keine Transaktionen gefunden.';";
+$trans["mbrAccountOpenBal"]  = "\$text='Noch zu zahlender Betrag';";
+$trans["mbrAccountDel"]      = "\$text='Löschen';";
+$trans["mbrAccountHdr1"]     = "\$text='Funktion';";
+$trans["mbrAccountHdr2"]     = "\$text='Datum';";
+$trans["mbrAccountHdr3"]     = "\$text='Typ';";
+$trans["mbrAccountHdr4"]     = "\$text='Beschreibung';";
+$trans["mbrAccountHdr5"]     = "\$text='Betrag';";
+$trans["mbrAccountHdr6"]     = "\$text='Kontostand';";
 
 #****************************************************************************
 #*  Translation text for page mbr_transaction.php
