@@ -338,7 +338,7 @@ require_once( "../shared/header.php" );
        class="waves-effect waves-light btn green">
 		<?php echo $loc->getText( "Renew All" ); ?>
     </a>
-    <table class="striped">
+    <table>
         <thead>
         <tr>
             <th>
@@ -452,7 +452,7 @@ require_once( "../shared/header.php" );
     <h5>
 		<?php echo $loc->getText( "mbrViewHead6" ); ?>
     </h5>
-    <table class="striped">
+    <table>
         <thead>
         <tr>
             <th>
@@ -556,7 +556,7 @@ require_once( "../shared/header.php" );
 		<?php echo $loc->getText( "mbrViewHead2" ); ?>
     </h5>
 
-    <table class="striped">
+    <table>
         <thead>
         <tr>
             <th>

@@ -25,7 +25,7 @@ function inputField($type, $name, $value = "", $attrs = NULL, $data = NULL)
         $pageErrors = array();
     }
     if (isset($pageErrors[$name])) {
-	    $s .= '<div class="red">' . H( $pageErrors[ $name ] ) . '</div>';
+	    $s .= '<div class="red-text">' . H( $pageErrors[ $name ] ) . '</div>';
     }
     if (!$attrs) {
         $attrs = array();

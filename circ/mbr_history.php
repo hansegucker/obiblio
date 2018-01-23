@@ -58,25 +58,28 @@ if (!$histQ->queryByMbrid($mbrid)) {
 require_once("../shared/header.php");
 ?>
 
-<h1><?php echo $loc->getText("mbrHistoryHead1"); ?></h1>
-<table class="primary">
+<h3>
+	<?php echo $loc->getText( "mbrHistoryHead1" ); ?>
+</h3>
+
+<table>
     <tr>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr1"); ?>
         </th>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr2"); ?>
         </th>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr3"); ?>
         </th>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr4"); ?>
         </th>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr5"); ?>
         </th>
-        <th valign="top" nowrap="yes" align="left">
+        <th>
             <?php echo $loc->getText("mbrHistoryHdr6"); ?>
         </th>
     </tr>
@@ -85,7 +88,7 @@ require_once("../shared/header.php");
     if ($histQ->getRowCount() == 0) {
         ?>
         <tr>
-            <td class="primary" align="center" colspan="6">
+            <td>
                 <?php echo $loc->getText("mbrHistoryNoHist"); ?>
             </td>
         </tr>
@@ -94,22 +97,24 @@ require_once("../shared/header.php");
         while ($hist = $histQ->fetchRow()) {
             ?>
             <tr>
-                <td class="primary" valign="top">
+                <td>
                     <?php echo H($hist->getBiblioBarcodeNmbr()); ?>
                 </td>
-                <td class="primary" valign="top">
-                    <a href="../shared/biblio_view.php?bibid=<?php echo HURL($hist->getBibid()); ?>&amp;tab=cataloging"><?php echo H($hist->getTitle()); ?></a>
+                <td>
+                    <a href="../shared/biblio_view.php?bibid=<?php echo HURL( $hist->getBibid() ); ?>&amp;tab=cataloging">
+			            <?php echo H( $hist->getTitle() ); ?>
+                    </a>
                 </td>
-                <td class="primary" valign="top">
+                <td>
                     <?php echo H($hist->getAuthor()); ?>
                 </td>
-                <td class="primary" valign="top">
+                <td>
                     <?php echo H($biblioStatusDm[$hist->getStatusCd()]); ?>
                 </td>
-                <td class="primary" valign="top">
+                <td>
                     <?php echo H($hist->getStatusBeginDt()); ?>
                 </td>
-                <td class="primary" valign="top">
+                <td>
                     <?php echo H($hist->getDueBackDt()); ?>
                 </td>
             </tr>

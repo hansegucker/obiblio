@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/circ/mbr_account.php" afterPath="$PROJECT_DIR$/circ/mbr_account.php" />
-      <change beforePath="$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php" afterPath="$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php" />
+      <change beforePath="$PROJECT_DIR$/circ/checkin_form.php" afterPath="$PROJECT_DIR$/circ/checkin_form.php" />
+      <change beforePath="$PROJECT_DIR$/circ/index.php" afterPath="$PROJECT_DIR$/circ/index.php" />
+      <change beforePath="$PROJECT_DIR$/circ/mbr_history.php" afterPath="$PROJECT_DIR$/circ/mbr_history.php" />
+      <change beforePath="$PROJECT_DIR$/circ/mbr_view.php" afterPath="$PROJECT_DIR$/circ/mbr_view.php" />
+      <change beforePath="$PROJECT_DIR$/functions/inputFuncs.php" afterPath="$PROJECT_DIR$/functions/inputFuncs.php" />
       <change beforePath="$PROJECT_DIR$/locale/de/circulation.php" afterPath="$PROJECT_DIR$/locale/de/circulation.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,61 +19,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="inputFuncs.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/inputFuncs.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mbr_account.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/mbr_account.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="142" column="61" lean-forward="false" selection-start-line="142" selection-start-column="61" selection-end-line="142" selection-end-column="61" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mbr_transaction.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/mbr_transaction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mbr_transaction_del.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-250">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mbr_transaction_del_confirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circulation.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="circulation.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/de/circulation.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state relative-caret-position="-236">
+              <caret line="205" column="66" lean-forward="false" selection-start-line="205" selection-start-column="66" selection-end-line="205" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mbr_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2992">
+              <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="65" />
+              <folding>
+                <marker date="1516445055792" expanded="true" signature="11945:11951" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="11951:11957" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="11957:11963" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12032:12038" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12038:12044" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12044:12050" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12119:12125" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12125:12131" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12131:12137" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12208:12214" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12214:12220" ph=" " />
+                <marker date="1516445055792" expanded="true" signature="12220:12226" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checkin_form.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/circ/checkin_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -79,8 +65,8 @@
       <file leaf-file-name="navbars.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="719">
-              <caret line="115" column="57" lean-forward="false" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
+            <state relative-caret-position="1683">
+              <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -98,15 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>indexcard</find>
-      <find>ausleih-history</find>
-      <find>class=&quot;alt1&quot;</find>
-      <find>suchergeb</find>
-      <find>waves-effect waves-teal btn-flat</find>
-      <find>&lt;/div</find>
-      <find>&lt;b&gt;</find>
-      <find>&lt;/b&gt;</find>
-      <find>function printI</find>
       <find>inputField</find>
       <find>&lt;7strong&gt;</find>
       <find>&quot;red</find>
@@ -128,6 +105,15 @@
       <find>geb</find>
       <find>hr</find>
       <find>prints</find>
+      <find>class=&quot;striped&quot;</find>
+      <find>class=&quot;red&quot;</find>
+      <find>&quot;red&quot;</find>
+      <find>transaktion</find>
+      <find>derzeitig</find>
+      <find>mbrViewOutHdr7</find>
+      <find>checkinFormBarcode</find>
+      <find>Benutzer hat</find>
+      <find>font</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -165,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/classes/Rpt.php" />
-        <option value="$PROJECT_DIR$/classes/Table.php" />
         <option value="$PROJECT_DIR$/COPYRIGHT.html" />
         <option value="$PROJECT_DIR$/shared/biblio_view.php" />
         <option value="$PROJECT_DIR$/reports/report_criteria.php" />
@@ -199,14 +183,11 @@
         <option value="$PROJECT_DIR$/locale/de/shared.php" />
         <option value="$PROJECT_DIR$/shared/loginform.php" />
         <option value="$PROJECT_DIR$/home/index.php" />
-        <option value="$PROJECT_DIR$/circ/index.php" />
         <option value="$PROJECT_DIR$/shared/header.php" />
         <option value="$PROJECT_DIR$/navbars/circulation.php" />
         <option value="$PROJECT_DIR$/navbars/home.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/circ/mbr_view.php" />
         <option value="$PROJECT_DIR$/circ/mbr_print_checkouts.php" />
-        <option value="$PROJECT_DIR$/functions/inputFuncs.php" />
         <option value="$PROJECT_DIR$/shared/header_top.php" />
         <option value="$PROJECT_DIR$/circ/mbr_fields.php" />
         <option value="$PROJECT_DIR$/circ/mbr_del_confirm.php" />
@@ -215,7 +196,12 @@
         <option value="$PROJECT_DIR$/circ/mbr_search.php" />
         <option value="$PROJECT_DIR$/circ/mbr_account.php" />
         <option value="$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php" />
+        <option value="$PROJECT_DIR$/circ/mbr_view.php" />
+        <option value="$PROJECT_DIR$/circ/mbr_history.php" />
+        <option value="$PROJECT_DIR$/circ/index.php" />
+        <option value="$PROJECT_DIR$/functions/inputFuncs.php" />
         <option value="$PROJECT_DIR$/locale/de/circulation.php" />
+        <option value="$PROJECT_DIR$/circ/checkin_form.php" />
       </list>
     </option>
   </component>
@@ -251,7 +237,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,6 +289,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -376,7 +362,8 @@
       <workItem from="1515943833020" duration="2961000" />
       <workItem from="1516212535199" duration="1514000" />
       <workItem from="1516442857302" duration="156000" />
-      <workItem from="1516443062972" duration="1745000" />
+      <workItem from="1516443062972" duration="3650000" />
+      <workItem from="1516713930322" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -567,11 +554,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516442984785</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Redesign member account [MAT]">
+      <created>1516444826859</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1516444826859</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71578000" />
+    <option name="totallyTimeSpent" value="74116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,7 +580,7 @@
     <frame x="-3" y="33" width="1372" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2689394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311148" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30116472" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
@@ -615,7 +609,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Update class constructors (look at issue #1)" />
     <MESSAGE value="Rename Error class to OError (reason is that the same class exist already on a php installation at default)" />
     <MESSAGE value="Close issue #3" />
     <MESSAGE value="Close issue #5 | Reformat code in Query, StaffQuery, login, loginform" />
@@ -640,7 +633,8 @@
     <MESSAGE value="Redesign user edit form [MAT]" />
     <MESSAGE value="Redesign member deletion [MAT]" />
     <MESSAGE value="Disable &quot;show address&quot; in member search (Comment out)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Disable &quot;show address&quot; in member search (Comment out)" />
+    <MESSAGE value="Redesign member account [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign member account [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -649,13 +643,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/locale/de/sql/theme.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/sql/state_dm.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -874,13 +861,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circ/checkin_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -892,13 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -937,50 +910,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="403" column="28" lean-forward="false" selection-start-line="403" selection-start-column="25" selection-end-line="403" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
           <caret line="199" column="27" lean-forward="false" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/inputFuncs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="136" column="30" lean-forward="false" selection-start-line="136" selection-start-column="30" selection-end-line="136" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="115" column="57" lean-forward="false" selection-start-line="115" selection-start-column="57" selection-end-line="115" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_account.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
-          <caret line="142" column="61" lean-forward="false" selection-start-line="142" selection-start-column="61" selection-end-line="142" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="143" column="61" lean-forward="false" selection-start-line="143" selection-start-column="61" selection-end-line="143" selection-end-column="61" />
         </state>
       </provider>
     </entry>
@@ -988,22 +928,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/inputFuncs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="104" column="58" lean-forward="false" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/circulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="67" column="43" lean-forward="false" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        <state relative-caret-position="-236">
+          <caret line="205" column="66" lean-forward="false" selection-start-line="205" selection-start-column="66" selection-end-line="205" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2992">
+          <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="65" />
+          <folding>
+            <marker date="1516445055792" expanded="true" signature="11945:11951" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="11951:11957" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="11957:11963" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12032:12038" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12038:12044" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12044:12050" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12119:12125" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12125:12131" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12131:12137" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12208:12214" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12214:12220" ph=" " />
+            <marker date="1516445055792" expanded="true" signature="12220:12226" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/checkin_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
           <folding />
         </state>
       </provider>

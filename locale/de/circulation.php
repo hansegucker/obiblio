@@ -131,7 +131,7 @@ $trans["mbrViewOutHdr3"]      = "\$text='Mediennummer';";
 $trans["mbrViewOutHdr4"]      = "\$text='Titel';";
 $trans["mbrViewOutHdr5"]      = "\$text='Autor';";
 $trans["mbrViewOutHdr6"]      = "\$text='Rückgabe';";
-$trans["mbrViewOutHdr7"]      = "\$text='Überfällige<br>Tage';";
+$trans["mbrViewOutHdr7"] = "\$text='Überfällige Tage';";
 $trans["mbrViewOutHdr8"]      = "\$text='Verlängerungen';";
 $trans["mbrViewOutHdr9"] = "\$text='Mal';";
 $trans["mbrViewOutHdr10"] = "\$text='Rückgabe';";
@@ -150,7 +150,7 @@ $trans["mbrViewHoldHdr6"] = "\$text='Autor';";
 $trans["mbrViewHoldHdr7"] = "\$text='Status';";
 $trans["mbrViewHoldHdr8"] = "\$text='Rückgabe';";
 $trans["mbrViewNoHolds"] = "\$text='Derzeit keine Medien vorbestellt.';";
-$trans["mbrViewBalMsg"] = "\$text='Bemerkung: Benutzer hat ausstehende Gebühren von %bal%.';";
+$trans["mbrViewBalMsg"] = "\$text='Hinweis: Der Benutzer hat ausstehende Gebühren von %bal%.';";
 $trans["mbrViewShipEnd"] = "\$text='Achtung: Die Mitgliedschaft des Mitglieds ist abgelaufen!';";
 $trans["mbrPrintCheckouts"] = "\$text='Ausgeliehene Medien drucken';";
 $trans["Renew All"] = "\$text='Alle Medien verlängern';";
@@ -185,25 +185,25 @@ $trans["shelvingCartTrans"] = "\$text='Versäumnisgebühr (Nummer=%barcode%)';";
 #****************************************************************************
 #*  Translation text for page checkin_form.php
 #****************************************************************************
-$trans["checkinFormHdr1"] = "\$text='Medienrückgabe:';";
-$trans["checkinFormBarcode"] = "\$text='Mediennummer:';";
-$trans["checkinFormShelveButton"] = "\$text='Stelle in Eingangsablage';";
-$trans["checkinFormCheckinLink1"] = "\$text='Augewählte Medien einbuchen';";
-$trans["checkinFormCheckinLink2"] = "\$text='Alle Medien einbuchen';";
-$trans["checkinFormHdr2"] = "\$text='derzeitiger Inhalt der Eingangsablage:';";
-$trans["checkinFormColHdr1"] = "\$text='Rückgabedatum';";
-$trans["checkinFormColHdr2"] = "\$text='Mediennummer';";
-$trans["checkinFormColHdr3"] = "\$text='Titel';";
-$trans["checkinFormColHdr4"] = "\$text='Autor';";
-$trans["checkinFormEmptyCart"] = "\$text='Derzeit sind keine Medien im Eingangsregal.';";
-$trans["Checked in %barcode% for "] = "\$text='Exemplar %barcode% zurückgenommen von ';";
-$trans["Checked in %barcode%."] = "\$text='Exemplar %barcode% zurückgenommen.';";
-$trans["checkinEndErr"] = "\$text='Die Mitgliedschaft ist abgelaufen. Das Mitglied muss entweder die Mitgliedschaft verlängern oder für %monthlate% Monate nachzahlen.';";
+$trans["checkinFormHdr1"]           = "\$text='Medienrückgabe';";
+$trans["checkinFormBarcode"]        = "\$text='Mediennummer';";
+$trans["checkinFormShelveButton"]   = "\$text='In Eingangsablage stellen';";
+$trans["checkinFormCheckinLink1"]   = "\$text='Augewählte Medien einbuchen';";
+$trans["checkinFormCheckinLink2"]   = "\$text='Alle Medien einbuchen';";
+$trans["checkinFormHdr2"]           = "\$text='Derzeitiger Inhalt der Eingangsablage:';";
+$trans["checkinFormColHdr1"]        = "\$text='Rückgabedatum';";
+$trans["checkinFormColHdr2"]        = "\$text='Mediennummer';";
+$trans["checkinFormColHdr3"]        = "\$text='Titel';";
+$trans["checkinFormColHdr4"]        = "\$text='Autor';";
+$trans["checkinFormEmptyCart"]      = "\$text='Derzeit sind keine Medien in der Eingangsablage.';";
+$trans["Checked in %barcode% for "] = "\$text='Exemplar %barcode% wurde zurückgenommen von ';";
+$trans["Checked in %barcode%."]     = "\$text='Exemplar %barcode% zurückgenommen.';";
+$trans["checkinEndErr"]             = "\$text='Die Mitgliedschaft ist abgelaufen. Das Mitglied muss entweder die Mitgliedschaft verlängern oder für %monthlate% Monate nachzahlen.';";
 
 #****************************************************************************
 #*  Translation text for page checkin.php
 #****************************************************************************
-$trans["checkinErr1"] = "\$text='Keine Medien wurden ausgewählt.';";
+$trans["checkinErr1"] = "\$text='Es wurden keine Medien ausgewählt.';";
 
 #****************************************************************************
 #*  Translation text for page hold_message.php
@@ -236,7 +236,7 @@ $trans["mbrDelReturn"] = "\$text='kehre zur Benutzersuche zurück';";
 #****************************************************************************
 #*  Translation text for page mbr_history.php
 #****************************************************************************
-$trans["mbrHistoryHead1"]  = "\$text='Ausleihhistorie des Benutzers:';";
+$trans["mbrHistoryHead1"]  = "\$text='Ausleihhistorie';";
 $trans["mbrHistoryNoHist"] = "\$text='Keine Historie gefunden.';";
 $trans["mbrHistoryHdr1"]   = "\$text='Mediennummer';";
 $trans["mbrHistoryHdr2"]   = "\$text='Titel';";
@@ -252,7 +252,7 @@ $trans["mbrAccountLabel"]    = "\$text='Transaktion hinzufügen';";
 $trans["mbrAccountTransTyp"] = "\$text='Transaktions-Typ';";
 $trans["mbrAccountAmount"]   = "\$text='Betrag';";
 $trans["mbrAccountDesc"]     = "\$text='Beschreibung';";
-$trans["mbrAccountHead1"]    = "\$text='Transaktionen des Benutzers';";
+$trans["mbrAccountHead1"]    = "\$text='Transaktionen';";
 $trans["mbrAccountNoTrans"]  = "\$text='Keine Transaktionen gefunden.';";
 $trans["mbrAccountOpenBal"]  = "\$text='Noch zu zahlender Betrag';";
 $trans["mbrAccountDel"]      = "\$text='Löschen';";
