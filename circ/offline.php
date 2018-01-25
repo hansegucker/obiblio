@@ -63,7 +63,9 @@ function run_batch($lines, $date)
 function layout_links()
 {
     global $loc;
-    echo '<a href="../shared/layout.php?name=offline_commands">' . $loc->getText('Command Sheet') . '</a>';
+	echo '<a class="waves-effect waves-light btn" href="../shared/layout.php?name=offline_commands">' .
+	     '<i class="material-icons left">file_download</i>' .
+	     $loc->getText( 'Command Sheet' ) . '</a>';
 }
 
 $form = array(
@@ -81,7 +83,7 @@ list($values, $errs) = Form::getCgi_el($form['fields']);
 if (!$values['_posted'] or $errs) {
     include_once("../shared/header.php");
     if (isset($_REQUEST['msg'])) {
-        echo '<font class="error">' . H($_REQUEST['msg']) . '</font>';
+	    echo '<p class="red-text">' . H( $_REQUEST['msg'] ) . '</p>';
     }
     $form['values'] = $values;
     $form['errors'] = $errs;
@@ -98,9 +100,9 @@ else
     $errors = run_batch($lines, $values['date']);
 if ($errors) {
     include_once("../shared/header.php");
-    echo '<font class="error">' . $loc->getText("Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice.") . '</font>';
-    echo '<div class="errorbox">';
-    echo '<span class="errorhdr">' . $loc->getText('Errors') . '</span>';
+	echo '<div class="red-text">' . $loc->getText( "Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice." ) . '</div>';
+	echo '<div class="red-text">';
+	echo '<strong>' . $loc->getText( 'Errors' ) . '</strong>';
     echo '<ul>';
     foreach ($errors as $e) {
         echo '<li>' . H($e) . '</li>';

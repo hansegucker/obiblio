@@ -305,8 +305,8 @@ $trans["Couldn't check out %item% to %member%: %error%"]                        
 $trans["Couldn't check in %item%: %error%"]                                                                                                                        = "\$text='Konnte Exemplar %item% nicht zurücknehmen: %error%';";
 $trans["Unrecognized command code: %cmd%"]                                                                                                                         = "\$text='Nicht erkanntes Kommando: %cmd%';";
 $trans["Command Sheet"]                                                                                                                                            = "\$text='Kommandoübersichtsblatt';";
-$trans["Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice."] = "\$text='Aktionen die keinen Fehler produzieren wurden ausgeführt. Passen Sie auf, dass Sie keine Datei doppelt hochladen, da sonst einige Ausleihen doppelt erfasst werden.';";
-$trans["Errors"]                                                                                                                                                   = "\$text='Fehler';";
+$trans["Actions which did not produce an error have completed. Think carefully before uploading the same file again, or some circulations may be recorded twice."] = "\$text='Manche der Aktionen produzierten keinen Fehler. Diese wurden ausgeführt. Passen Sie auf, dass Sie keine Datei doppelt hochladen, da sonst einige Ausleihen doppelt erfasst werden.';";
+$trans["Errors"] = "\$text='Fehlermeldung:';";
 $trans["Offline Upload Successful."]                                                                                                                               = "\$text='Offline-Hochladeaktion erfolgreich.';";
 
 ?>
