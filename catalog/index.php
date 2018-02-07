@@ -16,7 +16,7 @@ require_once( "../shared/header.php" );
 require_once( "../classes/Localize.php" );
 $loc = new Localize( OBIB_LOCALE, $tab );
 if ( isset( $_GET["msg"] ) ) {
-	$msg = "<font class=\"error\">" . H( $_GET["msg"] ) . "</font><br><br>";
+	$msg = "<p class=\"red-text\">" . H( $_GET["msg"] ) . "</p>";
 } else {
 	$msg = "";
 }
@@ -28,47 +28,56 @@ if ( isset( $_GET["msg"] ) ) {
 </h3>
 
 <form name="barcodesearch" method="POST" action="../shared/biblio_search.php">
-    <table class="primary">
-        <tr>
-            <th valign="top" nowrap="yes" align="left">
-	            <?php echo $loc->getText( "indexBarcodeHdr" ); ?>:
-            </th>
-        </tr>
-        <tr>
-            <td nowrap="true" class="primary">
-	            <?php echo $loc->getText( "indexBarcodeField" ); ?>:
-                <input type="text" name="searchText" size="20" maxlength="20">
-                <input type="hidden" name="searchType" value="barcodeNmbr">
-                <input type="hidden" name="sortBy" value="default">
-                <input type="submit" value="<?php echo $loc->getText( "indexButton" ); ?>" class="button">
-            </td>
-        </tr>
-    </table>
+    <p class="flow-text">
+		<?php echo $loc->getText( "indexBarcodeHdr" ); ?>:
+    </p>
+
+
+    <div class="input-field">
+        <input type="text" name="searchText" size="20" maxlength="20">
+        <label for="searchText">
+			<?php echo $loc->getText( "indexBarcodeField" ); ?>
+        </label>
+    </div>
+
+    <!-- Hiden fields -->
+    <input type="hidden" name="searchType" value="barcodeNmbr">
+    <input type="hidden" name="sortBy" value="default">
+
+    <button type="submit" class="waves-effect waves-light btn green">
+        <i class="material-icons left">search</i>
+		<?php echo $loc->getText( "indexButton" ); ?>
+    </button>
+
 </form>
 
 
-<form name="phrasesearch" method="POST" action="../shared/biblio_search.php">
-    <table class="primary">
-        <tr>
-            <th valign="top" nowrap="yes" align="left">
-	            <?php echo $loc->getText( "indexSearchHdr" ); ?>:
-            </td>
-        </tr>
-        <tr>
-            <td nowrap="true" class="primary">
-                <select name="searchType">
-                    <option value="keyword" selected><?php echo $loc->getText( "indexKeyword" ); ?>
-                    <option value="author"><?php echo $loc->getText( "indexAuthor" ); ?>
-                    <option value="title"><?php echo $loc->getText( "indexTitle" ); ?>
-                    <option value="subject"><?php echo $loc->getText( "indexSubject" ); ?>
-                    <option value="callno"><?php echo $loc->getText( "biblioFieldsCallNmbr" ); ?>
-                </select>
-                <input type="text" name="searchText" size="30" maxlength="256">
-                <input type="hidden" name="sortBy" value="default">
-                <input type="submit" value="<?php echo $loc->getText( "indexButton" ); ?>" class="button">
-            </td>
-        </tr>
-    </table>
+<form name="phrasesearch" method="POST" action="../shared/biblio_search.php" class="row">
+    <p class="flow-text">
+		<?php echo $loc->getText( "indexSearchHdr" ); ?>:
+    </p>
+
+    <div class="input-field col s12 m2">
+        <select name="searchType">
+            <option value="keyword" selected><?php echo $loc->getText( "indexKeyword" ); ?>
+            <option value="author"><?php echo $loc->getText( "indexAuthor" ); ?>
+            <option value="title"><?php echo $loc->getText( "indexTitle" ); ?>
+            <option value="subject"><?php echo $loc->getText( "indexSubject" ); ?>
+            <option value="callno"><?php echo $loc->getText( "biblioFieldsCallNmbr" ); ?>
+        </select>
+    </div>
+
+    <div class="input-field col s12 m10">
+        <input type="text" name="searchText" size="30" maxlength="256">
+    </div>
+
+    <!-- Hiden fields -->
+    <input type="hidden" name="sortBy" value="default">
+
+    <button type="submit" class="waves-effect waves-light btn green">
+        <i class="material-icons left">search</i><?php echo $loc->getText( "indexButton" ); ?>
+    </button>
+
 </form>
 <?php echo $msg ?>
 
