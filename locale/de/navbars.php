@@ -65,24 +65,24 @@ $trans["Checkout Privs"] = "\$text = 'Ausleiheinst.';";
 #****************************************************************************
 #*  Translation text for page cataloging.php
 #****************************************************************************
-$trans["catalogSummary"] = "\$text = 'Katalogisierung';";
-$trans["catalogSearch1"] = "\$text = 'Mediensuche';";
-$trans["catalogSearch2"] = "\$text = 'Mediensuche';";
-$trans["catalogResults"] = "\$text = 'Suchergebnisse';";
-$trans["catalogBibInfo"] = "\$text = 'Medieninformationen';";
-$trans["catalogBibEdit"] = "\$text = 'Med. bearb.';";
-$trans["catalogBibEditMarc"] = "\$text = 'MARC bearb.';";
-$trans["catalogBibMarcNewFld"] = "\$text = 'Neues MARC Feld';";
+$trans["catalogSummary"]           = "\$text = 'Katalogisierung';";
+$trans["catalogSearch1"]           = "\$text = 'Mediensuche';";
+$trans["catalogSearch2"]           = "\$text = 'Mediensuche';";
+$trans["catalogResults"]           = "\$text = 'Suchergebnisse';";
+$trans["catalogBibInfo"]           = "\$text = 'Medieninformationen';";
+$trans["catalogBibEdit"]           = "\$text = 'Bearbeiten';";
+$trans["catalogBibEditMarc"]       = "\$text = 'MARC bearbeiten';";
+$trans["catalogBibMarcNewFld"]     = "\$text = 'MARC-Feld anlegen';";
 $trans["catalogBibMarcNewFldShrt"] = "\$text = 'Neues MARC';";
-$trans["catalogBibMarcEditFld"] = "\$text = 'Bearb. MARC Feld';";
-$trans["catalogCopyNew"] = "\$text = 'Neues Exem.';";
-$trans["catalogCopyEdit"] = "\$text = 'Bearb. Exem.';";
-$trans["catalogHolds"] = "\$text = 'Vorbestellungen';";
-$trans["catalogDelete"] = "\$text = 'Löschen';";
-$trans["catalogBibNewLike"] = "\$text = 'Ähnliches Neu';";
-$trans["catalogBibNew"] = "\$text = 'Neues Medium';";
-$trans["Upload Marc Data"] = "\$text = 'MARC Daten laden';";
-$trans["History"] = "\$text = 'Historie';";
+$trans["catalogBibMarcEditFld"]    = "\$text = 'MARC-Feld bearbeiten';";
+$trans["catalogCopyNew"]           = "\$text = 'Exemplar anlegen';";
+$trans["catalogCopyEdit"]          = "\$text = 'Exemplar bearbeiten';";
+$trans["catalogHolds"]             = "\$text = 'Vorbestellungen';";
+$trans["catalogDelete"]            = "\$text = 'Löschen';";
+$trans["catalogBibNewLike"]        = "\$text = 'Duplizieren';";
+$trans["catalogBibNew"]            = "\$text = 'Neues Medium';";
+$trans["Upload Marc Data"]         = "\$text = 'MARC Daten laden';";
+$trans["History"]                  = "\$text = 'Historie';";
 
 #****************************************************************************
 #*  Translation text for page reports.php
@@ -101,9 +101,9 @@ $trans["Report Criteria"] = "\$text = 'Berichtskriterien';";
 $trans["catalogSearch1"] = "\$text = 'Suche';";
 $trans["catalogSearch2"] = "\$text = 'Mediensuche';";
 $trans["catalogResults"] = "\$text = 'Suchergebnisse';";
-$trans["catalogBibInfo"] = "\$text = 'Medieninfo';";
-$trans["userlogin"] = "\$text = 'Benutzerlogin';";
-$trans["memberaccount"] = "\$text = 'Benutzerkonto';";
+$trans["catalogBibInfo"] = "\$text = 'Übersicht';";
+$trans["userlogin"]      = "\$text = 'Benutzerlogin';";
+$trans["memberaccount"]  = "\$text = 'Benutzerkonto';";
 
 #Added
 

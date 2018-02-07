@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/circ/offline.php" afterPath="$PROJECT_DIR$/circ/offline.php" />
-      <change beforePath="$PROJECT_DIR$/classes/Form.php" afterPath="$PROJECT_DIR$/classes/Form.php" />
-      <change beforePath="$PROJECT_DIR$/locale/de/circulation.php" afterPath="$PROJECT_DIR$/locale/de/circulation.php" />
+      <change beforePath="$PROJECT_DIR$/catalog/index.php" afterPath="$PROJECT_DIR$/catalog/index.php" />
+      <change beforePath="$PROJECT_DIR$/locale/de/navbars.php" afterPath="$PROJECT_DIR$/locale/de/navbars.php" />
+      <change beforePath="$PROJECT_DIR$/navbars/cataloging.php" afterPath="$PROJECT_DIR$/navbars/cataloging.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,74 +17,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="circulation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/locale/de/circulation.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="308" column="188" lean-forward="false" selection-start-line="308" selection-start-column="188" selection-end-line="308" selection-end-column="188" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mbr_view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2958">
-              <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="65" />
-              <folding>
-                <marker date="1516445055792" expanded="true" signature="11945:11951" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="11951:11957" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="11957:11963" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12032:12038" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12038:12044" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12044:12050" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12119:12125" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12125:12131" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12131:12137" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12208:12214" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12214:12220" ph=" " />
-                <marker date="1516445055792" expanded="true" signature="12220:12226" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkin_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/checkin_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offline.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/circ/offline.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/Form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="navbars.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+            <state relative-caret-position="1343">
+              <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="444" column="43" lean-forward="false" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circ/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="180" column="66" lean-forward="false" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="circulation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1105">
+              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -101,21 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;7strong&gt;</find>
-      <find>&quot;red</find>
-      <find>red</find>
-      <find>barcode</find>
-      <find>mediennummer</find>
-      <find>valign=&quot;top&quot; align=&quot;left&quot;</find>
-      <find>nowrap=&quot;yes&quot;</find>
-      <find>Medien</find>
-      <find>vo</find>
-      <find>data</find>
-      <find>img</find>
-      <find>Bearb</find>
-      <find>Lösche</find>
-      <find>History</find>
-      <find>history</find>
       <find>offline</find>
       <find>offli</find>
       <find>geb</find>
@@ -131,6 +114,21 @@
       <find>Benutzer hat</find>
       <find>font</find>
       <find>aktionen die</find>
+      <find>&lt;br&gt;</find>
+      <find>&lt;/a&gt;</find>
+      <find>&lt;li&gt;&lt;li&gt;</find>
+      <find>new</find>
+      <find>medienin</find>
+      <find>bibinfo</find>
+      <find>bibedit</find>
+      <find>hist</find>
+      <find>medieninfo</find>
+      <find>History</find>
+      <find>copynew</find>
+      <find>marc</find>
+      <find>holds</find>
+      <find>Delete</find>
+      <find>BibNewLike</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -138,6 +136,7 @@
       <replace>&lt;strong&gt;</replace>
       <replace>&lt;7strong&gt;</replace>
       <replace>&lt;/strong&gt;</replace>
+      <replace>&lt;/a&gt;&lt;/li&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -168,8 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/reports/report_criteria.php" />
-        <option value="$PROJECT_DIR$/layouts/default/list.php" />
         <option value="$PROJECT_DIR$/locale/de/reports.php" />
         <option value="$PROJECT_DIR$/layouts/default/overdue.php" />
         <option value="$PROJECT_DIR$/locale/en/reports.php" />
@@ -206,7 +203,6 @@
         <option value="$PROJECT_DIR$/shared/header_top.php" />
         <option value="$PROJECT_DIR$/circ/mbr_fields.php" />
         <option value="$PROJECT_DIR$/circ/mbr_del_confirm.php" />
-        <option value="$PROJECT_DIR$/locale/de/navbars.php" />
         <option value="$PROJECT_DIR$/circ/mbr_del.php" />
         <option value="$PROJECT_DIR$/circ/mbr_search.php" />
         <option value="$PROJECT_DIR$/circ/mbr_account.php" />
@@ -219,6 +215,9 @@
         <option value="$PROJECT_DIR$/locale/de/circulation.php" />
         <option value="$PROJECT_DIR$/classes/Form.php" />
         <option value="$PROJECT_DIR$/circ/offline.php" />
+        <option value="$PROJECT_DIR$/locale/de/navbars.php" />
+        <option value="$PROJECT_DIR$/navbars/cataloging.php" />
+        <option value="$PROJECT_DIR$/catalog/index.php" />
       </list>
     </option>
   </component>
@@ -253,8 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,12 +262,17 @@
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="classes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="functions" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="circ" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
@@ -297,6 +299,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,6 +309,7 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -373,7 +378,12 @@
       <workItem from="1516713930322" duration="999000" />
       <workItem from="1516718834050" duration="6000" />
       <workItem from="1516818845799" duration="1223000" />
-      <workItem from="1516905581789" duration="2012000" />
+      <workItem from="1516905581789" duration="2670000" />
+      <workItem from="1516974555127" duration="8000" />
+      <workItem from="1517742316554" duration="2362000" />
+      <workItem from="1517854990525" duration="2776000" />
+      <workItem from="1517937277335" duration="2060000" />
+      <workItem from="1518023671226" duration="2760000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -578,11 +588,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516714629054</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Redesign offline checkout page [MAT] | Form class with new design [MAT]">
+      <created>1516907651978</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1516907651978</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77723000" />
+    <option name="totallyTimeSpent" value="88347000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,9 +612,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="33" width="1372" height="729" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28257576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30530304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311148" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30116472" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
@@ -626,8 +642,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Close issue #3" />
-    <MESSAGE value="Close issue #5 | Reformat code in Query, StaffQuery, login, loginform" />
     <MESSAGE value="Remove more old class constructors (issue #1)" />
     <MESSAGE value="Close one more in issue #1:&#10;&#10;/var/www/html/obiblio/classes/Table.php&#10;variableInterpolation&#10;Line 103: echo TableFuncs::$col['func']($col, $row, $this-&gt;_params);" />
     <MESSAGE value="Append copyright" />
@@ -651,7 +665,9 @@
     <MESSAGE value="Disable &quot;show address&quot; in member search (Comment out)" />
     <MESSAGE value="Redesign member account [MAT]" />
     <MESSAGE value="Redesign checkin page [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign checkin page [MAT]" />
+    <MESSAGE value="Redesign offline checkout page [MAT] | Form class with new design [MAT]" />
+    <MESSAGE value="Redesign cataloging nav (icons+names) [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign cataloging nav (icons+names) [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -660,34 +676,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/locale/de/sql/staff.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install_instructions_english.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="248" column="36" lean-forward="false" selection-start-line="248" selection-start-column="36" selection-end-line="248" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/sql/usmarc_subfield_dm.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/settings_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="47" column="26" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -815,13 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/home/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/noauth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -833,13 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -955,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circ/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_history.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -973,59 +940,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
           <caret line="176" column="24" lean-forward="false" selection-start-line="176" selection-start-column="24" selection-end-line="176" selection-end-column="65" />
-          <folding>
-            <marker date="1516445055792" expanded="true" signature="11945:11951" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="11951:11957" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="11957:11963" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12032:12038" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12038:12044" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12044:12050" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12119:12125" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12125:12131" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12131:12137" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12208:12214" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12214:12220" ph=" " />
-            <marker date="1516445055792" expanded="true" signature="12220:12226" ph=" " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/circulation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="308" column="188" lean-forward="false" selection-start-line="308" selection-start-column="188" selection-end-line="308" selection-end-column="188" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
-          <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
-          <folding />
+          <caret line="308" column="42" lean-forward="false" selection-start-line="308" selection-start-column="42" selection-end-line="308" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circ/checkin_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="515">
           <caret line="233" column="24" lean-forward="false" selection-start-line="233" selection-start-column="24" selection-end-line="233" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/circ/offline.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_hold_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="444" column="43" lean-forward="false" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="180" column="66" lean-forward="false" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="51" column="59" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
