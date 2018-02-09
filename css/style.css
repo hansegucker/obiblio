@@ -51,3 +51,7 @@ ul.sidenav.sidenav-fixed li.logo img {
 ul.sidenav li.logout {
     margin-top: 130px;
 }
+
+.copy-item {
+    padding-left: 72px !important;
+}

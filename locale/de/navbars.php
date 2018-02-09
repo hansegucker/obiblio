@@ -37,30 +37,30 @@
 #****************************************************************************
 #*  Translation text shared by various php files under the navbars dir
 #****************************************************************************
-$trans["login"] = "\$text = 'Login';";
+$trans["login"]  = "\$text = 'Login';";
 $trans["logout"] = "\$text = 'Logout';";
-$trans["help"] = "\$text = 'Hilfe';";
+$trans["help"]   = "\$text = 'Hilfe';";
 
 #****************************************************************************
 #*  Translation text for page home.php
 #****************************************************************************
-$trans["homeHomeLink"] = "\$text = 'Startseite';";
+$trans["homeHomeLink"]    = "\$text = 'Startseite';";
 $trans["homeLicenseLink"] = "\$text = 'Lizenz';";
 
 #****************************************************************************
 #*  Translation text for page admin.php
 #****************************************************************************
-$trans["adminSummary"] = "\$text = 'Admin-Übersicht';";
-$trans["adminStaff"] = "\$text = 'Mitarbeiter';";
-$trans["adminSettings"] = "\$text = 'Bibliothekseinst.';";
+$trans["adminSummary"]       = "\$text = 'Admin-Übersicht';";
+$trans["adminStaff"]         = "\$text = 'Mitarbeiter';";
+$trans["adminSettings"]      = "\$text = 'Bibliothekseinst.';";
 $trans["adminMaterialTypes"] = "\$text = 'Medienarten';";
-$trans["adminCollections"] = "\$text = 'Genres';";
-$trans["adminThemes"] = "\$text = 'Layout';";
-$trans["adminTranslation"] = "\$text = 'Übersetzung';";
-$trans["Member Types"] = "\$text = 'Mitgliederarten';";
-$trans["Member Fields"] = "\$text = 'Mitgliederfelder';";
-$trans["Copy Fields"] = "\$text = 'Exemplarfelder';";
-$trans["Checkout Privs"] = "\$text = 'Ausleiheinst.';";
+$trans["adminCollections"]   = "\$text = 'Genres';";
+$trans["adminThemes"]        = "\$text = 'Layout';";
+$trans["adminTranslation"]   = "\$text = 'Übersetzung';";
+$trans["Member Types"]       = "\$text = 'Mitgliederarten';";
+$trans["Member Fields"]      = "\$text = 'Mitgliederfelder';";
+$trans["Copy Fields"]        = "\$text = 'Exemplarfelder';";
+$trans["Checkout Privs"]     = "\$text = 'Ausleiheinst.';";
 
 #****************************************************************************
 #*  Translation text for page cataloging.php
@@ -87,13 +87,13 @@ $trans["History"]                  = "\$text = 'Historie';";
 #****************************************************************************
 #*  Translation text for page reports.php
 #****************************************************************************
-$trans["reportsSummary"] = "\$text = 'Berichte Übersicht';";
+$trans["reportsSummary"]        = "\$text = 'Berichte Übersicht';";
 $trans["reportsReportListLink"] = "\$text = 'Berichte';";
-$trans["reportsLabelsLink"] = "\$text = 'Etiketten';";
-$trans["reportsLettersLink"] = "\$text = 'Briefe';";
-$trans["Report Results"] = "\$text = 'Berichtsergebnis';";
-$trans["Report List"] = "\$text = 'Berichteübersicht';";
-$trans["Report Criteria"] = "\$text = 'Berichtskriterien';";
+$trans["reportsLabelsLink"]     = "\$text = 'Etiketten';";
+$trans["reportsLettersLink"]    = "\$text = 'Briefe';";
+$trans["Report Results"]        = "\$text = 'Berichtsergebnis';";
+$trans["Report List"]           = "\$text = 'Berichteübersicht';";
+$trans["Report Criteria"]       = "\$text = 'Berichtskriterien';";
 
 #****************************************************************************
 #*  Translation text for page opac.php

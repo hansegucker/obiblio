@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
+    <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="Redesign catalog search page [MAT]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/catalog/index.php" afterPath="$PROJECT_DIR$/catalog/index.php" />
+      <change beforePath="$PROJECT_DIR$/circ/mbr_search.php" afterPath="$PROJECT_DIR$/circ/mbr_search.php" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/locale/de/cataloging.php" afterPath="$PROJECT_DIR$/locale/de/cataloging.php" />
+      <change beforePath="$PROJECT_DIR$/locale/de/navbars.php" afterPath="$PROJECT_DIR$/locale/de/navbars.php" />
+      <change beforePath="$PROJECT_DIR$/locale/de/shared.php" afterPath="$PROJECT_DIR$/locale/de/shared.php" />
+      <change beforePath="$PROJECT_DIR$/shared/biblio_search.php" afterPath="$PROJECT_DIR$/shared/biblio_search.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,41 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <file leaf-file-name="shared.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locale/de/shared.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="444" column="43" lean-forward="false" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/circ/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/catalog/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="51" column="59" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="155">
+              <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -67,18 +42,28 @@
       <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="180" column="66" lean-forward="false" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="66" />
+            <state relative-caret-position="110">
+              <caret line="225" column="33" lean-forward="false" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="circulation.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
+      <file leaf-file-name="biblio_search.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared/biblio_search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="343" column="10" lean-forward="false" selection-start-line="343" selection-start-column="10" selection-end-line="343" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mbr_search.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -96,13 +81,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>offline</find>
-      <find>offli</find>
-      <find>geb</find>
-      <find>hr</find>
-      <find>prints</find>
-      <find>class=&quot;striped&quot;</find>
-      <find>class=&quot;red&quot;</find>
       <find>&quot;red&quot;</find>
       <find>transaktion</find>
       <find>derzeitig</find>
@@ -126,6 +104,13 @@
       <find>holds</find>
       <find>Delete</find>
       <find>BibNewLike</find>
+      <find>loc =</find>
+      <find>bibliosearchPr</find>
+      <find>loc</find>
+      <find>searc</find>
+      <find>catalogresults</find>
+      <find>search</find>
+      <find>class=&quot;s</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,13 +149,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/locale/de/reports.php" />
         <option value="$PROJECT_DIR$/layouts/default/overdue.php" />
         <option value="$PROJECT_DIR$/locale/en/reports.php" />
         <option value="$PROJECT_DIR$/locale/de/opac.php" />
         <option value="$PROJECT_DIR$/locale/de/install.php" />
         <option value="$PROJECT_DIR$/locale/de/classes.php" />
-        <option value="$PROJECT_DIR$/locale/de/cataloging.php" />
         <option value="$PROJECT_DIR$/locale/de/sql/biblio_status_dm.sql" />
         <option value="$PROJECT_DIR$/locale/de/sql/collection_dm.sql" />
         <option value="$PROJECT_DIR$/locale/de/sql/state_dm.sql" />
@@ -189,19 +172,16 @@
         <option value="$PROJECT_DIR$/shared/global_constants.php" />
         <option value="$PROJECT_DIR$/home/license.php" />
         <option value="$PROJECT_DIR$/shared/footer.php" />
-        <option value="$PROJECT_DIR$/locale/de/shared.php" />
         <option value="$PROJECT_DIR$/shared/loginform.php" />
         <option value="$PROJECT_DIR$/home/index.php" />
         <option value="$PROJECT_DIR$/shared/header.php" />
         <option value="$PROJECT_DIR$/navbars/circulation.php" />
         <option value="$PROJECT_DIR$/navbars/home.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/circ/mbr_print_checkouts.php" />
         <option value="$PROJECT_DIR$/shared/header_top.php" />
         <option value="$PROJECT_DIR$/circ/mbr_fields.php" />
         <option value="$PROJECT_DIR$/circ/mbr_del_confirm.php" />
         <option value="$PROJECT_DIR$/circ/mbr_del.php" />
-        <option value="$PROJECT_DIR$/circ/mbr_search.php" />
         <option value="$PROJECT_DIR$/circ/mbr_account.php" />
         <option value="$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php" />
         <option value="$PROJECT_DIR$/circ/mbr_view.php" />
@@ -212,9 +192,14 @@
         <option value="$PROJECT_DIR$/locale/de/circulation.php" />
         <option value="$PROJECT_DIR$/classes/Form.php" />
         <option value="$PROJECT_DIR$/circ/offline.php" />
-        <option value="$PROJECT_DIR$/locale/de/navbars.php" />
         <option value="$PROJECT_DIR$/navbars/cataloging.php" />
         <option value="$PROJECT_DIR$/catalog/index.php" />
+        <option value="$PROJECT_DIR$/locale/de/navbars.php" />
+        <option value="$PROJECT_DIR$/circ/mbr_search.php" />
+        <option value="$PROJECT_DIR$/locale/de/cataloging.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/locale/de/shared.php" />
+        <option value="$PROJECT_DIR$/shared/biblio_search.php" />
       </list>
     </option>
   </component>
@@ -265,6 +250,11 @@
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="circ" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
@@ -380,7 +370,8 @@
       <workItem from="1517742316554" duration="2362000" />
       <workItem from="1517854990525" duration="2776000" />
       <workItem from="1517937277335" duration="2060000" />
-      <workItem from="1518023671226" duration="3548000" />
+      <workItem from="1518023671226" duration="7064000" />
+      <workItem from="1518193936315" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -599,11 +590,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518029470882</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Redesign catalog search page [MAT]">
+      <created>1518030286823</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1518030286823</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89135000" />
+    <option name="totallyTimeSpent" value="93207000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -618,7 +616,7 @@
     <frame x="-3" y="33" width="1372" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30530304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31060606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311148" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30116472" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
@@ -647,7 +645,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Remove more old class constructors (issue #1)" />
     <MESSAGE value="Close one more in issue #1:&#10;&#10;/var/www/html/obiblio/classes/Table.php&#10;variableInterpolation&#10;Line 103: echo TableFuncs::$col['func']($col, $row, $this-&gt;_params);" />
     <MESSAGE value="Append copyright" />
     <MESSAGE value="Update copyright" />
@@ -672,7 +669,8 @@
     <MESSAGE value="Redesign checkin page [MAT]" />
     <MESSAGE value="Redesign offline checkout page [MAT] | Form class with new design [MAT]" />
     <MESSAGE value="Redesign cataloging nav (icons+names) [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign cataloging nav (icons+names) [MAT]" />
+    <MESSAGE value="Redesign catalog search page [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign catalog search page [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -681,13 +679,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
@@ -794,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/shared.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="105" column="58" lean-forward="false" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/loginform.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -812,13 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -847,13 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/header_top.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -889,13 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3349">
-          <caret line="199" column="27" lean-forward="false" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -983,38 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="444" column="43" lean-forward="false" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="180" column="66" lean-forward="false" selection-start-line="180" selection-start-column="56" selection-end-line="180" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1033,8 +964,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="78" column="13" lean-forward="true" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        <state relative-caret-position="102">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="444" column="43" lean-forward="false" selection-start-line="444" selection-start-column="43" selection-end-line="444" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/circulation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="67" column="49" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/header_top.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="81" column="59" lean-forward="false" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="218" column="0" lean-forward="false" selection-start-line="218" selection-start-column="0" selection-end-line="218" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/shared.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="225" column="33" lean-forward="false" selection-start-line="225" selection-start-column="33" selection-end-line="225" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/biblio_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="343" column="10" lean-forward="false" selection-start-line="343" selection-start-column="10" selection-end-line="343" selection-end-column="10" />
           <folding />
         </state>
       </provider>
