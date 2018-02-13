@@ -25,10 +25,10 @@ if (OBIB_CHARSET != "") { ?>
 <?php } ?>
 
 <head>
-    <style type="text/css">
+	<style type="text/css">
         <?php include("../css/style.php");?>
     </style>
-    <meta name="description" content="OpenBiblio Library Automation System">
+	<meta name="description" content="OpenBiblio Library Automation System">
     <title><?php echo H(OBIB_LIBRARY_NAME); ?></title>
 
     <script language="JavaScript">
