@@ -75,7 +75,7 @@ $trans["catalogBibEditMarc"]       = "\$text = 'MARC bearbeiten';";
 $trans["catalogBibMarcNewFld"]     = "\$text = 'MARC-Feld anlegen';";
 $trans["catalogBibMarcNewFldShrt"] = "\$text = 'Neues MARC';";
 $trans["catalogBibMarcEditFld"]    = "\$text = 'MARC-Feld bearbeiten';";
-$trans["catalogCopyNew"]           = "\$text = 'Exemplar anlegen';";
+$trans["catalogCopyNew"] = "\$text = 'Exemplar hinzufügen';";
 $trans["catalogCopyEdit"]          = "\$text = 'Exemplar bearbeiten';";
 $trans["catalogHolds"]             = "\$text = 'Vorbestellungen';";
 $trans["catalogDelete"]            = "\$text = 'Löschen';";
