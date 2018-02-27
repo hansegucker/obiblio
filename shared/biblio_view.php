@@ -146,8 +146,8 @@ if ( $tab == "opac" ) {
 					<?php echo $loc->getText( "biblioViewCallNmbr" ); ?>:
                 </td>
                 <td>
-					<?php echo H( $biblio->getCallNmbr1() ); ?>
-					<?php echo H( $biblio->getCallNmbr2() ); ?>
+                    <?php echo H($biblio->getCallNmbr1()); ?><br>
+                    <?php echo H($biblio->getCallNmbr2()); ?><br>
 					<?php echo H( $biblio->getCallNmbr3() ); ?>
                 </td>
             </tr>
