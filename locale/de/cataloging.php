@@ -37,11 +37,11 @@
 #****************************************************************************
 #*  Common translation text shared among multiple pages
 #****************************************************************************
-$trans["catalogSubmit"]   = "\$text = 'Übermittle';";
+$trans["catalogSubmit"]   = "\$text = 'Übermitteln';";
 $trans["catalogCancel"]   = "\$text = 'Abbrechen';";
 $trans["catalogRefresh"]  = "\$text = 'Erneuern';";
 $trans["catalogDelete"]   = "\$text = 'Löschen';";
-$trans["catalogFootnote"] = "\$text = 'Felder mit %symbol% sind benötigt.';";
+$trans["catalogFootnote"] = "\$text = 'Felder mit %symbol% sind Pflicht.';";
 $trans["AnswerYes"]       = "\$text = 'Ja';";
 $trans["AnswerNo"]        = "\$text = 'Nein';";
 
@@ -115,16 +115,16 @@ $trans["biblioCopyDelSuccess"] = "\$text = 'Das Exemplar mit der Mediennummer %b
 #****************************************************************************
 #*  Translation text for page biblio_marc_list.php
 #****************************************************************************
-$trans["biblioMarcListMarcSelect"] = "\$text = 'Füge neues MARC-Feld hinzu';";
-$trans["biblioMarcListHdr"]        = "\$text = 'MARC-Feld Information';";
-$trans["biblioMarcListTbleCol1"]   = "\$text = 'Funktion';";
+$trans["biblioMarcListMarcSelect"] = "\$text = 'Neues MARC-Feld hinzufügen';";
+$trans["biblioMarcListHdr"]        = "\$text = 'MARC-Felder';";
+$trans["biblioMarcListTbleCol1"]   = "\$text = 'Aktionen';";
 $trans["biblioMarcListTbleCol2"]   = "\$text = 'Tag';";
 $trans["biblioMarcListTbleCol3"]   = "\$text = 'Tag-Beschreibung';";
-$trans["biblioMarcListTbleCol4"]   = "\$text = 'Ind 1';";
-$trans["biblioMarcListTbleCol5"]   = "\$text = 'Ind 2';";
+$trans["biblioMarcListTbleCol4"]   = "\$text = 'Ind. 1';";
+$trans["biblioMarcListTbleCol5"]   = "\$text = 'Ind. 2';";
 $trans["biblioMarcListTbleCol6"]   = "\$text = 'Unterfeld';";
 $trans["biblioMarcListTbleCol7"]   = "\$text = 'Unterfeld-Beschreibung';";
-$trans["biblioMarcListTbleCol8"]   = "\$text = 'Feld Daten';";
+$trans["biblioMarcListTbleCol8"]   = "\$text = 'Feld-Daten';";
 $trans["biblioMarcListNoRows"]     = "\$text = 'Keine MARC-Felder gefunden.';";
 $trans["biblioMarcListEdit"]       = "\$text = 'Bearb.';";
 $trans["biblioMarcListDel"]        = "\$text = 'Lösche';";
@@ -141,13 +141,13 @@ $trans["usmarcCloseWindow"]  = "\$text = 'Schließe Fenster';";
 #****************************************************************************
 #*  Translation text for page biblio_marc_new_form.php
 #****************************************************************************
-$trans["biblioMarcNewFormHdr"]    = "\$text = 'Füge neues MARC-Feld hinzu';";
+$trans["biblioMarcNewFormHdr"]    = "\$text = 'Neues MARC-Feld hinzufügen';";
 $trans["biblioMarcNewFormTag"]    = "\$text = 'Tag';";
 $trans["biblioMarcNewFormSubfld"] = "\$text = 'Unterfeld';";
 $trans["biblioMarcNewFormData"]   = "\$text = 'Feld-Daten';";
 $trans["biblioMarcNewFormInd1"]   = "\$text = 'Indikator 1';";
 $trans["biblioMarcNewFormInd2"]   = "\$text = 'Indikator 2';";
-$trans["biblioMarcNewFormSelect"] = "\$text = 'Wähle aus';";
+$trans["biblioMarcNewFormSelect"] = "\$text = 'Tag auswählen';";
 
 #****************************************************************************
 #*  Translation text for page biblio_marc_new.php

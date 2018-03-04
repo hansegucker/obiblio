@@ -301,6 +301,7 @@ $navloc = new Localize( OBIB_LOCALE, "navbars" );
         </a></li>
     <li>
         <a href="#" class="disabled">
+            <i class="material-icons">edit</i>
             &nbsp; &nbsp; &nbsp; &raquo; <?php echo $navloc->getText( "catalogBibMarcEditFld" ); ?>
         </a></li>
     <li>

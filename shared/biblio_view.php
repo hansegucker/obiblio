@@ -45,7 +45,7 @@ $loc = new Localize( OBIB_LOCALE, "shared" );
 #****************************************************************************
 $bibid = $_GET["bibid"];
 if ( isset( $_GET["msg"] ) ) {
-	$msg = "<p class=\"red-text\">" . H( $_GET["msg"] ) . "</p><br><br>";
+	$msg = "<p class=\"red-text\">" . H( $_GET["msg"] ) . "</p>";
 } else {
 	$msg = "";
 }
