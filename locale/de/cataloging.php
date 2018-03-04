@@ -83,10 +83,10 @@ $trans["biblioEditSuccess"] = "\$text = 'Das Medium wurde erfolgreich aktualisie
 #****************************************************************************
 #*  Translation text for page biblio_copy_new_form.php and biblio_copy_edit_form.php
 #****************************************************************************
-$trans["biblioCopyNewFormLabel"]   = "\$text = 'Füge neues Exemplar hinzu';";
+$trans["biblioCopyNewFormLabel"]   = "\$text = 'Neues Exemplar hinzufügen';";
 $trans["biblioCopyNewBarcode"]     = "\$text = 'Mediennummer';";
 $trans["biblioCopyNewDesc"]        = "\$text = 'Beschreibung';";
-$trans["biblioCopyNewAuto"]        = "\$text = 'Autom. generieren';";
+$trans["biblioCopyNewAuto"]        = "\$text = 'Automatisch generieren';";
 $trans["biblioCopyNewValidBarco"]  = "\$text = 'Überprüfen';";
 $trans["biblioCopyEditFormLabel"]  = "\$text = 'Exemplar bearbeiten';";
 $trans["biblioCopyEditFormStatus"] = "\$text = 'Status';";
@@ -105,7 +105,7 @@ $trans["biblioCopyEditSuccess"] = "\$text = 'Exemplar erfolgreich aktualisiert.'
 #*  Translation text for page biblio_copy_del_confirm.php
 #****************************************************************************
 $trans["biblioCopyDelConfirmErr1"] = "\$text = 'Exemplar konnte nicht gelöscht werden. Das Exemplar darf nicht ausgeliehen sein.';";
-$trans["biblioCopyDelConfirmMsg"]  = "\$text = 'Möchten sie wirklich das Exemplar mit der Mediennummer %barcodeNmbr% löschen? Dieses wird auch die Ausleihhistory über dieses Exemplar löschen.';";
+$trans["biblioCopyDelConfirmMsg"]  = "\$text = 'Möchten Sie wirklich das Exemplar mit der Mediennummer %barcodeNmbr% löschen? Dies wird auch die Ausleihhistorie dieses Exemplares löschen.';";
 
 #****************************************************************************
 #*  Translation text for page biblio_copy_del.php

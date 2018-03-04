@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/catalog/biblio_history.php" afterPath="$PROJECT_DIR$/catalog/biblio_history.php" />
+      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" />
+      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" />
+      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_new_form.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_new_form.php" />
+      <change beforePath="$PROJECT_DIR$/locale/de/cataloging.php" afterPath="$PROJECT_DIR$/locale/de/cataloging.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,41 +27,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="biblio_marc_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_list.php">
+      <file leaf-file-name="biblio_copy_new_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_new_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+            <state relative-caret-position="209">
+              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+              <folding>
+                <element signature="e#2000#2006#0#HTML" expanded="true" />
+                <element signature="e#2006#2012#0#HTML" expanded="true" />
+                <element signature="e#2012#2018#0#HTML" expanded="true" />
+                <element signature="e#2018#2024#0#HTML" expanded="true" />
+                <marker date="1520189275983" expanded="true" signature="2608:2656" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="biblio_copy_edit_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_edit_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="171" column="46" lean-forward="false" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
+              <folding>
+                <element signature="e#3353#3359#0#HTML" expanded="true" />
+                <element signature="e#3359#3365#0#HTML" expanded="true" />
+                <element signature="e#3365#3371#0#HTML" expanded="true" />
+                <element signature="e#3371#3377#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="biblio_copy_del_confirm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_marc_del_confirm.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_del_confirm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_history.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_history.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="107" column="188" lean-forward="true" selection-start-line="107" selection-start-column="188" selection-end-line="107" selection-end-column="188" />
               <folding />
             </state>
           </provider>
@@ -69,46 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="87">
               <caret line="303" column="42" lean-forward="false" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_marc_edit_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_edit_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1270">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_marc_fields.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_fields.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="141" column="24" lean-forward="false" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="biblio_fields.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/biblio_fields.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -126,7 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;br&gt;</find>
       <find>&lt;/a&gt;</find>
       <find>&lt;li&gt;&lt;li&gt;</find>
       <find>new</find>
@@ -156,6 +129,7 @@
       <find>marc-feld</find>
       <find>wähle asu</find>
       <find>überm</find>
+      <find>üge neu</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,9 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/locale/de/sql/state_dm.sql" />
-        <option value="$PROJECT_DIR$/locale/de/sql/transaction_type_dm.sql" />
-        <option value="$PROJECT_DIR$/locale/de/sql/usmarc_block_dm.sql" />
         <option value="$PROJECT_DIR$/locale/de/sql/usmarc_indicator_dm.sql" />
         <option value="$PROJECT_DIR$/locale/de/admin.php" />
         <option value="$PROJECT_DIR$/database_constants.php" />
@@ -242,9 +213,12 @@
         <option value="$PROJECT_DIR$/catalog/biblio_marc_list.php" />
         <option value="$PROJECT_DIR$/navbars/cataloging.php" />
         <option value="$PROJECT_DIR$/catalog/biblio_marc_fields.php" />
-        <option value="$PROJECT_DIR$/locale/de/cataloging.php" />
         <option value="$PROJECT_DIR$/catalog/biblio_marc_del_confirm.php" />
         <option value="$PROJECT_DIR$/catalog/biblio_history.php" />
+        <option value="$PROJECT_DIR$/catalog/biblio_copy_new_form.php" />
+        <option value="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" />
+        <option value="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" />
+        <option value="$PROJECT_DIR$/locale/de/cataloging.php" />
       </list>
     </option>
   </component>
@@ -432,7 +406,7 @@
       <workItem from="1518193936315" duration="556000" />
       <workItem from="1519663514715" duration="1453000" />
       <workItem from="1519728562909" duration="170000" />
-      <workItem from="1520165563616" duration="3578000" />
+      <workItem from="1520165563616" duration="6635000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -679,11 +653,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520175259816</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Redesign biblio history [MAT]">
+      <created>1520175502661</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1520175502661</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99573000" />
+    <option name="totallyTimeSpent" value="102630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,7 +708,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Do issue #2" />
     <MESSAGE value="Do issue #7 (translate reports)" />
     <MESSAGE value="Close issue #4 (utf-8 + reformat)" />
     <MESSAGE value="Close issue #10 (allow only utf-8)" />
@@ -752,7 +732,8 @@
     <MESSAGE value="Redesign biblio view [MAT]" />
     <MESSAGE value="Edit translation" />
     <MESSAGE value="Finish redesign of MARC fields pages [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish redesign of MARC fields pages [MAT]" />
+    <MESSAGE value="Redesign biblio history [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign biblio history [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -761,21 +742,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/home/license.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/copying.html" />
-    <entry file="file://$PROJECT_DIR$/shared/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_new_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1055,58 +1021,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/biblio_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/biblio_edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="141" column="24" lean-forward="false" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_edit_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1270">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_fields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="303" column="42" lean-forward="false" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1121,8 +1039,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/biblio_history.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
+        <state relative-caret-position="-471">
+          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_edit_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1270">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/biblio_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="303" column="42" lean-forward="false" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_marc_fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_new_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding>
+            <element signature="e#2000#2006#0#HTML" expanded="true" />
+            <element signature="e#2006#2012#0#HTML" expanded="true" />
+            <element signature="e#2012#2018#0#HTML" expanded="true" />
+            <element signature="e#2018#2024#0#HTML" expanded="true" />
+            <marker date="1520189275983" expanded="true" signature="2608:2656" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_edit_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="171" column="46" lean-forward="false" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
+          <folding>
+            <element signature="e#3353#3359#0#HTML" expanded="true" />
+            <element signature="e#3359#3365#0#HTML" expanded="true" />
+            <element signature="e#3365#3371#0#HTML" expanded="true" />
+            <element signature="e#3371#3377#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="107" column="188" lean-forward="true" selection-start-line="107" selection-start-column="188" selection-end-line="107" selection-end-column="188" />
           <folding />
         </state>
       </provider>
