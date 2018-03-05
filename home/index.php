@@ -18,62 +18,37 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 ?>
 
 <p class="flow-text"><?php echo $loc->getText("indexIntro"); ?></p>
+	<div class="row">
+		<div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h5 class="center"><?php echo $loc->getText("indexCirc"); ?></h5>
 
-<table>
-    <thead>
-    <tr>
-        <th><?php echo $loc->getText("indexTab"); ?></th>
-        <th><?php echo $loc->getText("indexDesc"); ?></th>
-    </tr>
-    </thead>
-
-    <tr>
-        <td>
-            <h5>
-                <i class="material-icons">repeat</i>
-                <?php echo $loc->getText("indexCirc"); ?>
-            </h5>
-        </td>
-
-        <td>
             <strong><?php echo $loc->getText("indexCircDesc1"); ?></strong>
             <ul class="collection">
                 <li class="collection-item"><?php echo $loc->getText("indexCircDesc2"); ?></li>
                 <li class="collection-item"><?php echo $loc->getText("indexCircDesc3"); ?></li>
                 <li class="collection-item"><?php echo $loc->getText("indexCircDesc4"); ?></li>
             </ul>
-        </td>
-    </tr>
+          </div>
+		</div>
+		<div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h5 class="center"><?php echo $loc->getText("indexCat"); ?></h5>
 
-    <tr>
-
-        <td>
-            <h5>
-                <i class="material-icons">library_books</i>
-                <?php echo $loc->getText("indexCat"); ?>
-            </h5>
-        </td>
-
-        <td>
             <strong><?php echo $loc->getText("indexCatDesc1"); ?></strong>
-
             <ul class="collection">
                 <li class="collection-item"><?php echo $loc->getText("indexCatDesc2"); ?></li>
             </ul>
-        </td>
-    </tr>
+          </div>
+		</div>
+		<div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h5 class="center"><?php echo $loc->getText("indexAdmin"); ?></h5>
 
-    <tr>
-        <td>
-            <h5>
-                <i class="material-icons">settings</i>
-                <?php echo $loc->getText("indexAdmin"); ?>
-            </h5>
-        </td>
-
-        <td>
             <strong><?php echo $loc->getText("indexAdminDesc1"); ?></strong>
-
             <ul class="collection">
                 <li class="collection-item"><?php echo $loc->getText("indexAdminDesc2"); ?></li>
                 <li class="collection-item"><?php echo $loc->getText("indexAdminDesc3"); ?></li>
@@ -81,26 +56,21 @@ $loc = new Localize(OBIB_LOCALE, $tab);
                 <li class="collection-item"><?php echo $loc->getText("indexAdminDesc5"); ?></li>
                 <li class="collection-item"><?php echo $loc->getText("indexAdminDesc6"); ?></li>
             </ul>
-        </td>
-    </tr>
+          </div>
+		</div>
+		<div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h5 class="center"><?php echo $loc->getText("indexReports"); ?></h5>
 
-    <tr>
-        <td>
-            <h5>
-                <i class="material-icons">print</i>
-                <?php echo $loc->getText("indexReports"); ?>
-            </h5>
-        </td>
-
-        <td>
             <strong><?php echo $loc->getText("indexReportsDesc1"); ?></strong>
-
             <ul class="collection">
                 <li class="collection-item"><?php echo $loc->getText("indexReportsDesc2"); ?></li>
                 <li class="collection-item"><?php echo $loc->getText("indexReportsDesc3"); ?></li>
             </ul>
-        </td>
-    </tr>
-</table>
+         </div>
+      </div>
+	</div>
+
 
 <?php include("../shared/footer.php"); ?>
