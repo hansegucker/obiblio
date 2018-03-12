@@ -14,7 +14,7 @@ include( "../shared/header_top.php" );; ?>
      **************************************************************************************-->
 <ul id="nav-mobile" class="sidenav sidenav-fixed">
     <li class="logo">
-        <a id="logo-container" href="#" class="brand-logo">
+        <a id="logo-container" href="index.php" class="brand-logo">
 			<?php
 			if ( OBIB_LIBRARY_IMAGE_URL != "" ) {
 				echo "<img src=\"" . H( OBIB_LIBRARY_IMAGE_URL ) . "\">";
