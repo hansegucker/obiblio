@@ -177,20 +177,20 @@ $trans["biblioMarcDelSuccess"] = "\$text = 'MARC-Feld erfolgreich gelöscht.';";
 #****************************************************************************
 #*  Translation text for page biblio_del_confirm.php
 #****************************************************************************
-$trans["biblioDelConfirmWarn"]   = "\$text = 'Dieses Medium hat %copyCount% Exemplar(e) und %holdCount% Vorbestellung(en).  Bitte löschen Sie diese Exemplare und/oder Vorbestellungen, bevor sie dieses Medium löschen.';";
-$trans["biblioDelConfirmReturn"] = "\$text = 'kehre zur Medieninformation zurück';";
-$trans["biblioDelConfirmMsg"]    = "\$text = 'Sind sie sicher das Medium mit dem Titel %title% zu löschen?';";
+$trans["biblioDelConfirmWarn"]   = "\$text = 'Dieses Medium hat %copyCount% Exemplar(e) und %holdCount% Vorbestellung(en). Bitte löschen Sie diese Exemplare und/oder Vorbestellungen, bevor Sie dieses Medium löschen.';";
+$trans["biblioDelConfirmReturn"] = "\$text = 'Zur Medieninformation zurückkehren';";
+$trans["biblioDelConfirmMsg"]    = "\$text = 'Sind Sie sicher, dass Sie das Medium mit dem Titel %title% löschen wollen?';";
 
 #****************************************************************************
 #*  Translation text for page biblio_del_confirm.php
 #****************************************************************************
-$trans["biblioDelMsg"]    = "\$text = 'Das Medium mit dem Titel, %title%, wurde gelöscht.';";
-$trans["biblioDelReturn"] = "\$text = 'Kehre zur Mediensuche zurück';";
+$trans["biblioDelMsg"]    = "\$text = 'Das Medium mit dem Titel %title% wurde gelöscht.';";
+$trans["biblioDelReturn"] = "\$text = 'Zur Mediensuche zurückkehren';";
 
 #****************************************************************************
 #*  Translation text for page biblio_hold_list.php
 #****************************************************************************
-$trans["biblioHoldListHead"]    = "\$text = 'Medien-Vorbestellungen:';";
+$trans["biblioHoldListHead"]    = "\$text = 'Vorbestellungen';";
 $trans["biblioHoldListNoHolds"] = "\$text = 'Zur Zeit sind keine Exemplare vorbestellt.';";
 $trans["biblioHoldListHdr1"]    = "\$text = 'Funktion';";
 $trans["biblioHoldListHdr2"]    = "\$text = 'Exemplar';";
