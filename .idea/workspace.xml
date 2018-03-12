@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" />
-      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" />
-      <change beforePath="$PROJECT_DIR$/catalog/biblio_copy_new_form.php" afterPath="$PROJECT_DIR$/catalog/biblio_copy_new_form.php" />
-      <change beforePath="$PROJECT_DIR$/locale/de/cataloging.php" afterPath="$PROJECT_DIR$/locale/de/cataloging.php" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +17,7 @@
       <file leaf-file-name="biblio_view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shared/biblio_view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="527">
               <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
               <folding />
             </state>
@@ -30,13 +27,9 @@
       <file leaf-file-name="biblio_copy_new_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_new_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="1003">
+              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
-                <element signature="e#2000#2006#0#HTML" expanded="true" />
-                <element signature="e#2006#2012#0#HTML" expanded="true" />
-                <element signature="e#2012#2018#0#HTML" expanded="true" />
-                <element signature="e#2018#2024#0#HTML" expanded="true" />
                 <marker date="1520189275983" expanded="true" signature="2608:2656" ph="..." />
               </folding>
             </state>
@@ -46,14 +39,9 @@
       <file leaf-file-name="biblio_copy_edit_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_edit_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
+            <state relative-caret-position="2873">
               <caret line="171" column="46" lean-forward="false" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
-              <folding>
-                <element signature="e#3353#3359#0#HTML" expanded="true" />
-                <element signature="e#3359#3365#0#HTML" expanded="true" />
-                <element signature="e#3365#3371#0#HTML" expanded="true" />
-                <element signature="e#3371#3377#0#HTML" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,18 +49,28 @@
       <file leaf-file-name="biblio_copy_del_confirm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="1122">
               <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="107" column="188" lean-forward="true" selection-start-line="107" selection-start-column="188" selection-end-line="107" selection-end-column="188" />
+            <state relative-caret-position="189">
+              <caret line="101" column="83" lean-forward="true" selection-start-line="101" selection-start-column="83" selection-end-line="101" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -81,7 +79,7 @@
       <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
+            <state relative-caret-position="5117">
               <caret line="303" column="42" lean-forward="false" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
               <folding />
             </state>
@@ -203,7 +201,6 @@
         <option value="$PROJECT_DIR$/circ/offline.php" />
         <option value="$PROJECT_DIR$/catalog/index.php" />
         <option value="$PROJECT_DIR$/circ/mbr_search.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/shared/biblio_search.php" />
         <option value="$PROJECT_DIR$/locale/de/shared.php" />
         <option value="$PROJECT_DIR$/locale/de/navbars.php" />
@@ -219,6 +216,7 @@
         <option value="$PROJECT_DIR$/catalog/biblio_copy_edit_form.php" />
         <option value="$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php" />
         <option value="$PROJECT_DIR$/locale/de/cataloging.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
       </list>
     </option>
   </component>
@@ -266,23 +264,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="circ" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
@@ -319,6 +306,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -406,7 +394,8 @@
       <workItem from="1518193936315" duration="556000" />
       <workItem from="1519663514715" duration="1453000" />
       <workItem from="1519728562909" duration="170000" />
-      <workItem from="1520165563616" duration="6635000" />
+      <workItem from="1520165563616" duration="6827000" />
+      <workItem from="1520866772104" duration="83000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -660,11 +649,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520175502661</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Redesign biblio copy actions [MAT]">
+      <created>1520190177503</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1520190177503</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102630000" />
+    <option name="totallyTimeSpent" value="102905000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -679,19 +675,19 @@
     <frame x="-3" y="33" width="1372" height="729" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32045454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32575756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311148" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30116472" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -708,7 +704,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Do issue #7 (translate reports)" />
     <MESSAGE value="Close issue #4 (utf-8 + reformat)" />
     <MESSAGE value="Close issue #10 (allow only utf-8)" />
     <MESSAGE value="Add new navbar with tabs (MAT)" />
@@ -733,7 +728,8 @@
     <MESSAGE value="Edit translation" />
     <MESSAGE value="Finish redesign of MARC fields pages [MAT]" />
     <MESSAGE value="Redesign biblio history [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redesign biblio history [MAT]" />
+    <MESSAGE value="Redesign biblio copy actions [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign biblio copy actions [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -945,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="55" column="33" lean-forward="true" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -970,7 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1972">
           <caret line="118" column="52" lean-forward="false" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
           <caret line="54" column="50" lean-forward="false" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -994,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1377">
           <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1008,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="141" column="24" lean-forward="false" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +1015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-471">
           <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1270">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,13 +1036,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="169" column="24" lean-forward="true" selection-start-line="169" selection-start-column="24" selection-end-line="169" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shared/biblio_view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="527">
           <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding />
         </state>
@@ -1071,7 +1049,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="5117">
           <caret line="303" column="42" lean-forward="false" selection-start-line="303" selection-start-column="42" selection-end-line="303" selection-end-column="42" />
           <folding />
         </state>
@@ -1081,19 +1059,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_new_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="1003">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
-            <element signature="e#2000#2006#0#HTML" expanded="true" />
-            <element signature="e#2006#2012#0#HTML" expanded="true" />
-            <element signature="e#2012#2018#0#HTML" expanded="true" />
-            <element signature="e#2018#2024#0#HTML" expanded="true" />
             <marker date="1520189275983" expanded="true" signature="2608:2656" ph="..." />
           </folding>
         </state>
@@ -1101,20 +1074,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_edit_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
+        <state relative-caret-position="2873">
           <caret line="171" column="46" lean-forward="false" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
-          <folding>
-            <element signature="e#3353#3359#0#HTML" expanded="true" />
-            <element signature="e#3359#3365#0#HTML" expanded="true" />
-            <element signature="e#3365#3371#0#HTML" expanded="true" />
-            <element signature="e#3371#3377#0#HTML" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/biblio_copy_del_confirm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="1122">
           <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
           <folding />
         </state>
@@ -1122,8 +1090,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/cataloging.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="107" column="188" lean-forward="true" selection-start-line="107" selection-start-column="188" selection-end-line="107" selection-end-column="188" />
+        <state relative-caret-position="189">
+          <caret line="101" column="83" lean-forward="true" selection-start-line="101" selection-start-column="83" selection-end-line="101" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding />
         </state>
       </provider>
