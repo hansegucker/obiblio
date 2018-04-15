@@ -211,9 +211,9 @@ $trans["NotAuth"] = "\$text = 'Sie sind nicht berechtigt die Katalogisierung zu 
 $trans["MarcUploadTest"]            = "\$text = 'Teste Datensatz';";
 $trans["MarcUploadTestTrue"]        = "\$text = 'Wahr';";
 $trans["MarcUploadTestFalse"]       = "\$text = 'Falsch';";
-$trans["MarcUploadTestFileUpload"]  = "\$text = 'USMarc Eingabe-Datei';";
+$trans["MarcUploadTestFileUpload"]  = "\$text = 'US-MARC Datei';";
 $trans["MarcUploadRecordsUploaded"] = "\$text = 'Datensätze hochgeladen';";
-$trans["MarcUploadMarcRecord"]      = "\$text = 'MARC Eintrag';";
+$trans["MarcUploadMarcRecord"]      = "\$text = 'MARC-Eintrag';";
 $trans["MarcUploadTag"]             = "\$text = 'Tag';";
 $trans["MarcUploadSubfield"]        = "\$text = 'Sub';";
 $trans["MarcUploadData"]            = "\$text = 'Daten';";
