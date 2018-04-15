@@ -26,7 +26,8 @@ $navloc = new Localize( OBIB_LOCALE, "navbars" );
         <a href="../catalog/index.php">
             <i class="material-icons">search</i>
 			<?php echo $navloc->getText( "catalogSearch2" ); ?>
-        </a></li>
+        </a>
+    </li>
 
 <?php } ?>
 

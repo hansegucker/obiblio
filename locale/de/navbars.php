@@ -50,7 +50,7 @@ $trans["homeLicenseLink"] = "\$text = 'Lizenz';";
 #****************************************************************************
 #*  Translation text for page admin.php
 #****************************************************************************
-$trans["adminSummary"]       = "\$text = 'Admin-Übersicht';";
+$trans["adminSummary"]       = "\$text = 'Übersicht';";
 $trans["adminStaff"]         = "\$text = 'Mitarbeiter';";
 $trans["adminSettings"]      = "\$text = 'Bibliothekseinst.';";
 $trans["adminMaterialTypes"] = "\$text = 'Medienarten';";
