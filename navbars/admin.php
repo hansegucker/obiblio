@@ -65,14 +65,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 <?php if ( $nav == "classifications" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">list</i>
+            <i class="material-icons">accessibility</i>
             &raquo; <?php echo $navLoc->getText( "Member Types" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/mbr_classify_list.php">
-            <i class="material-icons">list</i>
+            <i class="material-icons">accessibility</i>
 			<?php echo $navLoc->getText( "Member Types" ); ?>
         </a>
     </li>
@@ -81,14 +81,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 <?php if ( $nav == "member_fields" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">list</i>
+            <i class="material-icons">face</i>
             &raquo; <?php echo $navLoc->getText( "Member Fields" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/member_fields_list.php">
-            <i class="material-icons">list</i>
+            <i class="material-icons">face</i>
 			<?php echo $navLoc->getText( "Member Fields" ); ?>
         </a>
 <li>
@@ -97,14 +97,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 	<?php if ( $nav == "copy_fields" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">list</i>
+            <i class="material-icons">important_devices</i>
             &raquo; <?php echo $navLoc->getText( "Copy Fields" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/copy_fields_list.php">
-            <i class="material-icons">list</i>
+            <i class="material-icons">important_devices</i>
 			<?php echo $navLoc->getText( "Copy Fields" ); ?>
         </a>
     </li>
@@ -113,14 +113,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 <?php if ( $nav == "materials" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">list</i>
+            <i class="material-icons">devices</i>
             &raquo; <?php echo $navLoc->getText( "adminMaterialTypes" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/materials_list.php">
-            <i class="material-icons">list</i>
+            <i class="material-icons">devices</i>
 			<?php echo $navLoc->getText( "adminMaterialTypes" ); ?>
         </a>
     </li>
@@ -129,14 +129,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 <?php if ( $nav == "collections" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">list</i>
+            <i class="material-icons">library_books</i>
             &raquo; <?php echo $navLoc->getText( "adminCollections" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/collections_list.php">
-            <i class="material-icons">list</i>
+            <i class="material-icons">library_books</i>
 			<?php echo $navLoc->getText( "adminCollections" ); ?>
         </a>
     </li>
@@ -161,14 +161,14 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 <?php if ( $nav == "themes" ) { ?>
     <li>
         <a href="#" class="disabled">
-            <i class="material-icons">settings</i>
+            <i class="material-icons">invert_colors</i>
             &raquo; <?php echo $navLoc->getText( "adminThemes" ); ?>
         </a>
     </li>
 <?php } else { ?>
     <li>
         <a href="../admin/theme_list.php">
-            <i class="material-icons">settings</i>
+            <i class="material-icons">invert_colors</i>
 			<?php echo $navLoc->getText( "adminThemes" ); ?>
         </a>
     </li>
