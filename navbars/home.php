@@ -12,19 +12,7 @@ if (isset($_SESSION["userid"])) {
 } else {
     $sess_userid = "";
 }
-if ($sess_userid == "") { ?>
-    <li class="logout">
-        <a class="waves-effect waves-light btn green" href="../shared/loginform.php?RET=../home/index.php">
-            <?php echo $navLoc->getText("login"); ?>
-        </a>
-    </li>
-<?php } else { ?>
-    <li class="logout">
-        <a class="waves-effect waves-light btn red" href="../shared/logout.php">
-            <?php echo $navLoc->getText("logout"); ?>
-        </a>
-    </li>
-<?php } ?>
+?>
 
 <?php if ($nav == "home") { ?>
     <li><a href="#" class="disabled"><i class="material-icons">home</i>

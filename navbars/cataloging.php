@@ -7,11 +7,7 @@ require_once( "../classes/Localize.php" );
 $navloc = new Localize( OBIB_LOCALE, "navbars" );
 
 ?>
-<li class="logout">
-    <a class="waves-effect waves-light btn red" href="../shared/logout.php">
-		<?php echo $navloc->getText( "logout" ); ?>
-    </a>
-</li>
+
 
 
 <?php if ( $nav == "searchform" ) { ?>

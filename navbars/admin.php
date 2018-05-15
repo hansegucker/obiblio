@@ -7,12 +7,6 @@ require_once( "../classes/Localize.php" );
 $navLoc = new Localize( OBIB_LOCALE, "navbars" );
 
 ?>
-<li class="logout">
-    <a class="waves-effect waves-light btn red" href="../shared/logout.php">
-		<?php echo $navLoc->getText( "logout" ); ?>
-    </a>
-</li>
-
 <?php if ( $nav == "summary" ) { ?>
     <li>
         <a href="#" class="disabled">
