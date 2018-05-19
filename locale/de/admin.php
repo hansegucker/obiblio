@@ -203,63 +203,63 @@ $trans["If the month value for purging history is higher than zero, values in st
 #****************************************************************************
 #*  Translation text for all staff pages
 #****************************************************************************
-$trans["adminStaff_Staffmember"] = "\$text = 'Mitarbeiter,';";
-$trans["adminStaff_Return"] = "\$text = 'kehre zur Mitarbeiterliste zurück';";
-$trans["adminStaff_Yes"] = "\$text = 'Ja';";
-$trans["adminStaff_No"] = "\$text = 'Nein';";
+$trans["adminStaff_Staffmember"] = "\$text = 'Der Mitarbeiter ';";
+$trans["adminStaff_Return"]      = "\$text = 'Zur Mitarbeiterverwaltung zurückkehren';";
+$trans["adminStaff_Yes"]         = "\$text = 'Ja';";
+$trans["adminStaff_No"]          = "\$text = 'Nein';";
 
 
 #****************************************************************************
 #*  Translation text for page staff_del.php
 #****************************************************************************
-$trans["adminStaff_delDeleted"] = "\$text = ', wurde gelöscht.';";
+$trans["adminStaff_delDeleted"] = "\$text = ' wurde gelöscht.';";
 
 #****************************************************************************
 #*  Translation text for page staff_delete_confirm.php
 #****************************************************************************
-$trans["adminStaff_del_confirmConfirmText"] = "\$text = 'Sind Sie sicher folgenden Mitarbeiter zu löschen: ';";
+$trans["adminStaff_del_confirmConfirmText"] = "\$text = 'Sind Sie sich sicher, dass Sie folgenden Mitarbeiter löschen wollen: ';";
 
 #****************************************************************************
 #*  Translation text for page staff_edit.php
 #****************************************************************************
-$trans["adminStaff_editUpdated"] = "\$text = ', wurde aktualisiert.';";
+$trans["adminStaff_editUpdated"] = "\$text = ' wurde aktualisiert.';";
 
 #****************************************************************************
 #*  Translation text for page staff_edit_form.php
 #****************************************************************************
-$trans["adminStaff_edit_formHeader"] = "\$text = 'Bearbeite Mitarbeiterinformationen:';";
-$trans["adminStaff_edit_formLastname"] = "\$text = 'Nachname:';";
-$trans["adminStaff_edit_formFirstname"] = "\$text = 'Vorname:';";
-$trans["adminStaff_edit_formLogin"] = "\$text = 'Benutzername:';";
-$trans["adminStaff_edit_formAuth"] = "\$text = 'Befugnisse:';";
-$trans["adminStaff_edit_formCirc"] = "\$text = 'Ausleihe';";
-$trans["adminStaff_edit_formUpdatemember"] = "\$text = 'Benutzer bearb.';";
-$trans["adminStaff_edit_formCatalog"] = "\$text = 'Katalog.';";
-$trans["adminStaff_edit_formAdmin"] = "\$text = 'Admin';";
-$trans["adminStaff_edit_formReports"] = "\$text = 'Berichte';";
-$trans["adminStaff_edit_formSuspended"] = "\$text = 'Deakt.:';";
+$trans["adminStaff_edit_formHeader"]       = "\$text = 'Mitarbeiter bearbeiten';";
+$trans["adminStaff_edit_formLastname"]     = "\$text = 'Nachname';";
+$trans["adminStaff_edit_formFirstname"]    = "\$text = 'Vorname';";
+$trans["adminStaff_edit_formLogin"]        = "\$text = 'Benutzername';";
+$trans["adminStaff_edit_formAuth"]         = "\$text = 'Befugnisse:';";
+$trans["adminStaff_edit_formCirc"]         = "\$text = 'Ausleihe';";
+$trans["adminStaff_edit_formUpdatemember"] = "\$text = 'Benutzer bearbeiten';";
+$trans["adminStaff_edit_formCatalog"]      = "\$text = 'Katalogisierung';";
+$trans["adminStaff_edit_formAdmin"]        = "\$text = 'Admin';";
+$trans["adminStaff_edit_formReports"]      = "\$text = 'Berichte';";
+$trans["adminStaff_edit_formSuspended"]    = "\$text = 'Deaktiviert';";
 
 #****************************************************************************
 #*  Translation text for page staff_list.php
 #****************************************************************************
-$trans["adminStaff_list_formHeader"] = "\$text = 'Füge neue Mitarbeiter hinzu';";
-$trans["adminStaff_list_Columnheader"] = "\$text = ' Mitarbeiter:';";
-$trans["adminStaff_list_Function"] = "\$text = 'Funktionen';";
-$trans["adminStaff_list_Edit"] = "\$text = 'Bearb.';";
-$trans["adminStaff_list_Pwd"] = "\$text = 'Passw.';";
-$trans["adminStaff_list_Del"] = "\$text = 'Lösche';";
+$trans["adminStaff_list_formHeader"]   = "\$text = 'Neuen Mitarbeiter hinzufügen';";
+$trans["adminStaff_list_Columnheader"] = "\$text = ' Mitarbeiter';";
+$trans["adminStaff_list_Function"]     = "\$text = 'Aktionen';";
+$trans["adminStaff_list_Edit"]         = "\$text = 'Bearb.';";
+$trans["adminStaff_list_Pwd"]          = "\$text = 'Passw.';";
+$trans["adminStaff_list_Del"]          = "\$text = 'Lösche';";
 
 #****************************************************************************
 #*  Translation text for page staff_new.php
 #****************************************************************************
-$trans["adminStaff_new_Added"] = "\$text = ', wurde hinzugefügt.';";
+$trans["adminStaff_new_Added"] = "\$text = ' wurde hinzugefügt.';";
 
 #****************************************************************************
 #*  Translation text for page staff_new_form.php
 #****************************************************************************
-$trans["adminStaff_new_form_Header"] = "\$text = 'Füge neuen Mitarbeiter hinzu:';";
-$trans["adminStaff_new_form_Password"] = "\$text = 'Passwort:';";
-$trans["adminStaff_new_form_Reenterpassword"] = "\$text = 'Passwort wiederholen:';";
+$trans["adminStaff_new_form_Header"]          = "\$text = 'Neuen Mitarbeiter hinzufügen';";
+$trans["adminStaff_new_form_Password"]        = "\$text = 'Passwort';";
+$trans["adminStaff_new_form_Reenterpassword"] = "\$text = 'Passwort wiederholen';";
 
 #****************************************************************************
 #*  Translation text for page staff_pwd_reset.php
@@ -269,7 +269,7 @@ $trans["adminStaff_pwd_reset_Passwordreset"] = "\$text = 'Passwort wurde geände
 #****************************************************************************
 #*  Translation text for page staff_pwd_reset_form.php
 #****************************************************************************
-$trans["adminStaff_pwd_reset_form_Resetheader"] = "\$text = 'Ändere Mitarbeiter Passwort:';";
+$trans["adminStaff_pwd_reset_form_Resetheader"] = "\$text = 'Passwort ändern';";
 
 #****************************************************************************
 #*  Translation text for theme pages
