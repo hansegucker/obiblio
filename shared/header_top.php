@@ -86,6 +86,7 @@ if ( isset( $focus_form_name ) && ( $focus_form_name != "" ) ) {
 	}
 } ?> >
 <header>
+<div class="navbar-fixed">
     <nav class="nav-extended">
         <div class="nav-wrapper">
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -175,3 +176,4 @@ if ( isset( $focus_form_name ) && ( $focus_form_name != "" ) ) {
 	            <?php } ?>
             </ul>
         </div>
+</nav></div>

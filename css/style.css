@@ -65,4 +65,6 @@ body {
 main {
     flex: 1 0 auto;
 }
-
+.navbar-fixed{
+	padding-bottom: 100px;
+}
