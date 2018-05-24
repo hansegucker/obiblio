@@ -21,7 +21,7 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 	<div class="row">
 		<div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h2 class="center"><i class="material-icons large red-kath">repeat</i></h2>
             <h5 class="center"><?php echo $loc->getText("indexCirc"); ?></h5>
 
             <strong><?php echo $loc->getText("indexCircDesc1"); ?></strong>
@@ -34,7 +34,7 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 		</div>
 		<div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h2 class="center"><i class="material-icons large red-kath">library_books</i></h2>
             <h5 class="center"><?php echo $loc->getText("indexCat"); ?></h5>
 
             <strong><?php echo $loc->getText("indexCatDesc1"); ?></strong>
@@ -45,7 +45,7 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 		</div>
 		<div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h2 class="center"><i class="material-icons large red-kath">settings</i></h2>
             <h5 class="center"><?php echo $loc->getText("indexAdmin"); ?></h5>
 
             <strong><?php echo $loc->getText("indexAdminDesc1"); ?></strong>
@@ -60,7 +60,7 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 		</div>
 		<div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center large"><i class="material-icons">repeat</i></h2>
+            <h2 class="center"><i class="material-icons large red-kath">print</i></h2>
             <h5 class="center"><?php echo $loc->getText("indexReports"); ?></h5>
 
             <strong><?php echo $loc->getText("indexReportsDesc1"); ?></strong>

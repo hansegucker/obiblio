@@ -49,7 +49,7 @@ ul.sidenav.sidenav-fixed li.logo img {
 }
 
 ul.sidenav li.logout {
-    margin-top: 130px;
+    /*margin-top: 130px;*/
 }
 
 .copy-item {
@@ -65,4 +65,9 @@ body {
 main {
     flex: 1 0 auto;
 }
-
+.navbar-fixed{
+	padding-bottom: 100px;
+}
+.red-kath{
+	color: #da1f3d;
+}
