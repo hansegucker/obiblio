@@ -37,10 +37,10 @@
 #****************************************************************************
 #*  Common translation text shared among multiple pages
 #****************************************************************************
-$trans["adminSubmit"] = "\$text = 'Übermitteln';";
-$trans["adminCancel"] = "\$text = 'Abbrechen';";
-$trans["adminDelete"] = "\$text = 'Löschen';";
-$trans["adminUpdate"] = "\$text = 'Update';";
+$trans["adminSubmit"]   = "\$text = 'Übermitteln';";
+$trans["adminCancel"]   = "\$text = 'Abbrechen';";
+$trans["adminDelete"]   = "\$text = 'Löschen';";
+$trans["adminUpdate"]   = "\$text = 'Speichern';";
 $trans["adminFootnote"] = "\$text = 'Felder, die mit %symbol% markiert sind, werden benötigt.';";
 
 #****************************************************************************
@@ -74,26 +74,26 @@ $trans["adminCollections_editEnd"] = "\$text = ', wurde aktualisiert.';";
 #*  Translation text for page collections_edit_form.php
 #****************************************************************************
 $trans["adminCollections_edit_formEditcollection"] = "\$text = 'Bearbeite Genre:';";
-$trans["adminCollections_edit_formDescription"] = "\$text = 'Beschreibung:';";
-$trans["adminCollections_edit_formDaysdueback"] = "\$text = 'Ausleihdauer in Tagen:';";
-$trans["adminCollections_edit_formDailyLateFee"] = "\$text = 'Tägliche Versäumnisgebühr:';";
-$trans["adminCollections_edit_formNote"] = "\$text = '*Bemerkung:';";
-$trans["adminCollections_edit_formNoteText"] = "\$text = 'Wenn Sie die Ausleihdauer auf 0 setzen, kann man dieses Genre nicht ausleihen.';";
+$trans["adminCollections_edit_formDescription"]    = "\$text = 'Beschreibung:';";
+$trans["adminCollections_edit_formDaysdueback"]    = "\$text = 'Ausleihdauer in Tagen:';";
+$trans["adminCollections_edit_formDailyLateFee"]   = "\$text = 'Tägliche Versäumnisgebühr:';";
+$trans["adminCollections_edit_formNote"]           = "\$text = '* Bemerkung:';";
+$trans["adminCollections_edit_formNoteText"]       = "\$text = 'Wenn Sie die Ausleihdauer auf 0 setzen, kann man dieses Genre nicht ausleihen.';";
 
 #****************************************************************************
 #*  Translation text for page collections_list.php
 #****************************************************************************
-$trans["adminCollections_listAddNewCollection"] = "\$text = 'Füge neues Genre hinzu';";
-$trans["adminCollections_listCollections"] = "\$text = 'Genres:';";
-$trans["adminCollections_listFunction"] = "\$text = 'Funktionen';";
-$trans["adminCollections_listDescription"] = "\$text = 'Beschreibung';";
-$trans["adminCollections_listDaysdueback"] = "\$text = 'Ausleih-<br>dauer';";
-$trans["adminCollections_listDailylatefee"] = "\$text = 'Tägliche<br>Versäumnisgebühr';";
+$trans["adminCollections_listAddNewCollection"]  = "\$text = 'Füge neues Genre hinzu';";
+$trans["adminCollections_listCollections"]       = "\$text = 'Genres:';";
+$trans["adminCollections_listFunction"]          = "\$text = 'Funktionen';";
+$trans["adminCollections_listDescription"]       = "\$text = 'Beschreibung';";
+$trans["adminCollections_listDaysdueback"]       = "\$text = 'Ausleih-<br>dauer';";
+$trans["adminCollections_listDailylatefee"]      = "\$text = 'Tägliche<br>Versäumnisgebühr';";
 $trans["adminCollections_listBibliographycount"] = "\$text = 'Anzahl der<br>Medien';";
-$trans["adminCollections_listEdit"] = "\$text = 'Bearb.';";
-$trans["adminCollections_listDel"] = "\$text = 'Lösche';";
-$trans["adminCollections_ListNote"] = "\$text = '*Bemerkung:';";
-$trans["adminCollections_ListNoteText"] = "\$text = 'Man kann nur Genres löschen, die keine Medien enthalten.<br>Wenn Sie ein Genre löschen möchten, welches Medien enthält, müssen sie diese Medien zuerst einem anderen Genre zuordnen.';";
+$trans["adminCollections_listEdit"]              = "\$text = 'Bearb.';";
+$trans["adminCollections_listDel"]               = "\$text = 'Lösche';";
+$trans["adminCollections_ListNote"]              = "\$text = '* Bemerkung:';";
+$trans["adminCollections_ListNoteText"]          = "\$text = 'Man kann nur Genres löschen, die keine Medien enthalten.<br>Wenn Sie ein Genre löschen möchten, welches Medien enthält, müssen sie diese Medien zuerst einem anderen Genre zuordnen.';";
 
 #****************************************************************************
 #*  Translation text for page collections_new.php
@@ -104,11 +104,11 @@ $trans["adminCollections_newAdded"] = "\$text = ', wurde hinzugefügt.';";
 #*  Translation text for page collections_new_form.php
 #****************************************************************************
 $trans["adminCollections_new_formAddnewcollection"] = "\$text = 'Füge neues Genre hinzu:';";
-$trans["adminCollections_new_formDescription"] = "\$text = 'Beschreibung:';";
-$trans["adminCollections_new_formDaysdueback"] = "\$text = 'Ausleihdauer in Tagen:';";
-$trans["adminCollections_new_formDailylatefee"] = "\$text = 'Tägliche Versäumnisgebühr:';";
-$trans["adminCollections_new_formNote"] = "\$text = '*Bemerkung:';";
-$trans["adminCollections_new_formNoteText"] = "\$text = 'Wenn Sie die Ausleihdauer auf 0 setzen, kann man dieses Genre nicht ausleihen.';";
+$trans["adminCollections_new_formDescription"]      = "\$text = 'Beschreibung:';";
+$trans["adminCollections_new_formDaysdueback"]      = "\$text = 'Ausleihdauer in Tagen:';";
+$trans["adminCollections_new_formDailylatefee"]     = "\$text = 'Tägliche Versäumnisgebühr:';";
+$trans["adminCollections_new_formNote"]             = "\$text = '* Bemerkung:';";
+$trans["adminCollections_new_formNoteText"]         = "\$text = 'Wenn Sie die Ausleihdauer auf 0 setzen, kann man dieses Genre nicht ausleihen.';";
 
 #****************************************************************************
 #*  Translation text for page materials_del.php
@@ -126,16 +126,16 @@ $trans["admin_materials_delAreyousure"] = "\$text = 'Sind Sie sicher folgende Me
 #*  Translation text for page materials_edit_form.php
 #****************************************************************************
 $trans["admin_materials_delEditmaterialtype"] = "\$text = 'Bearbeite Medienarten:';";
-$trans["admin_materials_delDescription"] = "\$text = 'Beschreibung:';";
-$trans["admin_materials_delunlimited"] = "\$text = '(0 für unbeschränkt)';";
-$trans["admin_materials_delImagefile"] = "\$text = 'Bilddatei:';";
-$trans["admin_materials_delNote"] = "\$text = '*Bemerkung:';";
-$trans["admin_materials_delNoteText"] = "\$text = 'Die Bilddatein muss sich im Verzeichnis openbiblio/images befinden.';";
+$trans["admin_materials_delDescription"]      = "\$text = 'Beschreibung:';";
+$trans["admin_materials_delunlimited"]        = "\$text = '(0 für unbeschränkt)';";
+$trans["admin_materials_delImagefile"]        = "\$text = 'Bilddatei:';";
+$trans["admin_materials_delNote"]             = "\$text = '* Bemerkung:';";
+$trans["admin_materials_delNoteText"]         = "\$text = 'Die Bilddatein muss sich im Verzeichnis openbiblio/images befinden.';";
 
 #****************************************************************************
 #*  Translation text for page materials_edit.php
 #****************************************************************************
-$trans["admin_materials_editEnd"] = "\$text = ', wurde aktualisiert.';";
+$trans["admin_materials_editEnd"]           = "\$text = ', wurde aktualisiert.';";
 
 #****************************************************************************
 #*  Translation text for page materials_list.php
@@ -143,17 +143,17 @@ $trans["admin_materials_editEnd"] = "\$text = ', wurde aktualisiert.';";
 $trans["admin_materials_listAddmaterialtypes"] = "\$text = 'Füge neue Medienart hinzu';";
 $trans["admin_materials_listMaterialtypes"] = "\$text = 'Medienarten:';";
 $trans["admin_materials_listFunction"] = "\$text = 'Funktionen';";
-$trans["admin_materials_listDescription"] = "\$text = 'Beschreibung';";
-$trans["admin_materials_listLimits"] = "\$text = 'Limits';";
+$trans["admin_materials_listDescription"]   = "\$text = 'Beschreibung';";
+$trans["admin_materials_listLimits"]        = "\$text = 'Limits';";
 $trans["admin_materials_listCheckoutlimit"] = "\$text = 'Ausleihe';";
-$trans["admin_materials_listRenewallimit"] = "\$text = 'Verlängerung';";
-$trans["admin_materials_listImageFile"] = "\$text = 'Bild<br>Datei';";
-$trans["admin_materials_listBibcount"] = "\$text = 'Anzahl der<br>Medien';";
-$trans["admin_materials_listEdit"] = "\$text = 'Bearb.';";
-$trans["admin_materials_listDel"] = "\$text = 'Lösche';";
-$trans["admin_materials_listNote"] = "\$text = '*Bemerkung:';";
-$trans["admin_materials_listNoteText"] = "\$text = 'Man kann nur Medienarten löschen, die keine Medien enthalten.<br>Wenn Sie eine Medienart löschen möchten, welche Medien enthält, müssen sie diese Medien zuerst einer anderen Medienart zuordnen.';";
-$trans["No fields found!"] = "\$text = 'Keine Felder gefunden!';";
+$trans["admin_materials_listRenewallimit"]  = "\$text = 'Verlängerung';";
+$trans["admin_materials_listImageFile"]     = "\$text = 'Bild<br>Datei';";
+$trans["admin_materials_listBibcount"]      = "\$text = 'Anzahl der<br>Medien';";
+$trans["admin_materials_listEdit"]          = "\$text = 'Bearb.';";
+$trans["admin_materials_listDel"]           = "\$text = 'Lösche';";
+$trans["admin_materials_listNote"]          = "\$text = '* Bemerkung:';";
+$trans["admin_materials_listNoteText"]      = "\$text = 'Man kann nur Medienarten löschen, die keine Medien enthalten.<br>Wenn Sie eine Medienart löschen möchten, welche Medien enthält, müssen sie diese Medien zuerst einer anderen Medienart zuordnen.';";
+$trans["No fields found!"]                  = "\$text = 'Keine Felder gefunden!';";
 
 #****************************************************************************
 #*  Translation text for page materials_new.php
@@ -177,27 +177,27 @@ $trans["admin_noauth"] = "\$text = 'Sie sind nicht berechtigt den Adminbereich z
 #****************************************************************************
 #*  Translation text for page settings_edit_form.php
 #****************************************************************************
-$trans["admin_settingsUpdated"] = "\$text = 'Die Daten wurden aktualisiert..';";
-$trans["admin_settingsEditsettings"] = "\$text = 'Bearbeite Bibliothekseinstellungen:';";
-$trans["admin_settingsLibName"] = "\$text = 'Bibliotheksname:';";
-$trans["admin_settingsLibimageurl"] = "\$text = 'URL des Bibliothekslogo:';";
-$trans["admin_settingsOnlyshowimginheader"] = "\$text = 'Zeige nur das Bild in Kopfzeile:';";
-$trans["admin_settingsLibhours"] = "\$text = 'Öffnungszeiten:';";
-$trans["admin_settingsLibphone"] = "\$text = 'Telefonnummer:';";
-$trans["admin_settingsLibURL"] = "\$text = 'Homepage:';";
-$trans["admin_settingsOPACURL"] = "\$text = 'OPAC URL:';";
-$trans["admin_settingsSessionTimeout"] = "\$text = 'Session Timeout:';";
-$trans["admin_settingsMinutes"] = "\$text = 'Minuten';";
-$trans["admin_settingsSearchResults"] = "\$text = 'Suchergebnisse:';";
-$trans["admin_settingsItemsperpage"] = "\$text = 'Ergebnisse pro Seite';";
-$trans["admin_settingsPurgebibhistory"] = "\$text = 'Lösche vergangene Ausleihvorgänge nach:';";
-$trans["admin_settingsmonths"] = "\$text = 'Monaten';";
-$trans["admin_settingsBlockCheckouts"] = "\$text = 'Blockiere Ausleihe, wenn Gebühren anstehen:';";
-$trans["Max. hold length:"] = "\$text = 'Max. Reservierungsdauer:';";
-$trans["days"] = "\$text = 'Tage';";
-$trans["admin_settingsLocale"] = "\$text = 'Sprache:';";
-$trans["admin_settingsHTMLChar"] = "\$text = 'HTML Zeichensatz:';";
-$trans["admin_settingsHTMLTagLangAttr"] = "\$text = 'HTML Tag Sprach Attribut:';";
+$trans["admin_settingsUpdated"]             = "\$text = 'Die Daten wurden aktualisiert.';";
+$trans["admin_settingsEditsettings"]        = "\$text = 'Bibliothekseinstellungen bearbeiten';";
+$trans["admin_settingsLibName"]             = "\$text = 'Bibliotheksname';";
+$trans["admin_settingsLibimageurl"]         = "\$text = 'URL des Bibliothekslogo';";
+$trans["admin_settingsOnlyshowimginheader"] = "\$text = 'Nur das Logo in der Kopfzeile anzeigen';";
+$trans["admin_settingsLibhours"]            = "\$text = 'Öffnungszeiten';";
+$trans["admin_settingsLibphone"]            = "\$text = 'Telefonnummer';";
+$trans["admin_settingsLibURL"]              = "\$text = 'Homepage';";
+$trans["admin_settingsOPACURL"]             = "\$text = 'OPAC-URL';";
+$trans["admin_settingsSessionTimeout"]      = "\$text = 'Session-Timeout (in Minuten)';";
+//$trans["admin_settingsMinutes"] = "\$text = 'Minuten';";
+$trans["admin_settingsSearchResults"] = "\$text = 'Suchergebnisse pro Seite';";
+//$trans["admin_settingsItemsperpage"] = "\$text = 'Ergebnisse pro Seite';";
+$trans["admin_settingsPurgebibhistory"] = "\$text = 'Lösche vergangene Ausleihvorgänge nach <em>X</em> Monaten';";
+//$trans["admin_settingsmonths"] = "\$text = 'Monaten';";
+$trans["admin_settingsBlockCheckouts"] = "\$text = 'Ausleihe blockieren, wenn Gebühren ausstehen';";
+$trans["Max. hold length:"]            = "\$text = 'Max. Reservierungsdauer (in Tagen)';";
+//$trans["days"] = "\$text = 'Tage';";
+$trans["admin_settingsLocale"]                                                                                                                                                                               = "\$text = 'Sprache';";
+$trans["admin_settingsHTMLChar"]                                                                                                                                                                             = "\$text = 'HTML Zeichensatz:';";
+$trans["admin_settingsHTMLTagLangAttr"]                                                                                                                                                                      = "\$text = 'HTML-Sprach-Tag (xx)';";
 $trans["If the month value for purging history is higher than zero, values in statistics reports shift over time.<br>Data from statistics reports should be saved outside OpenBiblio for future reference."] = "\$text = 'Wenn die Monatsanzahl beim löschen der Historie größer als Null ist, können sich die statistischen Werte verändern.<br>Daten aus statistischen Reporten sollten für zukünftige Referenzen außerhalb von Openbiblio gespeichert werden.';";
 
 #****************************************************************************
@@ -299,25 +299,25 @@ $trans["adminTheme_Preview"] = "\$text = 'Vorschau des Layouts';";
 #*  Translation text for page theme_list.php
 #****************************************************************************
 $trans["adminTheme_Changetheme"] = "\$text = 'Bearbeite benutzes Layout:';";
-$trans["adminTheme_Choosetheme"] = "\$text = 'Wähle ein neues Layout aus:';";
-$trans["adminTheme_Addnew"] = "\$text = 'Füge neues Layout hinzu';";
-$trans["adminTheme_themes"] = "\$text = 'Layouts:';";
-$trans["adminTheme_function"] = "\$text = 'Funktionen';";
-$trans["adminTheme_Themename"] = "\$text = 'Layout Name';";
-$trans["adminTheme_Usage"] = "\$text = 'Benutzung';";
-$trans["adminTheme_Edit"] = "\$text = 'Bearb.';";
-$trans["adminTheme_Copy"] = "\$text = 'Kopiere';";
-$trans["adminTheme_Del"] = "\$text = 'Lösche';";
-$trans["adminTheme_Inuse"] = "\$text = 'benutzt';";
-$trans["adminTheme_Note"] = "\$text = '*Bemerkung:';";
-$trans["adminTheme_Notetext"] = "\$text = 'Layouts die gerade benutzt werden können nicht gelöscht werden.';";
+$trans["adminTheme_Choosetheme"]                                                                                                                                                                             = "\$text = 'Wähle ein neues Layout aus:';";
+$trans["adminTheme_Addnew"]                                                                                                                                                                                  = "\$text = 'Füge neues Layout hinzu';";
+$trans["adminTheme_themes"]                                                                                                                                                                                  = "\$text = 'Layouts:';";
+$trans["adminTheme_function"]                                                                                                                                                                                = "\$text = 'Funktionen';";
+$trans["adminTheme_Themename"]                                                                                                                                                                               = "\$text = 'Layout Name';";
+$trans["adminTheme_Usage"]                                                                                                                                                                                   = "\$text = 'Benutzung';";
+$trans["adminTheme_Edit"]                                                                                                                                                                                    = "\$text = 'Bearb.';";
+$trans["adminTheme_Copy"]                                                                                                                                                                                    = "\$text = 'Kopiere';";
+$trans["adminTheme_Del"]                                                                                                                                                                                     = "\$text = 'Lösche';";
+$trans["adminTheme_Inuse"]                                                                                                                                                                                   = "\$text = 'benutzt';";
+$trans["adminTheme_Note"]                                                                                                                                                                                    = "\$text = '* Bemerkung:';";
+$trans["adminTheme_Notetext"]                                                                                                                                                                                = "\$text = 'Layouts die gerade benutzt werden können nicht gelöscht werden.';";
 
 #****************************************************************************
 #*  Translation text for page theme_list.php
 #****************************************************************************
-$trans["adminTheme_Theme2"] = "\$text = 'Layout:';";
-$trans["adminTheme_Tablebordercolor"] = "\$text = 'Tabellenrahmen Farbe:';";
-$trans["adminTheme_Errorcolor"] = "\$text = 'Fehler Farbe:';";
+$trans["adminTheme_Theme2"]                                                                                                                                                                                                                               = "\$text = 'Layout:';";
+$trans["adminTheme_Tablebordercolor"]                                                                                                                                                                                                                     = "\$text = 'Tabellenrahmen Farbe:';";
+$trans["adminTheme_Errorcolor"]                                                                                                                                                                                                                           = "\$text = 'Fehler Farbe:';";
 $trans["adminTheme_Tableborderwidth"] = "\$text = 'Tabellenrahmen Breite:';";
 $trans["adminTheme_Tablecellpadding"] = "\$text = 'Tabellenzellen Innenabstand:';";
 $trans["adminTheme_Title"] = "\$text = 'Titelzeile';";
@@ -423,14 +423,14 @@ $trans["Add custom copy field"] = "\$text = 'Füge spezifisches Exemplarfeld hin
 $trans["Classification type, %desc%, has been deleted."] = "\$text = 'Mitgliederart, %desc%, wurde gelöscht.';";
 $trans["return to member classification list"] = "\$text = 'Zurück zur Liste der Mitgliederarten';";
 $trans["Are you sure you want to delete classification '%desc%'?"] = "\$text = 'Sind Sie sicher die Mitgliederart \'%desc%\' zu löschen?';";
-$trans["Classification type, %desc%, has been updated."] = "\$text = 'Mitgliederart, %desc%, wurde aktualisiert.';";
-$trans["Edit Classification Type"] = "\$text = 'Bearbeite Mitgliederart';";
-$trans["Max. Fines:"] = "\$text = 'Max. Gebühren:';";
-$trans["Add new member classification"] = "\$text = 'Neue Mitgliederart hinzufügen';";
-$trans["Member Classifications List"] = "\$text = 'Liste der Mitgliederarten';";
-$trans["Max. Fines"] = "\$text = 'Max. Gebühren';";
-$trans["Members"] = "\$text = 'Mitglieder';";
-$trans["*Note:"] = "\$text = '*Bemerkung:';";
+$trans["Classification type, %desc%, has been updated."]                                                                                                                                                                                                  = "\$text = 'Mitgliederart, %desc%, wurde aktualisiert.';";
+$trans["Edit Classification Type"]                                                                                                                                                                                                                        = "\$text = 'Bearbeite Mitgliederart';";
+$trans["Max. Fines:"]                                                                                                                                                                                                                                     = "\$text = 'Max. Gebühren:';";
+$trans["Add new member classification"]                                                                                                                                                                                                                   = "\$text = 'Neue Mitgliederart hinzufügen';";
+$trans["Member Classifications List"]                                                                                                                                                                                                                     = "\$text = 'Liste der Mitgliederarten';";
+$trans["Max. Fines"]                                                                                                                                                                                                                                      = "\$text = 'Max. Gebühren';";
+$trans["Members"]                                                                                                                                                                                                                                         = "\$text = 'Mitglieder';";
+$trans["*Note:"]                                                                                                                                                                                                                                          = "\$text = '* Bemerkung:';";
 $trans["The delete function is only available on classifications that have a member count of zero.  If you wish to delete a classification with a member count greater than zero you will first need to change those members to another classification."] = "\$text = 'Die Löschfunktion ist nur verfügbar, bei Mitgliederarten, die keine Mitglieder haben. Wenn Sie eine Mitgliederart löschen möchten, die mehr als Null Mitglieder haben, dann müssen Sie diese Mitglieder erst in eine andere Mitgliederart verschieben.';";
 $trans["Classification type, %desc%, has been added."] = "\$text = 'Mitgliederart, %desc%, wurde hinzugefügt.';";
 $trans["Add new classification type"] = "\$text = 'Füge neue Mitgliederart hinzu';";
