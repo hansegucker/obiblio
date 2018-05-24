@@ -14,9 +14,9 @@ $loc = new Localize(OBIB_LOCALE, $tab);
 
 ?>
 
-<h1><img src="../images/admin.png" border="0" width="30" height="30"
-         align="top"> <?php echo $loc->getText("indexHdr"); ?></h1>
-<?php echo $loc->getText("indexDesc"); ?>
-<br><br><br><br><br>
+<h3><i class="material-icons small">settings</i> <?php echo $loc->getText( "indexHdr" ); ?></h3>
+<p class="flow-text">
+	<?php echo $loc->getText( "indexDesc" ); ?>
+</p>
 
 <?php include("../shared/footer.php"); ?>

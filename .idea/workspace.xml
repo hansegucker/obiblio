@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="">
+    <list default="true" id="3cb87e66-0b69-4b8d-a3a4-37192052dee9" name="Default" comment="Redesign staff management [MAT]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/locale/de/navbars.php" afterPath="$PROJECT_DIR$/locale/de/navbars.php" />
-      <change beforePath="$PROJECT_DIR$/navbars/admin.php" afterPath="$PROJECT_DIR$/navbars/admin.php" />
-      <change beforePath="$PROJECT_DIR$/navbars/cataloging.php" afterPath="$PROJECT_DIR$/navbars/cataloging.php" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_del.php" afterPath="$PROJECT_DIR$/admin/staff_del.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_del_confirm.php" afterPath="$PROJECT_DIR$/admin/staff_del_confirm.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_edit.php" afterPath="$PROJECT_DIR$/admin/staff_edit.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_edit_form.php" afterPath="$PROJECT_DIR$/admin/staff_edit_form.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_list.php" afterPath="$PROJECT_DIR$/admin/staff_list.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_new.php" afterPath="$PROJECT_DIR$/admin/staff_new.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_new_form.php" afterPath="$PROJECT_DIR$/admin/staff_new_form.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_pwd_reset.php" afterPath="$PROJECT_DIR$/admin/staff_pwd_reset.php" />
+      <change beforePath="$PROJECT_DIR$/admin/staff_pwd_reset_form.php" afterPath="$PROJECT_DIR$/admin/staff_pwd_reset_form.php" />
+      <change beforePath="$PROJECT_DIR$/locale/de/admin.php" afterPath="$PROJECT_DIR$/locale/de/admin.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,41 +24,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navbars.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/locale/de/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="62" column="55" lean-forward="false" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            <state relative-caret-position="183">
+              <caret line="254" column="44" lean-forward="false" selection-start-line="254" selection-start-column="44" selection-end-line="254" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_del.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_del.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="47" column="74" lean-forward="false" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="84" column="71" lean-forward="true" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/locale/de/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-289">
-              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/navbars/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="70">
+              <caret line="147" column="51" lean-forward="false" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cataloging.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_edit_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_edit_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="110" column="3" lean-forward="true" selection-start-line="110" selection-start-column="3" selection-end-line="161" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_new_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_new_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="131" column="8" lean-forward="false" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_new.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/staff_new.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_pwd_reset_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_pwd_reset_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="staff_pwd_reset.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/staff_pwd_reset.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-542">
+              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -68,12 +136,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bibedit</find>
-      <find>hist</find>
-      <find>medieninfo</find>
-      <find>History</find>
-      <find>copynew</find>
-      <find>marc</find>
       <find>holds</find>
       <find>Delete</find>
       <find>BibNewLike</find>
@@ -98,6 +160,12 @@
       <find>sind</find>
       <find>neues</find>
       <find>New</find>
+      <find>adminStaff_list_Columnheader</find>
+      <find>echo $loc-&gt;getText( &quot;adminStaff_No&quot; );</find>
+      <find>Funktione</find>
+      <find>kehre zur mi</find>
+      <find>staffm</find>
+      <find>füge n</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -106,6 +174,8 @@
       <replace>&lt;7strong&gt;</replace>
       <replace>&lt;/strong&gt;</replace>
       <replace>&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>echo '&lt;i class=&quot;material-icons&quot;&gt;check&lt;/i&gt;';</replace>
+      <replace>echo '&lt;i class=&quot;material-icons&quot;&gt;clear&lt;/i&gt;';</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -136,17 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/test.html" />
-        <option value="$PROJECT_DIR$/test/test.js" />
-        <option value="$PROJECT_DIR$/locale/de/home.php" />
-        <option value="$PROJECT_DIR$/shared/global_constants.php" />
-        <option value="$PROJECT_DIR$/home/license.php" />
-        <option value="$PROJECT_DIR$/shared/footer.php" />
-        <option value="$PROJECT_DIR$/shared/loginform.php" />
-        <option value="$PROJECT_DIR$/home/index.php" />
-        <option value="$PROJECT_DIR$/shared/header.php" />
-        <option value="$PROJECT_DIR$/navbars/circulation.php" />
-        <option value="$PROJECT_DIR$/navbars/home.php" />
         <option value="$PROJECT_DIR$/circ/mbr_print_checkouts.php" />
         <option value="$PROJECT_DIR$/shared/header_top.php" />
         <option value="$PROJECT_DIR$/circ/mbr_fields.php" />
@@ -187,6 +246,17 @@
         <option value="$PROJECT_DIR$/navbars/cataloging.php" />
         <option value="$PROJECT_DIR$/locale/de/navbars.php" />
         <option value="$PROJECT_DIR$/navbars/admin.php" />
+        <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/admin/staff_list.php" />
+        <option value="$PROJECT_DIR$/admin/staff_edit_form.php" />
+        <option value="$PROJECT_DIR$/admin/staff_pwd_reset.php" />
+        <option value="$PROJECT_DIR$/admin/staff_pwd_reset_form.php" />
+        <option value="$PROJECT_DIR$/admin/staff_del_confirm.php" />
+        <option value="$PROJECT_DIR$/admin/staff_del.php" />
+        <option value="$PROJECT_DIR$/admin/staff_edit.php" />
+        <option value="$PROJECT_DIR$/admin/staff_new_form.php" />
+        <option value="$PROJECT_DIR$/locale/de/admin.php" />
+        <option value="$PROJECT_DIR$/admin/staff_new.php" />
       </list>
     </option>
   </component>
@@ -245,7 +315,22 @@
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
               <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="circ" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="obiblio" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="home" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="obiblio" type="b2602c69:ProjectViewProjectNode" />
@@ -364,7 +449,11 @@
       <workItem from="1521650738253" duration="599000" />
       <workItem from="1521658016832" duration="113000" />
       <workItem from="1522836250235" duration="17000" />
-      <workItem from="1523784242078" duration="1862000" />
+      <workItem from="1523784242078" duration="2474000" />
+      <workItem from="1526494859459" duration="2195000" />
+      <workItem from="1526571823900" duration="1822000" />
+      <workItem from="1526731977181" duration="72000" />
+      <workItem from="1526732125693" duration="1440000" />
     </task>
     <task id="LOCAL-00001" summary="Update install instructions a little bit (German version)">
       <created>1511978788246</created>
@@ -646,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523784984861</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Redesign nav of admin section [MAT]">
+      <created>1523786118108</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1523786118108</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106707000" />
+    <option name="totallyTimeSpent" value="112848000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -662,22 +758,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="33" width="1372" height="729" extended-state="6" />
+    <frame x="-3" y="33" width="1926" height="1041" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3469697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36392742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13311148" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3274918" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30116472" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294509" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933443" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.327787" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -694,8 +790,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Redesign index page (MAT)" />
-    <MESSAGE value="Redesign nav at circulation tab (MAT)" />
     <MESSAGE value="Redesign circulation index [MAT]" />
     <MESSAGE value="Add icons to circulation nav [MAT]" />
     <MESSAGE value="Redesign search results page at circulation [MAT]" />
@@ -719,7 +813,9 @@
     <MESSAGE value="Remove heading color" />
     <MESSAGE value="Finish medium nav points [MAT]" />
     <MESSAGE value="Finish upload MARC [MAT]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish upload MARC [MAT]" />
+    <MESSAGE value="Redesign nav of admin section [MAT]" />
+    <MESSAGE value="Redesign staff management [MAT]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign staff management [MAT]" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -728,83 +824,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/circ/checkout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shared/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_del_confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="97" column="37" lean-forward="false" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_del.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="143" column="61" lean-forward="false" selection-start-line="143" selection-start-column="61" selection-end-line="143" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_transaction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-250">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_transaction_del_confirm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/inputFuncs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/mbr_history.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="104" column="58" lean-forward="false" selection-start-line="104" selection-start-column="58" selection-end-line="104" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/circ/mbr_view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2958">
@@ -837,20 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="59" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circ/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -977,7 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2907">
           <caret line="171" column="46" lean-forward="false" selection-start-line="171" selection-start-column="46" selection-end-line="171" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
           <caret line="68" column="49" lean-forward="false" selection-start-line="68" selection-start-column="49" selection-end-line="68" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +996,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="52" column="4" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +1003,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="161" column="7" lean-forward="false" selection-start-line="161" selection-start-column="7" selection-end-line="161" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="224" column="67" lean-forward="false" selection-start-line="224" selection-start-column="67" selection-end-line="224" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="71" column="67" lean-forward="false" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="97" column="16" lean-forward="true" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +1045,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,7 +1052,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,38 +1059,136 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale/de/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/locale/de/navbars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
+        <state relative-caret-position="1020">
           <caret line="62" column="55" lean-forward="false" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbars/cataloging.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circ/mbr_del.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_del_confirm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="93" column="17" lean-forward="false" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_del.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="47" column="74" lean-forward="false" selection-start-line="47" selection-start-column="74" selection-end-line="47" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/navbars/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="183" column="0" lean-forward="true" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state relative-caret-position="70">
+          <caret line="147" column="51" lean-forward="false" selection-start-line="147" selection-start-column="51" selection-end-line="147" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="84" column="71" lean-forward="true" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_edit_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="110" column="3" lean-forward="true" selection-start-line="110" selection-start-column="3" selection-end-line="161" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_new_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="131" column="8" lean-forward="false" selection-start-line="131" selection-start-column="8" selection-end-line="131" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locale/de/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="254" column="44" lean-forward="false" selection-start-line="254" selection-start-column="44" selection-end-line="254" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_pwd_reset_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_pwd_reset.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-542">
+          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/staff_new.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
           <folding />
         </state>
       </provider>
