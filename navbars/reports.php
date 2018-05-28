@@ -14,7 +14,7 @@ if (isset($_SESSION["userid"])) {
 }
 ?>
 <?php
-Nav::node('reportlist', $navLoc->getText("Report List"), '../reports/index.php');
+/*Nav::node('reportlist', $navLoc->getText("Report List"), '../reports/index.php');
 if (isset($_SESSION['rpt_Report'])) {
     Nav::node('results', $navLoc->getText("Report Results"),
         '../reports/run_report.php?type=previous');
@@ -27,5 +27,42 @@ if (isset($helpPage)) {
 $helpurl .= "')";
 Nav::node('help', $navLoc->getText("help"), $helpurl);
 
-Nav::display("$nav");
+Nav::display("$nav");*/
 ?>
+<?php if ($nav == "reportlist") { ?>
+    <li><a href="#" class="disabled"><i class="material-icons">home</i>
+            &raquo; <?php echo $navLoc->getText("Report List"); ?></a></li>
+<?php } else { ?>
+    <li><a href="../reports/index.php"><i
+                    class="material-icons">home</i> <?php echo $navLoc->getText("Report List"); ?></a></li>
+<?php } ?>
+
+<?php if ($nav == "reportcriteria") { ?>
+    <li><a href="#" class="disabled"><i class="material-icons">filter_list</i>
+            &raquo; <?php echo $loc->getText("Report Criteria"); ?></a></li>
+<?php } else { ?>
+    <li><a href="../reports/report_criteria.php?type="><i
+                    class="material-icons">filter_list</i> <?php echo $loc->getText("Report Criteria"); ?></a></li>
+<?php } ?>
+
+
+
+<?php if ($nav == "results") { ?>
+    <li><a href="#" class="disabled"><i class="material-icons">list</i>
+            &raquo; <?php echo $navLoc->getText("Report Results"); ?></a></li>
+<?php } else { ?>
+    <li><a href="../reports/run_report.php?type=previous"><i
+                    class="material-icons">list</i> <?php echo $navLoc->getText("Report Results"); ?></a></li>
+<?php } ?>
+
+<?php if ($nav == "results/list") { ?>
+    <li><a href="#" class="disabled"><i class="material-icons">print</i>
+            &raquo; <?php echo $loc->getText("Print list"); ?></a></li>
+<?php } else { ?>
+    <li><a href="../shared/layout.php?rpt=Report&name=list"><i
+                    class="material-icons">print</i> <?php echo $loc->getText("Print list"); ?></a></li>
+<?php } ?>
+
+<li>
+    <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><i
+                class="material-icons">help</i> <?php echo $navLoc->getText("help"); ?></a></li>

@@ -126,10 +126,6 @@ foreach ($rpt->layouts() as $l) {
     Nav::node('results/' . $l['name'], $loc->getText($title),
         '../shared/layout.php?rpt=Report&name=' . U($l['name']));
 }
-Nav::node('results/list', $loc->getText("Print list"),
-    '../shared/layout.php?rpt=Report&name=list');
-Nav::node('reportcriteria', $loc->getText("Report Criteria"),
-    '../reports/report_criteria.php?type=' . U($rpt->type()));
 
 if ($format == 'csv') {
     include_once('../classes/CsvTable.php');
