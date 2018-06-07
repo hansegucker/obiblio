@@ -40,8 +40,8 @@ Nav::display("$nav");*/
 <?php if ($nav == "reportcriteria") { ?>
     <li><a href="#" class="disabled"><i class="material-icons">filter_list</i>
             &raquo; <?php echo $loc->getText("Report Criteria"); ?></a></li>
-<?php } else { ?>
-    <li><a href="../reports/report_criteria.php?type="><i
+<?php } else if ($nav == "results") { ?>
+    <li><a href="../reports/report_criteria.php?type=<?= U($rpt->type()) ?>"><i
                     class="material-icons">filter_list</i> <?php echo $loc->getText("Report Criteria"); ?></a></li>
 <?php } ?>
 
@@ -50,15 +50,12 @@ Nav::display("$nav");*/
 <?php if ($nav == "results") { ?>
     <li><a href="#" class="disabled"><i class="material-icons">list</i>
             &raquo; <?php echo $navLoc->getText("Report Results"); ?></a></li>
-<?php } else { ?>
+<?php } else if ($nav == "reportcriteria") { ?>
     <li><a href="../reports/run_report.php?type=previous"><i
                     class="material-icons">list</i> <?php echo $navLoc->getText("Report Results"); ?></a></li>
 <?php } ?>
 
-<?php if ($nav == "results/list") { ?>
-    <li><a href="#" class="disabled"><i class="material-icons">print</i>
-            &raquo; <?php echo $loc->getText("Print list"); ?></a></li>
-<?php } else { ?>
+<?php if ($nav == "results") { ?>
     <li><a href="../shared/layout.php?rpt=Report&name=list"><i
                     class="material-icons">print</i> <?php echo $loc->getText("Print list"); ?></a></li>
 <?php } ?>

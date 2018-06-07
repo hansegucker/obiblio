@@ -44,18 +44,17 @@ foreach (array_keys($reports) as $k) {
 
 include("../shared/header.php");
 ?>
-
-<h1><?php echo $loc->getText("reportListHdr"); ?></h1>
+<div class="container">
+<h3><i class="material-icons small">print</i> <?php echo $loc->getText("reportListHdr"); ?></h3>
 
 <?php echo $loc->getText("reportListDesc"); ?>
-<ul>
+<ul class="collection with-header">
     <?php
     foreach (array_keys($reports) as $category) {
-        echo '<li class="report_category"><strong>' . $loc->getText($category) . '</strong><ul>';
+        echo '<li class="collection-header"><h6>' . $loc->getText($category) . '</h6></li>';
         foreach ($reports[$category] as $type => $title) {
-            echo '<li><a href="../reports/report_criteria.php?type=' . HURL($type) . '">' . H($title) . '</a></li>';
+            echo '<li><a class="collection-item" href="../reports/report_criteria.php?type=' . HURL($type) . '">' . H($title) . '</a></li>';
         }
-        echo '</ul></li>';
     }
     if ($errors) {
         echo '<li class="report_category"><strong>' . $loc->getText("Report Errors") . '</strong><ul>';
@@ -66,4 +65,5 @@ include("../shared/header.php");
     }
     ?>
 </ul>
+</div>
 <?php include("../shared/footer.php"); ?>

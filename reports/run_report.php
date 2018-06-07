@@ -29,7 +29,7 @@ if (isset($_REQUEST['rpt___format'])) {
 function echolink($page, $text, $newSort = NULL)
 {
     global $tab, $nav, $format;
-    echo '<a href="../reports/run_report.php?type=previous';
+    echo '<li class="waves-effect"> <a href="../reports/run_report.php?type=previous';
     echo '&amp;rpt___format=' . HURL($format);
     echo '&amp;tab=' . HURL($tab) . '&amp;nav=' . HURL($nav);
     echo '&amp;page=' . HURL($page);
@@ -38,7 +38,7 @@ function echolink($page, $text, $newSort = NULL)
     }
     echo '">'
         . $text
-        . '</a>';
+        . '</a> </li>';
 }
 
 function printResultPages(&$loc, $currPage, $pageCount)
@@ -47,12 +47,13 @@ function printResultPages(&$loc, $currPage, $pageCount)
         return false;
     }
     echo $loc->getText("Result Pages: ");
+    echo "<ul class='pagination'>";
     if ($currPage > 6) {
         echolink(1, $loc->getText("&laquo;First"));
         echo ' ';
     }
     if ($currPage > 1) {
-        echolink($currPage - 1, $loc->getText("&laquo;Prev"));
+        echolink($currPage - 1, '<i class="material-icons">chevron_left</i>');
         echo ' ';
     }
     $start = $currPage - 5;
@@ -61,20 +62,21 @@ function printResultPages(&$loc, $currPage, $pageCount)
     if ($end > $pageCount) $end = $pageCount;
     for ($i = $start; $i <= $end; $i++) {
         if ($i == $currPage) {
-	        echo "<strong>" . $i . "</strong> ";
+	        echo "<li class='active'><a>" . $i . "</a></li> ";
         } else {
             echolink($i, $i);
             echo ' ';
         }
     }
     if ($currPage < $pageCount) {
-        echolink($currPage + 1, $loc->getText("Next&raquo;"));
+        echolink($currPage + 1, '<i class="material-icons">chevron_right</i>');
         echo ' ';
     }
     if ($currPage < $pageCount - 5) {
         echolink($pageCount, $loc->getText("Last&raquo;"));
         echo ' ';
     }
+    echo "</ul>";
 }
 
 if (!$_REQUEST['type']) {

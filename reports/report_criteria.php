@@ -57,6 +57,8 @@ if (isset($_REQUEST['msg'])) {
     Params::printForm($params);
     ?>
 
-    <input type="submit" value="<?= $loc->getText('reportCriteriaRunReport'); ?>" class="button"/>
+    <button class="btn waves-effect waves-light" type="submit" name="action">
+		<?= $loc->getText('reportCriteriaRunReport'); ?>
+	</button>
 </form>
 <?php include("../shared/footer.php"); ?>

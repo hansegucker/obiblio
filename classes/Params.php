@@ -109,7 +109,7 @@ class Params
     /* STATIC */
     function printForm($defs, $prefix = 'rpt_', $namel = array())
     {
-        echo '<table class="' . $prefix . 'params">';
+        echo '<div class="' . $prefix . 'params">';
         foreach ($defs as $def) {
             $def = array_pad($def, 4, NULL);        # Sigh.
             list($type, $name, $options, $list) = $def;
@@ -122,7 +122,7 @@ class Params
                 Params::_print($type, $l, $options, $list, $prefix);
             }
         }
-        echo '</table>';
+        echo '</div>';
     }
 
     /* PRIVATE */
@@ -138,9 +138,9 @@ class Params
             return;
         }
         if ($type == 'group') {
-            echo '<tr><td class="' . $prefix . 'group" colspan="2">';
+            echo '<div class="' . $prefix . 'group">';
             Params::printForm($list, $prefix, $namel);
-            echo '</td></tr>';
+            echo '</div>';
             return;
         }
         if ($type == 'order_by') {
@@ -159,10 +159,14 @@ class Params
         } else {
             $default = '';
         }
-        echo '<tr class="' . $prefix . 'param">';
-        echo '<td><label for="' . H($name) . '">';
+        echo '<div class="input-field ' . $prefix . 'param">';
+		if ($type != 'select'){
+        	echo '<label for="' . H($name) . '">';
+		} else {
+			echo '<label>';
+		}
         echo $loc->getText($title);
-        echo '</label></td><td>';
+        echo '</label>';
         switch ($type) {
             case 'string':
             case 'date':
@@ -196,7 +200,7 @@ class Params
             default:
                 assert(NULL);
         }
-        echo '</td></tr>';
+        echo '</div>';
     }
 
     function _splitName($name)
