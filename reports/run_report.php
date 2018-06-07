@@ -46,8 +46,7 @@ function printResultPages(&$loc, $currPage, $pageCount)
     if ($pageCount <= 1) {
         return false;
     }
-    echo $loc->getText("Result Pages: ");
-    echo "<ul class='pagination'>";
+    echo "<ul class='pagination center'>";
     if ($currPage > 6) {
         echolink(1, $loc->getText("&laquo;First"));
         echo ' ';
@@ -139,6 +138,7 @@ if ($format == 'csv') {
 }
 
 include('../shared/header.php');
+?><h1><?php echo $loc->getText("Report Results:"); ?></h1><?php
 
 if (isset($_REQUEST["msg"]) && !empty($_REQUEST["msg"])) {
     echo "<font class=\"error\">" . H($_REQUEST["msg"]) . "</font><br><br>";
@@ -156,20 +156,6 @@ if ($format == 'paged') {
 }
 ?>
 
-<table class="resultshead">
-    <tr>
-        <th><?php echo $loc->getText("Report Results:"); ?></th>
-        <td class="resultshead">
-            <table class="buttons">
-                <tr>
-                    <?php
-                    # Fill in report actions here
-                    ?>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
 <?php
 if ($format == 'paged') {
     $rpt->pageTable($page, new Table('echolink'));

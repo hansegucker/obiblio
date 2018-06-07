@@ -70,8 +70,8 @@ class Table
             if (!isset($col['title']) or !$col['title']) {
                 $col['title'] = $col['name'];
             }
-            echo '<td valign="middle" align="center" class="primary">';
-	        echo '<font class="small"><strong>' . $this->_loc->getText( $col['title'] ) . '</strong></font>';
+            echo '<th valign="middle" align="center" class="primary">';
+	        echo '<span>' . $this->_loc->getText( $col['title'] ) . '</span>';
             if (isset($col['sort']) and $col['sort'] and $echolink) {
                 echo "<br><nobr>";
                 $echolink(1, "<img border='0' src='../images/down.png' alt='&darr;'>",
@@ -80,7 +80,7 @@ class Table
                     $col['sort'] . '!r');
                 echo "</nobr>";
             }
-            echo "</td>\n";
+            echo "</th>\n";
         }
         echo "</tr>\n";
     }
