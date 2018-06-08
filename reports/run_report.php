@@ -48,7 +48,7 @@ function printResultPages(&$loc, $currPage, $pageCount)
     }
     echo "<ul class='pagination center'>";
     if ($currPage > 6) {
-        echolink(1, $loc->getText("&laquo;First"));
+        echolink(1, '<i class="material-icons">arrow_forward</i>');
         echo ' ';
     }
     if ($currPage > 1) {
@@ -72,7 +72,7 @@ function printResultPages(&$loc, $currPage, $pageCount)
         echo ' ';
     }
     if ($currPage < $pageCount - 5) {
-        echolink($pageCount, $loc->getText("Last&raquo;"));
+        echolink($pageCount, '<i class="material-icons">arrow_forward</i>');
         echo ' ';
     }
     echo "</ul>";
