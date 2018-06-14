@@ -246,10 +246,3 @@ $navloc = new Localize(OBIB_LOCALE, "navbars");
         </a>
     </li>
 <?php } ?>
-
-<li>
-    <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')">
-        <i class="material-icons">help</i>
-        <?php echo $navloc->getText("help"); ?>
-    </a>
-</li>

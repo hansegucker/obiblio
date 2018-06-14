@@ -175,12 +175,3 @@ $navLoc = new Localize( OBIB_LOCALE, "navbars" );
  <a href="../admin/translation_list.php" class="alt1">< ?php echo $navLoc->getText("adminTranslation");?></a><br>
 < ?php } ?>
 -->
-
-<li>
-    <a href="javascript:popSecondary('../shared/help.php<?php if ( isset( $helpPage ) ) {
-		echo "?page=" . H( addslashes( U( $helpPage ) ) );
-	} ?>')">
-        <i class="material-icons">help</i>
-		<?php echo $navLoc->getText( "help" ); ?>
-    </a>
-</li>

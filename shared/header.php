@@ -45,12 +45,12 @@ if ($sess_userid == "") { ?>
     </li>
 	<li>
 		<a class="disabled">
-	<?php  
+	<?php
 	unset($_SESSION["postVars"]);
     unset($_SESSION["pageErrors"]);
 
     $postVars["userid"] = $_SESSION['userid'];
-	include_once("../classes/Staff.php");
+		include_once("../classes/Staff.php");
     include_once("../classes/StaffQuery.php");
     include_once("../functions/errorFuncs.php");
     $staffQ = new StaffQuery();
@@ -74,6 +74,9 @@ if ($sess_userid == "") { ?>
 	</li>
 <?php } ?>
 	<?php include( "../navbars/" . $tab . ".php" ); ?>
+	<li><div class="divider"></div></li>
+	<li><a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><i
+	                class="material-icons">help</i> <?php echo $navLoc->getText("help"); ?></a></li>
 </ul>
 </header>
 

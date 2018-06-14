@@ -59,7 +59,3 @@ Nav::display("$nav");*/
     <li><a href="../shared/layout.php?rpt=Report&name=list"><i
                     class="material-icons">print</i> <?php echo $loc->getText("Print list"); ?></a></li>
 <?php } ?>
-
-<li>
-    <a href="javascript:popSecondary('../shared/help.php<?php if (isset($helpPage)) echo "?page=" . H(addslashes(U($helpPage))); ?>')"><i
-                class="material-icons">help</i> <?php echo $navLoc->getText("help"); ?></a></li>
