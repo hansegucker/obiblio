@@ -52,6 +52,7 @@ echo ">\n";
             // Init side nav
             $(".button-collapse").sidenav();
             $('select').select();
+						$('select').formSelect();
         });
 
         function popSecondary(url) {
