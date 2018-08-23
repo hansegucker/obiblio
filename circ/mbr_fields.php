@@ -50,7 +50,7 @@ $ids["mbrFldsClassify"] = "classification"
 <?php
 foreach ( $fields as $title => $html ) {
 	?>
-    <div class="input-field">
+    <div class="input-field col s12">
         <label for="<?php echo $ids[ $title ]; ?>">
 			<?php echo $loc->getText( $title ); ?>
         </label>
