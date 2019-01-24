@@ -48,7 +48,7 @@ function printResultPages(&$loc, $currPage, $pageCount)
     }
     echo "<ul class='pagination center'>";
     if ($currPage > 6) {
-        echolink(1, '<i class="material-icons">arrow_forward</i>');
+        echolink(1, '<i class="material-icons">arrow_back</i>');
         echo ' ';
     }
     if ($currPage > 1) {
