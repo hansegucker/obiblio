@@ -29,7 +29,7 @@ function moneyFormat($amount, $decimals)
     // Disabling following line forces currency symbol. Recommended for Admin, Library Settings, HTML Charset: utf-8
     $currencySymbol = $localeInfo["currency_symbol"];
     if (!H($currencySymbol)) {
-        $currencySymbol = '$';
+        $currencySymbol = '€';
     }
     $dec_point = $localeInfo["mon_decimal_point"];
     if (!$dec_point) {
@@ -50,11 +50,11 @@ function moneyFormat($amount, $decimals)
 
     /* add currency symbol and sign
        _sign_posn doc:
-       0 Parentheses surround the quantity and currency_symbol  
-       1 The sign string precedes the quantity and currency_symbol  
-       2 The sign string succeeds the quantity and currency_symbol  
-       3 The sign string immediately precedes the currency_symbol  
-       4 The sign string immediately succeeds the currency_symbol  
+       0 Parentheses surround the quantity and currency_symbol
+       1 The sign string precedes the quantity and currency_symbol
+       2 The sign string succeeds the quantity and currency_symbol
+       3 The sign string immediately precedes the currency_symbol
+       4 The sign string immediately succeeds the currency_symbol
     */
 
     if ($localeInfo[$prefix . "_sign_posn"] == 0) {
